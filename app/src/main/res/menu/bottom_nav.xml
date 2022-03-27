@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:icon="@drawable/ic_text_foreground"
+    android:title="Text"
+    android:id="@+id/frag1"
+    />
+    <item
+        android:icon="@drawable/ic_quiz3_foreground"
+        android:title="quiz"
+        android:id="@+id/frag2"
+        />
+    <item
+        android:icon="@drawable/ic_practice_foreground"
+        android:title="practice"
+        android:id="@+id/frag3"
+        />
+</menu>
