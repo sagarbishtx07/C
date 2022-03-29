@@ -31,6 +31,27 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
         //val tv = view.findViewById<View>(R.id.tvf3)as TextView
         val bundle = arguments
         val c_id = bundle!!.getInt("mText")
+        var q1=view.findViewById<TextView>(R.id.q1)
+        var q2=view.findViewById<TextView>(R.id.q2)
+        var q3=view.findViewById<TextView>(R.id.q3)
+        var q4=view.findViewById<TextView>(R.id.q4)
+        var q5=view.findViewById<TextView>(R.id.q5)
+        var s1=view.findViewById<TextView>(R.id.c1)
+        var s2=view.findViewById<TextView>(R.id.c2)
+        when(c_id){
+            0->{
+                q1.text=getString(R.string.f3i1q1)
+                s1.text=getString(R.string.f3i1s1)
+                q2.text=getString(R.string.f3i1q2)
+                s2.text=getString(R.string.f3i1s2)
+                q3.text=getString(R.string.f3i1q3)
+                q4.text=getString(R.string.f3i1q4)
+                q5.text=getString(R.string.f3i1q5)
+            }
+            1->{
+
+            }
+        }
         //tv.text="Fragment 3 ${msg.toString()}"
         return view
 }}

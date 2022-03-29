@@ -2,4 +2,15 @@
     <string name="app_name">C</string>
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="f3i1q1">
+        Coding will start from section 3
+    </string>
+    <string name="f3i1s1">As you might have read in the bottom navigation plate that this zone is for code but since we have only done the introduction
+         part so we will begin coding from the 3rd section, since the next section will also going to be mainly about setting up the editor, environment
+        for working in C.</string>
+    <string name="f3i1q2"> </string>
+    <string name="f3i1s2"> </string>
+    <string name="f3i1q3"> </string>
+    <string name="f3i1q4"> </string>
+    <string name="f3i1q5"> </string>
 </resources>
