@@ -17,22 +17,44 @@ object quest{
                 "Improving your logic building and implementation of logic in programs that you make","Both 2 and 3",3+12));
 
         //1
-            quesList.add(Questions(5,"Q1","op1","op2","op3","op4",3))
-            quesList.add(Questions(6,"Q2","op1","op2","op3","op4",3+4))
-            quesList.add(Questions(7,"Q3","op1","op2","op3","op4",0+8))
-            quesList.add(Questions(8,"Q4","op1","op2","op3","op4",1+12))
+            quesList.add(Questions(5,"What is the use of compiler?","It saves the code for us, so it doesn't get lost if there was some unexpected power cut.",
+                "It removes the errors and warnings from the program.","Compiler coverts the code into readable file.","It scans the code for error and syntax checking if " +
+                        "errors are found it displays the error" +
+                        " and if everything alright converts the code into low level language code for computer to understand.",3))
+
+            quesList.add(Questions(6,"Which of the following is a text editor.","Notepad++","Notepad","VS code","All of them",3+4))
+            quesList.add(Questions(7,"Which of the following is not an IDE","Code Blocks","Turbo C","Vs Code","Netbeans",2+8))
+            quesList.add(Questions(8,"What is an environment path when we were setting up the compiler?","It sets the IDE for coding",
+                "It tells the computer the location/path of the bin file of the compiler where the program for executing our code exists.","It installs the compiler in our" +
+                        " computer so we can run the code without any problem","None of these",2+12))
 
         //2
-            quesList.add(Questions(9,"Q1","op1","op2","op3","op4",2))
-            quesList.add(Questions(10,"Q2","op1","op2","op3","op4",2+4))
-            quesList.add(Questions(11,"Q3","op1","op2","op3","op4",2+8))
-            quesList.add(Questions(12,"Q3","op1","op2","op3","op4",2+12))
+            quesList.add(Questions(9,"Which of the following type of brackets is used to the define the definition of program or specify the code inside of a block of code.",
+                "Circular brackets ( )"
+                ,"Curly Brackets { }",
+                "Square Brackets [ ] ","Arrows < >",1))
+
+            quesList.add(Questions(10,"What if we miss ';' at the end of the line? ","Compiler will show warning not error for this","C compiler will put the semi colon at the end of line for us."
+                ,"Program will give error","Nothing will happen",2+4))
+
+            quesList.add(Questions(11,"What is the function of the header file that we include at the top of C program.",
+                "It tells the compiler that it is C file.",
+                "It has all the essential libraries which include important functions and such which are required by our program."
+                ,"It tells the compiler that program starts from this line.",
+                "It contains the methods to solve the errors if we encounter error.",1+8))
+
+            quesList.add(Questions(12,"What does the header file stdio.h that we include in every C program contains?",
+                "Its called standard input output header file and it contains the source code of compiler",
+                "It contains the information about the location of C compiler installed in our system.",
+                "It is the Standard Input output header file and it contains the information related to input output functions.","op4",2+12))
 
         //3
-            quesList.add(Questions(13,"Q1","op1","op2","op3","op4",2))
-            quesList.add(Questions(14,"Q2","op1","op2","op3","op4",2+4))
-            quesList.add(Questions(15,"Q3","op1","op2","op3","op4",2+8))
-            quesList.add(Questions(16,"Q4","op1","op2","op3","op4",2+12))
+            quesList.add(Questions(13,"Which of these is not a data type in C?","struct","number","int","float",1))
+            quesList.add(Questions(14,"What is the range of integers that we could normally store in the int data type with using long int?","0 to 1 million ",
+                "-32767 to 32767","0 to 32767","0 to 65535",1+4))
+
+            quesList.add(Questions(15,"Which of the following values is wrong to put inside an int?","32767","-4000","3132.42","0",2+8))
+            quesList.add(Questions(16,"To store 5.43234 which data type will you prefer?","Int","Double","Point","Float",1+12))
 
         //4
             quesList.add(Questions(17,"Q1","op1","op2","op3","op4",2))
