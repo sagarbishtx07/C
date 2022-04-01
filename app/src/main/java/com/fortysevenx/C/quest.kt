@@ -80,6 +80,51 @@ object quest{
                 "a>=b is a correct expression for comparison between a and b in c",2+12))
 
 
+        //5
+        quesList.add(Questions(21,"What is a Boolean Value?",
+            "Value which is only divisible by 100",
+            "Values which can only be positive or negative",
+            "Values which are either true or false, or 0 or 1 , where 0 is false and 1 is true",
+            "Binary Values are Boolean Values",2))
+
+        quesList.add(Questions(22,"Guess the output of this portion of code? -: " +
+                "\n\t if(4%2!=0)\n\t{\n\t\tprintf(\"YES\");\n\t}else\n\t\tprintf(\"NO\");\n",
+            "Program will not give output and give error because there is not curly brackets with else block",
+            "Output will be YES",
+            "Output will be NO",
+            "Output will be ZERO",2+4))
+
+        quesList.add(Questions(23,"Identify the incorrect statement.",
+            "&& only gives true if both the statement around it are true",
+            "|| only works if both the statement around it are false",
+            "!= is an operator for checking if both the number are different or not",
+            " = is called assignment operator",1+8))
+
+        quesList.add(Questions(24,"What will be output of this block of code -:\n\t" +
+                "if(1)\n\t\tprintf(\"FIRE\");\n\telse\n\t\tprintf(\"ICE\");",
+            "FIRE","ICE","Program will give error","Program will run but will not give output",0+12))
+
+
+        //6
+        quesList.add(Questions(21,"","","","","",0))
+        quesList.add(Questions(22,"","","","","",0+4))
+        quesList.add(Questions(23,"","","","","",0+8))
+        quesList.add(Questions(24,"","","","","",0+12))
+
+
+        //7
+        quesList.add(Questions(21,"","","","","",0))
+        quesList.add(Questions(22,"","","","","",0+4))
+        quesList.add(Questions(23,"","","","","",0+8))
+        quesList.add(Questions(24,"","","","","",0+12))
+
+
+        //8
+        quesList.add(Questions(21,"","","","","",0))
+        quesList.add(Questions(22,"","","","","",0+4))
+        quesList.add(Questions(23,"","","","","",0+8))
+        quesList.add(Questions(24,"","","","","",0+12))
+
 
         return quesList
     }
