@@ -106,40 +106,87 @@ object quest{
 
 
         //6
-        quesList.add(Questions(21,"Which of the following type of loop will definitely run once no matter the condition?",
+        quesList.add(Questions(25,"Which of the following type of loop will definitely run once no matter the condition?",
             "For Loop",
             "While Loop",
             "do while",
             "all of the above",2))
 
-        quesList.add(Questions(22,"How many time this loop will run?\n\twhile(1){\n\t\tprintf(\"RUNNING\\n\");\n\t}\n",
+        quesList.add(Questions(26,"How many time this loop will run?\n\twhile(1){\n\t\tprintf(\"RUNNING\\n\");\n\t}\n",
             "1 time","Will not run even once","This will be a infinity loop",
             "Program will throw error because there is no condition specified inside while loop",0+4))
 
-        quesList.add(Questions(23,"Identify the correct output of this program -:\n\t" +
+        quesList.add(Questions(27,"Identify the correct output of this program -:\n\t" +
                 "for(i=5;i<=7;i++)\n\t\tprintf(\"Yo \");\n\t\tprintf(\"HELLO \");\n",
             "Yo Yo Yo HELLO HELLO HELLO",
             "Yo HELLO Yo HELLO Yo HELLO",
             "Yo Yo Yo HELLO",
             "Yo Yo HELLO HELLO",2+8))
 
-        quesList.add(Questions(24,"How many times this loop will run?\n\t" +
+        quesList.add(Questions(28,"How many times this loop will run?\n\t" +
                 "for(i=0;i<5;i++)\n\t\tfor(j=i;j<5;j++)\n\t\t\tprintf(\"HELLO\");\n",
             "25","10","50","15",3+12))
 
 
         //7
-        quesList.add(Questions(21,"","","","","",0))
-        quesList.add(Questions(22,"","","","","",0+4))
-        quesList.add(Questions(23,"","","","","",0+8))
-        quesList.add(Questions(24,"","","","","",0+12))
+        quesList.add(Questions(29,"What does nesting means in programming?",
+            "Using one or more than one loop inside other loop",
+            "Using one or more than one if statement inside other",
+            "Using loops outside main()","Both 1 and 2",3))
+
+        quesList.add(Questions(30,"Which of the following is a decision control block like if-else block.",
+            "For Loop",
+            "Switch statement",
+            "Return Keyword",
+            "do while loop",1+4))
+
+        quesList.add(Questions(31,"Guess the output of the following code -:\n" +
+                "\t" +
+                "char a = 'B';\n\t" +
+                "switch(a){\n\t\t" +
+                "case 'A':\n" +
+                "\t\t\tprintf(\"APPLE\");\n\t\t\t" +
+                "break;\n" +
+                "\t\t\tcase 'B':\n\t\t\t" +
+                "printf(\"Bat\");\n\t\t\t" +
+                "break;\n\t\t\t" +
+                "default:\n\t\t\t" +
+                "printf(\"DOG\");\n\t\t}\n",
+            "APPLE",
+            "DOG",
+            "BAT",
+            "program will give error because no break statement inside default case",
+            3+8))
+
+        quesList.add(Questions(32,
+            "Which of these is an invalid statement.",
+            "Case 'A': will not work as c is in uppercase 'C', it should be case",
+            "default case is not compulsory to run switch block without error ",
+            "default case is compulsory to run switch block without error ",
+            "Both 1 and 3",2+12))
 
 
         //8
-        quesList.add(Questions(21,"","","","","",0))
-        quesList.add(Questions(22,"","","","","",0+4))
-        quesList.add(Questions(23,"","","","","",0+8))
-        quesList.add(Questions(24,"","","","","",0+12))
+        quesList.add(Questions(33,"Which of the following is not true for a function in C?",
+            "Functions helps in reducing lines of code.",
+            "We can pass as many parameters as we need in function.",
+            "Running of function stops when it encounters return statement",
+            "We cannot define the function before the main()",3))
+
+        quesList.add(Questions(34,"What is the purpose of return statement at the end of function?",
+            "It marks the end of definition of function in other words it tells that function finishes here.",
+            "It returns the name of the function to the main()",
+            "return keyword is also used to pass an value back from where the function was called.",
+            "Both 1 and 3",3+4))
+
+        quesList.add(Questions(35,"What is the right syntax to call this function? -:\n\t" +
+                "void add(int a,int b);\n","add(2,3.5);","add(2);","add(a=2,b=3);","add(2,3);",
+            3+8))
+
+        quesList.add(Questions(36,"From where can we call a function?",
+            "function can be called from another function.",
+            "function can be called from inside main().","function can be called from inside another function",
+            "ALL OF THE ABOVE",3+12))
 
 
         return quesList

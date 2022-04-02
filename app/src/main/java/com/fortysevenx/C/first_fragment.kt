@@ -319,7 +319,7 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                     "First 5 lines of code are about declaring 2 variable to store height of tony and steve and then asking them" +
                             "to input their height using the printf() statement.Then from the 6th line we take input of h1 and h2 using the " +
                             "int format specifier - %d (note that we cannot print any text inside of scanf() statement otherwise it might cause problem" +
-                            ". Then wwe use the if to check that if(h1>h2) so if its true then the code inside it gets executed and the statement " +
+                            ". Then we use the if to check that if(h1>h2) so if its true then the code inside it gets executed and the statement " +
                             "inside it gets printed and otherwise the statement inside else block is printed."
                 sh3.text = "2.Program to compare if a number is divisible by 2 or 3 or 7 or 11."
                 im3.setImageResource(R.drawable.s603)
@@ -341,7 +341,7 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                 p1.text =
                     "Imagine you have to print 'Hello World' in C then you would have to write printf(\"Hello World\") every time" +
                             " then it would take some time but now imagine if you were to do it 100 or 1000 time then it would take very large amount" +
-                            "of time. Thats where loops comes in to reduce the line of code that follow similar pattern or have repetition ."
+                            "of time. That's where loops comes in to reduce the line of code that follow similar pattern or have repetition ."
                 sh1.text = "While Loop"
                 p2.text =
                     "While loop means that - this block of code will repeat itself or stay in loop while the condition is not false. \n" +
@@ -446,7 +446,7 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                             " in if-else when no other condition is satisfied then it is run default case do not require a break statement.\n" +
                             "You will have a better understanding in the next example.\nNote - Case in switch" +
                             " statement end with colon(:) not semi colon(;)"
-                im1.setImageResource(R.drawable.s8i1)
+                //im1.setImageResource(R.drawable.s8i1)
                 sh2.text = ""
                 p3.text = ""
                 sh3.text = ""
