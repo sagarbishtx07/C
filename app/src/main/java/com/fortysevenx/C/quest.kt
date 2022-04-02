@@ -106,10 +106,26 @@ object quest{
 
 
         //6
-        quesList.add(Questions(21,"","","","","",0))
-        quesList.add(Questions(22,"","","","","",0+4))
-        quesList.add(Questions(23,"","","","","",0+8))
-        quesList.add(Questions(24,"","","","","",0+12))
+        quesList.add(Questions(21,"Which of the following type of loop will definitely run once no matter the condition?",
+            "For Loop",
+            "While Loop",
+            "do while",
+            "all of the above",2))
+
+        quesList.add(Questions(22,"How many time this loop will run?\n\twhile(1){\n\t\tprintf(\"RUNNING\\n\");\n\t}\n",
+            "1 time","Will not run even once","This will be a infinity loop",
+            "Program will throw error because there is no condition specified inside while loop",0+4))
+
+        quesList.add(Questions(23,"Identify the correct output of this program -:\n\t" +
+                "for(i=5;i<=7;i++)\n\t\tprintf(\"Yo \");\n\t\tprintf(\"HELLO \");\n",
+            "Yo Yo Yo HELLO HELLO HELLO",
+            "Yo HELLO Yo HELLO Yo HELLO",
+            "Yo Yo Yo HELLO",
+            "Yo Yo HELLO HELLO",2+8))
+
+        quesList.add(Questions(24,"How many times this loop will run?\n\t" +
+                "for(i=0;i<5;i++)\n\t\tfor(j=i;j<5;j++)\n\t\t\tprintf(\"HELLO\");\n",
+            "25","10","50","15",3+12))
 
 
         //7
