@@ -82,8 +82,9 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                 im1.setImageResource(R.drawable.s2i1)
                 im2.setImageResource(R.drawable.s2i2)
                 p1.text =
-                    "NOTE -: Here we are setting up the text editor to code so it might be complex for your first time so to better visualize how " +
-                            "to do this correctly without any problem i would recommend you" +
+                    "NOTE -: Here we are setting up the text editor to code so it might be complex for your first time if at the end of this section" +
+                            "you are unable to setup the editor then " +
+                            "i would recommend you" +
                             " to watch a youtube video like\"HOW TO SETUP CODEBLOCKs/TURBO C TO RUN C PROGRAM.\" to easily do it. " +
                             "\n\nBefore we start writing program we need to decide our setup someplace to write run/execute our programs.But first you should undertands these 3 terms\n" +
 
@@ -93,8 +94,8 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                             "to download the C compiler and then setup the path for it.\n" +
                             "\n\n" +
                             "2.Setting the path for compiler - Every time when you run the program you might need to call the compiler and for it every time you would have " +
-                            "to specify its location to computer but this gets very time consuming and not good as well to acess the compiler anytime we set the path of compiler" +
-                            "in the system variables.Setting up path in simpler terms is to let your computer remember the loacation of c compiler so that we don't have to tell the computer every time we run the code.\n" +
+                            "to specify its location to computer but this gets very time consuming and not good as well to access the compiler anytime we set the path of compiler" +
+                            "in the system variables.Setting up path in simpler terms is to let your computer remember the location of c compiler so that we don't have to tell the computer every time we run the code.\n" +
                             "\n\n" +
                             "3. Text Editor and IDE -: " +
                             "Text editor as the name says we edit text in here notepad in windows is the most popular example of it and when we use that text editor specially for writing\n" +

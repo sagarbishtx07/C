@@ -34,9 +34,12 @@ class MainActivity : AppCompatActivity() {
             R.id.tv8,
             R.id.tv9,
             R.id.tv10,
-            R.id.tv11
+            R.id.tv11,
+            R.id.tv12,
+            R.id.tv13,
+            R.id.tv14,
         )
-        for (i in 0..10) {
+        for (i in 0..13) {
             findViewById<TextView>(tv[i]).setOnClickListener {
                var intent =  Intent(this,Content::class.java)
                 intent.putExtra(Constants.ID,i)
