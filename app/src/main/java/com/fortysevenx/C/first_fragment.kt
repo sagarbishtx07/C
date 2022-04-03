@@ -82,7 +82,10 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                 im1.setImageResource(R.drawable.s2i1)
                 im2.setImageResource(R.drawable.s2i2)
                 p1.text =
-                    "Before we start writing program we need to decide our setup someplace to write run/execute our programs.But first you should undertands these 3 terms\n" +
+                    "NOTE -: Here we are setting up the text editor to code so it might be complex for your first time so to better visualize how " +
+                            "to do this correctly without any problem i would recommend you" +
+                            " to watch a youtube video like\"HOW TO SETUP CODEBLOCKs/TURBO C TO RUN C PROGRAM.\" to easily do it. " +
+                            "\n\nBefore we start writing program we need to decide our setup someplace to write run/execute our programs.But first you should undertands these 3 terms\n" +
 
                             "\n\n" +
                             "1.COMPILER - Compiler is the program that reads our code then understands it and checks for error and converts it into a language understandable by the computer\n" +

@@ -188,6 +188,32 @@ object quest{
             "function can be called from inside main().","function can be called from inside another function",
             "ALL OF THE ABOVE",3+12))
 
+        //9
+        quesList.add(Questions(37,"Which one is correct for '&' and '*' for pointers?",
+            "'&' provides the address and '*' also provides the address",
+            "'*' provides the address and '&' points to that address",
+            "'&' provides the address and '*' points to that address",
+            "'&' is pointer to address and '*' is the value there",2))
+
+        quesList.add(Questions(38,"Find the values of a,b and c -:\n\t" +
+                "int a,*b,c;\n\t" +
+                "a=5;\n\t" +
+                "*b=&a;\n\t" +
+                "c=*b;\n\t" +
+                "a=a+1;\n","a=5 b=5 c=5","a=6 b=5 c=6","a=6 b=6 c=6","a=6 b=6 c=5",
+            3+4))
+
+        quesList.add(Questions(39,"What will this expression be address or value(a is an integer values)?-:\n\t" +
+                "x=*(&(*(&(*(&a)))))","Address","Value","pointer pointing to that address","Both 2 and 3",
+            3+8))
+
+        quesList.add(Questions(40,"Which of the following is incorrect for pointers?",
+            "Pointers contains the address and when used with * points to that address",
+            "When we declare a pointer like int *a; it doesn't get space for storing the value but for storing the " +
+                    "space so if we do *a=5; it might return an error.",
+            "We can store value in an pointer.",
+            "We can store the address of the variable which is storing the value.",2+12))
+
 
         return quesList
     }
