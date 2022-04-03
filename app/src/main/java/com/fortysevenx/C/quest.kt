@@ -214,6 +214,93 @@ object quest{
             "We can store value in an pointer.",
             "We can store the address of the variable which is storing the value.",2+12))
 
+        //10
+        quesList.add(Questions(41,"Which of the following way is the correct way of passing pointer/address for two int variable x and y to the function sum(int *a,int *b)?",
+            "sum(&x,&y);",
+            "sum(*x,*y);",
+            "sum(**x,**y);",
+            "sum(&(*x),&(*x));",
+            0))
+
+        quesList.add(Questions(42,"Correct syntax to receive a pointer from function int* add(int a,int b) in an int *a;.",
+            "&a=add(&5,&6);",
+            "*a=add(5,6);",
+            "a=add(5,6);",
+            "a=add(*5,*6);",
+            2+4))
+
+        quesList.add(Questions(43,"Which of the following function call demonstrates call by value and call by reference respectively with two int variables a and b.",
+            "add(&a,&b); and add(a,b);",
+            "add(a,b); and add(*a,*b);",
+            "add(a,b) and add(&a,&b);",
+            "add(*a,*b); and add(a,b);",
+            2+8))
+
+        quesList.add(Questions(44,"Which of these statements does not define functions and pointers.",
+            "Functions are the block of code that we write to reduce lines of code.",
+            "We cannot store value in an pointer variable but only address of the value",
+            "We can operate with pointer variable just like normal variable like c=*a+*b is valid",
+            "Functions cannot return pointer variable.",3+12))
+
+
+        //11
+        quesList.add(Questions(45,"Determine the correct properties of this array of length 6 -:" +
+                "\n\tint a[]={2,3,-1,45,0,9};",
+            "starting index 1 and last index 6",
+            "starting index is -1 and last index is 5",
+            "starting index is 0 and last index is 5",
+            "starting index = 0 and last index = 5",
+            2))
+
+        quesList.add(
+            Questions(46,"Given an array-:\n\tint a[]={1,2,3,4,5,6};\n" +
+                "what will the output of this block of code. -:\n\t" +
+                "for(i=0;i<6;i++){\n\t\tif(i%2!=0)\n\t\t\tprintf(\"%d \",a[i]);\n\t}\n,",
+            "It will print all the even values from the array",
+            "It will print all the prime numbers in the array",
+            "This will print all the odd numbers in the array",
+            "This will print all the elements of the  array",2+4))
+
+        quesList.add(Questions(47,"We are given an array a[5] what will be the size of the array assuming size of 1 int" +
+                " as 2bytes in the given compiler.",
+            "5 bytes","10 bytes","6 bytes","12bytes",1+8))
+
+        quesList.add(Questions(48,"If we have an array string st of 10 elements (char st[10];) then which of the following statement" +
+                " given below is incorrect.",
+            "st without square brackets is an pointer pointing to the starting of array",
+            "size of given array is double the size of one char",
+            "to print the whole character string we can use %s format specifier",
+            "we cannot print the whole string at once without using loop",3+12))
+
+
+        //12
+        quesList.add(Questions(49,"Can we change the length of array in C once we declare it",
+            "No array is a static data type and its length cannot be changed normally",
+            "Yes we can change the length of array by adding another array to it",
+            "Yes we can change the length of array by the use of dynamic memory allocation",
+            "Both 1 and 3 are correct",
+            3+4))
+
+        quesList.add(
+            Questions(51,"What do we mean by dynamic memory allocation?",
+            "Adding, removing and changing memory space  at run time that is once allocated",
+            "allocating memory without even declaring the variable",
+            "Using the malloc() function for memory allocation",
+            "all of the above",3+4))
+
+        quesList.add(Questions(52,"Which is the correct format to access array elements with using pointers.",
+            "(*a+[1])","(&a+2)","*(a+1)","*(a[1])",2+8))
+
+        quesList.add(Questions(53,"Suppose we have a pointer variable int *a; and we want to store the address of start" +
+                " of array int x[]; in it.Which is the correct method to do this. ",
+            "&a=x;",
+            "&a=&x;",
+            "a=x;",
+            "*a=&x[1];",
+            2+12))
+
+       // quesList.add(Questions(50,"","","","","",0))
+
 
         return quesList
     }
