@@ -18,7 +18,7 @@ const val ID:String="ID"
         textList.add(CardDetails(11,"More about functions"))
         textList.add(CardDetails(12,"Arrays and Strings"))
         textList.add(CardDetails(13,"Pointers in Arrays"))
-        textList.add(CardDetails(14,"Let's Start"))
+        textList.add(CardDetails(14,"Multidimensional Array"))
         textList.add(CardDetails(15,"Let's Start"))
         textList.add(CardDetails(16,"Let's Start"))
         return textList

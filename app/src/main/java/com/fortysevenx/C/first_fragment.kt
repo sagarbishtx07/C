@@ -773,7 +773,7 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         "Remember in the last section when we were inputting string we didn't write '&' ampersand symbol in the scanf(\"%s\",str);" +
                         " we missed the '&' because the str[20] was a character array and the str itself is a pointer which means it already holds " +
                         "some address so we don't need the '&' to get the address for the scanf(). "
-                sh2.text = "Accessing ll elements with pointers"
+                sh2.text = "Accessing array elements with pointers"
                 p3.text = "Now we know that to access first element of the array without using the square brackets we do it by" +
                         "*(a+0) or *a. To access the other elements of the array -: *(a+element_index) ,for second element *(a+1)" +
                         " to access the third element *(a+2) and so on. When we declare a array suppose of 5 elements - a[5] mem1ory" +
@@ -807,7 +807,72 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         " use in C and many programs are based on pointers and dynamic memory allocation in competitive program so it would" +
                         " be very beneficial to master these."
             }
+            13->{
+                tv.text = "What are multidimensional array?"
+                p1.text = "As we have studied in the previous sections about the array where we have declared arrays only with" +
+                        " one row but what if we want to store more information in the same array there we use multidimensional array." +
+                        " Here's a little representation for it.\n\t" +
+                        " One dimensional array(Normal array/1D array that we have declared till now).\n" +
+                        "\t\tint a[5] = {2,3,4,5,6};\n\n" +
+                        " Multi-Dimensional array(2D array)\n" +
+                        "\t\t int b[3][5]={{2,5,7,11,13},\n" +
+                        "\t\t              {3,6,9,12,15},\n" +
+                        "\t\t              {5,10,20,40,80}};\n" +
+                        "\nHere you might have easily recognised the array a which is a simple one dimensional array, but the array b is a multidimensional " +
+                        " 2D array which contains multiple rows which adds an extra dimension so its a 2D array."
+                sh1.text = "How does the 3D array look like?"
+                p2.text = "After reading about the 2 dimensional array above you might be wondering what is 3 dimensional array or how it " +
+                        " look like. As you might have realised that 2D array is a collection of more than one one dimensional array, So similar to" +
+                        " a 2D array a 3 Dimensional array is a collection of one or more 2 dimensional array as you can see in the image. But working" +
+                        " in this section you will not find any 3D array or work with it as it becomes a bit complex very easily and as a beginner " +
+                        "programmer you might not find many questions related to 3D array but once you master 2D array you will not have much problem " +
+                        "in future working with 3D arrays."
+
+                sh2.text = "Working with 2D array"
+                p3.text = "Declaration and initialization format-: \n" +
+                        "\tint a[no._of_rows][no._of_columns]={\n" +
+                        "                                      {},\n" +
+                        "                                      {}};\n" +
+                        "Example-:\n" +
+                        "\t\t int b[3][5]={{2,5,7,11,13},\n" +
+                        "\t\t              {3,6,9,12,15},\n" +
+                        "\t\t              {5,10,20,40,80}};\n" +
+                        "\nPROGRAM to initialize elements of 2D array by taking input from the user.\n" +
+                        "\n\t - - - code - - - \n\n\t" +
+                        "#include<stdio.h>\n\t" +
+                        "void main(){\n\t\t" +
+                        "int a[3][5],i,j;\n\t\t" +
+                        "printf(\"Enter Values in 2D array\");" +
+                        "for(i=0;i<3;i++){\n\t\t\t" +
+                        "for(j=0;j<5;j++){\n\t\t\t\t" +
+                        "scanf(\"%d\",&a[i][j]);\n\t\t\t" +
+                        "}\n\t\t}\n\t" +
+                        "}\n\n" +
+                        "\t although this is a simple program but there are few things to mention, first the first square " +
+                        "brackets of the 2D array indicates the row number that is why we have used it as outer loop since" +
+                        " first the row will have to filled for which we have the inner loop to input columns in row" +
+                        " then we should proceed to next row."
+
+                sh3.text = "MATRIX and some operations on it"
+                p4.text = "Matrix is another name for 2D array but often whenever the matrix name will pop there will" +
+                        " be many chances that we are dealing with a square matrix\n" +
+                        "\nSQUARE MATRIX - 2D array with equal number of rows and columns. For ex - : a[3][3],b[5][5];\n" +
+                        "\nSome terms in square matrix.\n\t" +
+                        "The elements that go diagonally are called diagonal elements. There are 2 diagonals in an square" +
+                        " matrix.\n" +
+                        "Right Diagonal -: The diagonal going from right top to bottom left.\n" +
+                        "Left Diagonal -: The diagonal going from left top to right bottom\n\n" +
+                        "\tLeft Diagonal has a property that all the elements along the left diagonal in a square matrix" +
+                        " will have the index of row and column equal. For ex- the elements of the left diagonal will be" +
+                        " like a[1][1],[2][2],b[0][0].\n\t" +
+                        "Right Diagonal has a property that all the elements along the right diagonal in the square matrix will " +
+                        "satisfy the relation that i+j+1=size of matrix where i=row number and j= column number. For example if we have a matrix 3x3 (a[3][3]) then the" +
+                        "elements in the right diagonal will will be like a[0][2] which is satisfying the relation" +
+                        " 0+2+1=3(size of matrix/row/column). "
+            }
         }
+
+
         //tv.text=c_id.toString()
         return view
     }
