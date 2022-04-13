@@ -14,7 +14,7 @@
     </string>
     
     <string name="f3i1q2">
-
+m
     </string>
 
     <string name="f3i1s2">
@@ -67,27 +67,38 @@
 
     <!-- ID 3 -->
     <string name="f3i3q1">
-       
+       Write and Execute a program that prints your name.
     </string>
 
     <string name="f3i3s1">
+        \t#include&lt;stdio.h&gt;\n
+        \tvoid main(){\n
+        \t\tprintf(&quot;MY NAME IS BOOSTER&quot;);
+        \n\t
+        }\n
+
        
     </string>
 
     <string name="f3i3q2">
-
+        Write and execute a program to print the sum of 10 and 5.
     </string>
 
     <string name="f3i3s2">
+        \n
+        \t#include&lt;stdio.h&gt;\n
+        \tvoid main(){\n\t\t
+        printf(&quot;Sum of 10 and 15 is = %d&quot;,10+15);\n\t
+        }\n
 
     </string>
 
     <string name="f3i3q3">
-
+        Write and execute a program that prints your name and your school name.
     </string>
 
     <string name="f3i3q4">
-
+        Write a program that prints the product of 10 and 2500 and prints like &quot;2500*10 = &apos;ans&apos; &quot;
     </string>
 
     <string name="f3i3q5">
