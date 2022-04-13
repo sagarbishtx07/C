@@ -2,15 +2,158 @@
     <string name="app_name">C</string>
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <string name="f3i1q1">
         Coding will start from section 3
     </string>
-    <string name="f3i1s1">As you might have read in the bottom navigation plate that this zone is for code but since we have only done the introduction
+
+    <string name="f3i1s1">
+        As you might have read in the bottom navigation plate that this zone is for code but since we have only done the introduction
          part so we will begin coding from the 3rd section, since the next section will also going to be mainly about setting up the editor, environment
-        for working in C.</string>
-    <string name="f3i1q2"> </string>
-    <string name="f3i1s2"> </string>
-    <string name="f3i1q3"> </string>
-    <string name="f3i1q4"> </string>
-    <string name="f3i1q5"> </string>
+        for working in C.
+    </string>
+    
+    <string name="f3i1q2">
+
+    </string>
+
+    <string name="f3i1s2">
+
+    </string>
+
+    <string name="f3i1q3">
+
+    </string>
+
+    <string name="f3i1q4">
+
+    </string>
+
+    <string name="f3i1q5">
+
+    </string>
+
+
+    <!--      ID 2            -->
+    
+    <string name="f3i2q1">
+       PROCEED TO NEXT SECTION
+    </string>
+
+    <string name="f3i2s1">
+       
+    </string>
+
+    <string name="f3i2q2">
+
+    </string>
+
+    <string name="f3i2s2">
+
+    </string>
+
+    <string name="f3i2q3">
+
+    </string>
+
+    <string name="f3i2q4">
+
+    </string>
+
+    <string name="f3i2q5">
+
+    </string>
+    
+
+    <!-- ID 3 -->
+    <string name="f3i3q1">
+       
+    </string>
+
+    <string name="f3i3s1">
+       
+    </string>
+
+    <string name="f3i3q2">
+
+    </string>
+
+    <string name="f3i3s2">
+
+    </string>
+
+    <string name="f3i3q3">
+
+    </string>
+
+    <string name="f3i3q4">
+
+    </string>
+
+    <string name="f3i3q5">
+
+    </string>
+
+
+    <!--      ID 4            -->
+
+    <string name="f3i4q1">
+       
+    </string>
+
+    <string name="f3i4s1">
+       
+    </string>
+
+    <string name="f3i4q2">
+
+    </string>
+
+    <string name="f3i4s2">
+
+    </string>
+
+    <string name="f3i4q3">
+
+    </string>
+
+    <string name="f3i4q4">
+
+    </string>
+
+    <string name="f3i4q5">
+
+    </string>
+
+
+    <!--      ID 5            -->
+
+    <string name="f3i5q1">
+       
+    </string>
+
+    <string name="f3i5s1">
+       
+    </string>
+
+    <string name="f3i5q2">
+
+    </string>
+
+    <string name="f3i5s2">
+
+    </string>
+
+    <string name="f3i5q3">
+
+    </string>
+
+    <string name="f3i5q4">
+
+    </string>
+
+    <string name="f3i5q5">
+
+    </string>
+    
 </resources>
