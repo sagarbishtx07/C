@@ -870,9 +870,21 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         "elements in the right diagonal will will be like a[0][2] which is satisfying the relation" +
                         " 0+2+1=3(size of matrix/row/column). "
             }
+            14->{
+                tv.text=""
+                p1.text=""
+                sh1.text=""
+                p2.text=""
+                sh2.text=""
+                p3.text=""
+                sh3.text=""
+                p4.text = ""
+                foot.text=""
+            }
         }
 
-
+767890861
+        
         //tv.text=c_id.toString()
         return view
     }
