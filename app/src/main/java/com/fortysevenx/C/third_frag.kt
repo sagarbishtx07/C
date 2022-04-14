@@ -56,14 +56,14 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
             R.string.f3i2q4,
             R.string.f3i2q5,
 
-                       R.string.f3i3q1,
-                       R.string.f3i3s1,
-                       R.string.f3i3q2,
-                       R.string.f3i3s2,
-                       R.string.f3i3q3,
-                       R.string.f3i3q4,
-                       R.string.f3i3q5,
-            /*
+            R.string.f3i3q1,
+            R.string.f3i3s1,
+            R.string.f3i3q2,
+            R.string.f3i3s2,
+            R.string.f3i3q3,
+            R.string.f3i3q4,
+             R.string.f3i3q5,
+
                                  R.string.f3i4q1,
                                  R.string.f3i4s1,
                                  R.string.f3i4q2,
@@ -71,7 +71,7 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                                  R.string.f3i4q3,
                                  R.string.f3i4q4,
                                  R.string.f3i4q5,
-
+/*
                                  R.string.f3i5q1,
                                  R.string.f3i5s1,
                                  R.string.f3i5q2,

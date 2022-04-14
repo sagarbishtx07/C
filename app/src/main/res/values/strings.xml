@@ -109,18 +109,41 @@ m
     <!--      ID 4            -->
 
     <string name="f3i4q1">
+        Write and execute a program to print a float value without points/decimal places.
        
     </string>
 
     <string name="f3i4s1">
-       
+       \n
+        \t#include&lt;stdio.h&gt;\n
+        \tvoid main(){\n
+        \t\tfloat b=5.89;\n
+        \t\tprintf(&quot;%d&quot;,(int)b);\n
+        \t\t}
+        \n
+        What you seen in the above program is called type casting. Here b an floating point or a decimal value
+         has been converted/printed as an integer values by the use of type cast or using it as an integer by simply
+         adding (int) before it. It can be done vice versa or in other words you can print an int a=10; as 10.0000
+        using type casting to float i.e. &apos;(float)a&apos;;
     </string>
 
     <string name="f3i4q2">
+        W and E a program to show the use of float, int and char data types.
 
     </string>
 
     <string name="f3i4s2">
+        \n
+        \t#include&lt;stdio.h&gt;
+        \tvoid main(){\n
+        \t\tint age;\n
+        \t\tfloat prcnt;\n
+        \t\tchar gender;\n
+        \t\tage = 20;\n
+        \t\tprcnt = 67.78;\n
+        \t\tgender = &apos;M&apos;;\n
+        \t\tprintf(&quot;\\nAge = %d\\nPercent = %f\\nGender = %c\&quot;,age,prcnt,gender);\n
+        \t}\n
 
     </string>
 
