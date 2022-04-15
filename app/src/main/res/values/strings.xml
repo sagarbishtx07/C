@@ -109,12 +109,60 @@ m
     <!--      ID 4            -->
 
     <string name="f3i4q1">
-        Write and execute a program to print a float value without points/decimal places.
+        NOTE - Some of these program might be more understandable to you after you go through the next section, so if you dont get these
+        program now dont worry in the next section you will understand then you can go through these again :)/n
+
        
     </string>
 
     <string name="f3i4s1">
-       \n
+
+
+    </string>
+
+    <string name="f3i4q2">
+        W and E a program to show the use of float, int and char data types.
+
+    </string>
+
+    <string name="f3i4s2">
+
+   \n
+   \t#include&lt;stdio.h&gt;
+   \tvoid main(){\n
+   \t\tint age;\n
+   \t\tfloat prcnt;\n
+   \t\tchar gender;\n
+   \t\tage = 20;\n
+   \t\tprcnt = 67.78;\n
+   \t\tgender = \'M\';\n
+   \t\tprintf(&quot;\\nAge = %d\\nPercent = %f\\nGender = %c\&quot;,age,prcnt,gender);\n
+   \t}\n
+
+</string>
+
+<string name="f3i4q3">
+    Write a program to store 37,98.7,\'345\',\'A\' inside different data types and then print them in separate lines.
+</string>
+
+<string name="f3i4q4">
+    Write and execute a program to add 2 numbers 23 and 33.456 by storing them in their correct data types then printing the output as
+     an integer value(without decimal places).
+</string>
+
+<string name="f3i4q5">
+
+</string>
+
+
+<!--      ID 5            -->
+
+    <string name="f3i5q1">
+         Write and execute a program to print a float value without points/decimal places.
+    </string>
+
+    <string name="f3i5s1">
+               \n
         \t#include&lt;stdio.h&gt;\n
         \tvoid main(){\n
         \t\tfloat b=5.89;\n
@@ -124,49 +172,7 @@ m
         What you seen in the above program is called type casting. Here b an floating point or a decimal value
          has been converted/printed as an integer values by the use of type cast or using it as an integer by simply
          adding (int) before it. It can be done vice versa or in other words you can print an int a=10; as 10.0000
-        using type casting to float i.e. &apos;(float)a&apos;;
-    </string>
-
-    <string name="f3i4q2">
-        W and E a program to show the use of float, int and char data types.
-
-    </string>
-
-    <string name="f3i4s2">
-        \n
-        \t#include&lt;stdio.h&gt;
-        \tvoid main(){\n
-        \t\tint age;\n
-        \t\tfloat prcnt;\n
-        \t\tchar gender;\n
-        \t\tage = 20;\n
-        \t\tprcnt = 67.78;\n
-        \t\tgender = &apos;M&apos;;\n
-        \t\tprintf(&quot;\\nAge = %d\\nPercent = %f\\nGender = %c\&quot;,age,prcnt,gender);\n
-        \t}\n
-
-    </string>
-
-    <string name="f3i4q3">
-
-    </string>
-
-    <string name="f3i4q4">
-
-    </string>
-
-    <string name="f3i4q5">
-
-    </string>
-
-
-    <!--      ID 5            -->
-
-    <string name="f3i5q1">
-       
-    </string>
-
-    <string name="f3i5s1">
+        using type casting to float i.e. \'(float)a\'; ;
        
     </string>
 
