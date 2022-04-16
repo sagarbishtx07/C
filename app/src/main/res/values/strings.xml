@@ -177,14 +177,29 @@ m
     </string>
 
     <string name="f3i5q2">
+        Write a program to take 2 integer inputs and print the total of those values.
 
     </string>
 
     <string name="f3i5s2">
-
+        \n
+        #include&lt;stdio.h&gt;\n
+        void main(){\n
+        \tint a,b,total;\n
+        \tprintf(&quot;Enter First Value = &quot;);
+        \tscanf(&quot;%d&quot;,&amp;a);\n
+        \tprintf(&quot;Enter Second Value = &quot;);
+        \tscanf(&quot;%d&quot;,&amp;n);\n
+        \ttotal=a+b;\n
+        \tprintf(&quot;A + B = %d&quot;,total);\n
+        }
+        
     </string>
 
     <string name="f3i5q3">
+        Write and Execute a program like we did above by taking 2 numbers as
+        input but this time perform subtraction,division and multiplication
+        also.
 
     </string>
 
@@ -193,6 +208,151 @@ m
     </string>
 
     <string name="f3i5q5">
+
+    </string>
+
+    <!-- ID 6 -->
+
+    <string name="f4i5q1">
+        Write a program to check that the given number is positive or negative.
+
+    </string>
+
+    <string name="f4i5s1">
+        \n
+        #include&lt;stdio.h&gt;\n
+        void main(){\n
+        \tint a;\n
+        \tprintf(&quot;Enter Number &quot;);\n
+        \tscanf(&quot;%d&quot;,&amp;a);\n
+        \tif(a>=0)\n
+        \tprintf(&quot;Positive Number&quot;);\n
+        \telse\n
+        \tprintf(&quot;Negative Number&quot;);\n
+        }\n
+
+    </string>
+
+    <string name="f4i5q2">
+        Write and Execute a program to reverse a 2 digit int value.
+
+    </string>
+
+    <string name="f4i5s2">
+        \n
+        #include&lt;stdio.h&gt;\n
+        void main(){\n
+        \tint a,b=0;
+        \tprintf(&quot;Enter a 2 number &quot;);\n
+        \tscanf("%d",&amp;a);\n
+        \tb=a%10;\n
+        \ta=a/10;\n
+        \tb=b*10;\n
+        \tb=b+a;\n
+        \tprintf("Reversed number is %d",b);\n
+        }\n
+
+
+
+    </string>
+
+    <string name="f4i5q3">
+        W and E a program that checks whether the given number is the square of any number between
+        2 and 7 or not,If its a square of the number from 2 and 7 print YES otherwise print NO .\n
+
+        for ex - input number = 25\n
+        \t output - YES.
+
+
+    </string>
+
+    <string name="f4i5q4">
+        Write and Execute a program that prints the number(between 1 and 8) taken as input from the user
+         in words.\n
+        For example-:\n
+        \tinput - 7\n
+        \toutput - SEVEN.\n
+
+
+    </string>
+
+    <string name="f4i5q5">
+
+
+    </string>
+
+    <!-- ID 7 -->
+
+    <string name="f4i6q1">
+
+
+    </string>
+
+    <string name="f4i6s1">
+
+
+    </string>
+
+    <string name="f4i6q2">
+
+
+    </string>
+
+    <string name="f4i6s2">
+
+
+    </string>
+
+    <string name="f4i6q3">
+
+
+    </string>
+
+    <string name="f4i6q4">
+
+
+    </string>
+
+    <string name="f4i6q5">
+
+
+    </string>
+
+
+    <!-- ID 8 -->
+
+    <string name="f4i7q1">
+
+
+    </string>
+
+    <string name="f4i7s1">
+
+
+    </string>
+
+    <string name="f4i7q2">
+
+
+    </string>
+
+    <string name="f4i7s2">
+
+
+    </string>
+
+    <string name="f4i7q3">
+
+
+    </string>
+
+    <string name="f4i7q4">
+
+
+    </string>
+
+    <string name="f4i7q5">
+
 
     </string>
     
