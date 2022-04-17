@@ -281,34 +281,58 @@ m
 
     </string>
 
-    <!-- ID 7 -->
+    <!-- ID LOOPS -->
 
     <string name="f4i6q1">
-
+        Write and Execute a program that prints the table of 19 using for loop.
 
     </string>
 
     <string name="f4i6s1">
-
+        #include&lt;stdio.h&gt;\n
+        void main(){\n
+        \tint i;\n
+        \tfor(i=1;i&lt;=10;i++){\n
+        \t\tprintf(&quot;19 x %d = %d&quot;,i,(19*i));\n
+        \t}\n
+        }
 
     </string>
 
     <string name="f4i6q2">
+        Write a program that takes two values from the user a and b and prints the values from a to b.
 
 
     </string>
 
     <string name="f4i6s2">
-
+    \n
+        #include&lt;stdio.h&gt;\n
+        void main(){\n
+        \tint a,b,i;\n
+        \tprintf(&quot;Enter First Value &quot;);\n
+        \tscanf(&quot;%d&quot;,&amp;a);\n
+        \tprintf(&quot;Enter Second Value &quot;);\n
+        \tscanf(&quot;%d&quot;,&amp;b);\n
+        \tfor(i=a;i&lt;=b;i++)\n
+        \tprintf(&quot;%d\\t&quot;,i);\n
+        }
 
     </string>
 
     <string name="f4i6q3">
 
+        Write and Execute a program that prints the table of 25 but only for the odd places or values.\n
+        for example -:\n
+        \t25x1 = 25\n
+        go to the next odd place i.e. 3\n
+        25 x 3 = 75
 
     </string>
 
     <string name="f4i6q4">
+        Write a program that prints all the even numbers between 0 and 51 using while loop.
+
 
 
     </string>
@@ -319,35 +343,84 @@ m
     </string>
 
 
-    <!-- ID 8 -->
+    <!-- ID Nested Loop and Switch Case -->
 
     <string name="f4i7q1">
+        Write and Execute a program that reverses the given int number.
 
 
     </string>
 
     <string name="f4i7s1">
+        \n
+        #include&lt;stdio.h&gt;\n
+        void main()\n
+        {\n
+        \tint n, rev = 0;\n
+        \tprintf(&lt;Enter Number &gt;);\n
+        \tscanf(&quot;%d&quot;, &amp;n);\n
+        \twhile (n != 0)\n
+        \t{\n
+        \trev = rev * 10 + (n % 10);\n
+        \tn = n / 10;\n
+        \t}\n
+        \tprintf(&lt;Reverse Value is %d&gt;,rev);\n
+}
 
 
     </string>
 
     <string name="f4i7q2">
-
+        Write and Execute a program that prints the words for number between 1 and 5 inserted by user by
+        using the switch case.\n
+        for ex - : \n\t
+        input = 1\n\t
+        output = ONE\n
 
     </string>
 
     <string name="f4i7s2">
+               \n
+        #include&lt;stdio.h&gt;\n
+        void main(){\n
+        \tint i;\n
+        \tscanf(&quot;%d&quot;,&amp;i);\n
+        \tswitch(i){\n
+        \t\tCase 1:\n
+        \t\tprintf(&quot;ONE&quot;);\n
+        \t\tbreak;\n
+        \t\tCase 2:\n
+        \t\tprintf(&quot;TWO&quot;);\n
+        \t\tbreak;\n
+        \t\tCase 3:\n
+        \t\tprintf(&quot;THREE&quot;);\n
+        \t\tbreak;\n
+        \t\tCase 4:\n
+        \t\tprintf(&quot;FOUR&quot;);\n
+        \t\tbreak;\n
+        \t\tCase 5:\n
+        \t\tprintf(&quot;FIVE&quot;);\n
+        \t\tbreak;\n
+        \t\tdefault:\n
+        \t\tprintf(&quot;INVALID OPTION&quot;);
+        \t}\n
+        }\n
 
 
     </string>
 
     <string name="f4i7q3">
-
+          Write and Execute a program that checks whether a number is divisible by 5 and then checks
+         that if its even or odd with the use of nested if-else.
 
     </string>
 
     <string name="f4i7q4">
-
+        W and E a program to build a calculator that inputs 2 number from user and then give the user
+         choice for the option between +,-,*,/ and then uses the switch case to implement those operations.
+        Note - : you should be able to make this program on your own but even after trying many times if
+        you are unable to implement this program there is a similar program in next section, although try
+        to make it work on your own.
 
     </string>
 
