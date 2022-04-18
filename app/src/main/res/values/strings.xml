@@ -418,7 +418,7 @@ m
     <string name="f4i7q4">
         W and E a program to build a calculator that inputs 2 number from user and then give the user
          choice for the option between +,-,*,/ and then uses the switch case to implement those operations.
-        Note - : you should be able to make this program on your own but even after trying many times if
+       \n Note - : you should be able to make this program on your own but even after trying many times if
         you are unable to implement this program there is a similar program in next section, although try
         to make it work on your own.
 
@@ -428,5 +428,275 @@ m
 
 
     </string>
-    
+
+
+    <!-- ID FUNCTIONS -->
+
+    <string name="f4i8q1">
+        Write and Execute a program to build an interactive calculator with the use of functions.
+
+    </string>
+
+    <string name="f4i8s1">
+        /n
+        #include <stdio.h>
+void calculator(int x, int y)
+{
+    int ans;
+    char opt;
+    printf("Enter operation from these [+,-,*,/]");
+    scanf("%c", &opt);
+    switch (opt)
+    {
+    case '+':
+        ans = x + y;
+        printf("a + b = %d", ans);
+        break;
+    case '-':
+        ans = x - y;
+        printf("a - b = %d", ans);
+        break;
+    case '*':
+        ans = x * y;
+        printf("a * b = %d", ans);
+        break;
+    case '/':
+        ans = x / y;
+        printf("a / b = %d", ans);
+        break;
+    default:
+        printf("INVALID OPTION");
+    }
+}
+void main()
+{
+    int a, b, opt;
+    printf("a = ");
+    scanf("%d", &a);
+    printf("b = ");
+    scanf("%d", &b);
+    calculator(a, b);
+}
+
+
+    </string>
+
+    <string name="f4i8q2">
+
+
+    </string>
+
+    <string name="f4i8s2">
+
+
+    </string>
+
+    <string name="f4i8q3">
+
+
+    </string>
+
+    <string name="f4i8q4">
+
+
+    </string>
+
+    <string name="f4i8q5">
+
+
+    </string>
+
+
+    <!-- ID POINTERS -->
+
+    <string name="f4i9q1">
+
+
+    </string>
+
+    <string name="f4i9s1">
+
+
+    </string>
+
+    <string name="f4i9q2">
+
+
+    </string>
+
+    <string name="f4i9s2">
+
+
+    </string>
+
+    <string name="f4i9q3">
+
+
+    </string>
+
+    <string name="f4i9q4">
+
+
+    </string>
+
+    <string name="f4i9q5">
+
+
+    </string>
+
+
+    <!-- ID More about FUNCTIONS -->
+
+    <string name="f4i10q1">
+
+
+    </string>
+
+    <string name="f4i10s1">
+
+
+    </string>
+
+    <string name="f4i10q2">
+
+
+    </string>
+
+    <string name="f4i10s2">
+
+
+    </string>
+
+    <string name="f4i10q3">
+
+
+    </string>
+
+    <string name="f4i10q4">
+
+
+    </string>
+
+    <string name="f4i10q5">
+
+
+    </string>
+
+
+    <!-- ID Arrays and Strings -->
+
+    <string name="f4i11q1">
+
+
+    </string>
+
+    <string name="f4i11s1">
+
+
+    </string>
+
+    <string name="f4i11q2">
+
+
+    </string>
+
+    <string name="f4i11s2">
+
+
+    </string>
+
+    <string name="f4i11q3">
+
+
+    </string>
+
+    <string name="f4i11q4">
+
+
+    </string>
+
+    <string name="f4i11q5">
+
+
+    </string>
+
+
+    <!-- ID Pointers and Arrays -->
+
+    <string name="f4i12q1">
+
+
+    </string>
+
+    <string name="f4i12s1">
+
+
+    </string>
+
+    <string name="f4i12q2">
+
+
+    </string>
+
+    <string name="f4i12s2">
+
+
+    </string>
+
+    <string name="f4i12q3">
+
+
+    </string>
+
+    <string name="f4i12q4">
+
+
+    </string>
+
+    <string name="f4i12q5">
+
+
+    </string>
+
+
+    <!-- ID MULTIDIMENSIONAL ARRAY -->
+
+    <string name="f4i13q1">
+
+
+    </string>
+
+    <string name="f4i13s1">
+
+
+    </string>
+
+    <string name="f4i13q2">
+
+
+    </string>
+
+    <string name="f4i13s2">
+
+
+    </string>
+
+    <string name="f4i13q3">
+
+
+    </string>
+
+    <string name="f4i13q4">
+
+
+    </string>
+
+    <string name="f4i13q5">
+
+
+    </string>
+
+
+
+
 </resources>
