@@ -439,70 +439,94 @@ m
 
     <string name="f4i8s1">
         /n
-        #include <stdio.h>
-void calculator(int x, int y)
-{
-    int ans;
-    char opt;
-    printf("Enter operation from these [+,-,*,/]");
-    scanf("%c", &opt);
-    switch (opt)
-    {
-    case '+':
-        ans = x + y;
-        printf("a + b = %d", ans);
-        break;
-    case '-':
-        ans = x - y;
-        printf("a - b = %d", ans);
-        break;
-    case '*':
-        ans = x * y;
-        printf("a * b = %d", ans);
-        break;
-    case '/':
-        ans = x / y;
-        printf("a / b = %d", ans);
-        break;
-    default:
-        printf("INVALID OPTION");
-    }
-}
-void main()
-{
-    int a, b, opt;
-    printf("a = ");
-    scanf("%d", &a);
-    printf("b = ");
-    scanf("%d", &b);
-    calculator(a, b);
+        #include &lt;stdio.h&gt;\n
+        void calculator(int x, int y)\n
+        {\n
+        \tint ans;\n
+        \tchar opt;\n
+        \tprintf(&quot;Enter operation from these [+,-,*,/]&quot;);\n
+        \tscanf(&quot;%c&quot;, &amp;opt);\n
+        \tswitch (opt)\n
+        \t{\n
+        \tcase \'+\':\n
+        \tans = x + y;\n
+        \tprintf(&quot;a + b = %d&quot;, ans);\n
+        \tbreak;\n
+        \tcase \'-\':\n
+        \tans = x - y;\n
+        \tprintf(&quot;a - b = %d&quot;, ans);\n
+        \tbreak;\n
+        \tcase \'*\':\n
+        \tans = x * y;\n
+        \tprintf(&quot;a * b = %d&quot;, ans);\n
+        \tbreak;\n
+        \tcase \'/\':\n
+        \tans = x / y;\n
+        \tprintf(&quot;a / b = %d&quot;, ans);\n
+        \tbreak;\n
+        \tdefault:\n
+        \tprintf(&quot;INVALID OPTION&quot;);\n
+        \t}\n
+        }\n
+        \n
+        void main()\n
+        {\n
+        \tint a, b, opt;\n
+        \tprintf(&quot;a = &quot;);\n
+        \tscanf(&quot;%d&quot;, &amp;a);\n
+        \tprintf(&quot;b = &quot;);\n
+        \tscanf(&quot;%d&quot;, &amp;b);\n
+        \tcalculator(a, b);\n
 }
 
 
     </string>
 
     <string name="f4i8q2">
-
+        Write a function in C that prints all the even numbers between 2 values passed to it.
 
     </string>
 
     <string name="f4i8s2">
+        #include&gt;stdio.h&lt;\n
+        void even(int a,int b){
+        \tint i;\n
+        \tfor(i=a+1;i&lt;b;i++){\n
+        \tif(i%2==0)\n
+        \tprintf(&quot;%d\\ti&quot;,i);\n
+        \t}\n
+        }\n
+        void main(){\n
+        \tint a,b;\n
+        \tprintf(&quot;a = &quot;);\n
+        \tscanf(&quot;%d&quot;, &amp;a);\n
+        \tprintf(&quot;b = &quot;);\n
+        \tscanf(&quot;%d&quot;, &amp;b);\n
+        \teven(a,b);
+        }
 
 
     </string>
 
     <string name="f4i8q3">
+        Write a program with a function that checks whether the number sent to it as
+         an argument is negative or positive.
+
+        for ex -:\n
+        input -: -23\n
+        output -: NEGATIVE VALUE
 
 
     </string>
 
     <string name="f4i8q4">
+        Write a program with a function that takes 3 value and returns the biggest value.
 
 
     </string>
 
     <string name="f4i8q5">
-
+        Write a function that prints the square of first 10 natural numbers.
 
     </string>
 
