@@ -534,17 +534,22 @@ m
     <!-- ID POINTERS -->
 
     <string name="f4i9q1">
-        Write a program to input two variables then swap them using the pointers without using the third variable with the use of a function.
+        Write a program to input two variables then swap them and print them.(you can use the third/temporary
+         variable for swapping.)
+
 
 
     </string>
 
     <string name="f4i9s1">
         #include&lt;stdio.h&gt;\n
-        void swap(int *a,int *b){\n
-        \t&amp;a=&amp;a+&amp;b;\n
-        \t&amp;b=&amp;a-&amp;b;\n
-        \t&amp;a=&amp;a-&amp;b;\n
+        void swap(int a,int b){\n
+        \tint temp;
+        \ta=temp;\n
+        \ta=b;\n
+        \tb=temp;\n
+        \tprintf(&quot;AFTER SWAPPING\\n&quot;);\n
+        \tprintf(&quot;x=%d\\n&quot;y=%d&quot;,a,b);\n
         }\n
         void main(){\n
         \tint x,y;\n
@@ -552,9 +557,7 @@ m
         \tscanf(&quot;%d&quot;, &amp;x);\n
         \tprintf(&quot;y = &quot;);\n
         \tscanf(&quot;%d&quot;, &amp;y);\n
-        \tprintf(&quot;AFTER SWAPPING\\n&quot;);\n
-        \tswap(&amp;x,&amp;y);\n
-        \tprintf(&quot;x=%d\\n&quot;y=%d&quot;,x,y);\n
+        \tswap(a,b);\n
         }
 
     </string>
@@ -601,32 +604,69 @@ m
     <!-- ID More about FUNCTIONS -->
 
     <string name="f4i10q1">
+        Write a program to input two variables then swap them using the pointers without using the third variable with the use of a function.
 
 
     </string>
 
     <string name="f4i10s1">
+        #include&lt;stdio.h&gt;\n
+        void swap(int *a,int *b){\n
+        \t&amp;a=&amp;a+&amp;b;\n
+        \t&amp;b=&amp;a-&amp;b;\n
+        \t&amp;a=&amp;a-&amp;b;\n
+        }\n
+        void main(){\n
+        \tint x,y;\n
+        \tprintf(&quot;x = &quot;);\n
+        \tscanf(&quot;%d&quot;, &amp;x);\n
+        \tprintf(&quot;y = &quot;);\n
+        \tscanf(&quot;%d&quot;, &amp;y);\n
+        \tprintf(&quot;AFTER SWAPPING\\n&quot;);\n
+        \tswap(&amp;x,&amp;y);\n
+        \tprintf(&quot;x=%d\\n&quot;y=%d&quot;,x,y);\n
+        }
 
 
     </string>
 
     <string name="f4i10q2">
+        Write a program with a function that takes 2 number and returns their product inside a pointer.
 
 
     </string>
 
     <string name="f4i10s2">
+        #include&lt;stdio.h&gt;\n
+        int* sum(int *a,int *b){\n
+        \tint sum;\n
+        \tsum = *a+*b;\n
+        \treturn &amp;sum;\n
+        }\n
+        void main(){\n
+        \tint x,y;\n
+        \tint *total;
+        \tprintf(&quot;x = &quot;);\n
+        \tscanf(&quot;%d&quot;, &amp;x);\n
+        \tprintf(&quot;y = &quot;);\n
+        \tscanf(&quot;%d&quot;, &amp;y);\n
+        \ttotal = sum(&amp;x,&amp;y);\n
+        \tprintf(&quot;x + y =%d&quot;,*total);\n
+        }
 
 
     </string>
 
     <string name="f4i10q3">
+        Write a function that returns zero if the value sent to it is odd and returns zero if
+        the value sent is even.
 
 
     </string>
 
     <string name="f4i10q4">
-
+        Write and execute a program with a function that takes three values as pointers and returns a pointer
+        which is the biggest of all three value and then prints the biggest value.
 
     </string>
 
