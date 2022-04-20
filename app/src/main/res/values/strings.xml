@@ -364,7 +364,7 @@ m
         \trev = rev * 10 + (n % 10);\n
         \tn = n / 10;\n
         \t}\n
-        \tprintf(&lt;Reverse Value is %d&gt;,rev);\n
+        \tprintf(&quot;Reverse Value is %d&quot;,rev);\n
 }
 
 
@@ -445,7 +445,7 @@ m
         \tint ans;\n
         \tchar opt;\n
         \tprintf(&quot;Enter operation from these [+,-,*,/]&quot;);\n
-        \tscanf(&quot;%c&quot;, &amp;opt);\n
+        \tscanf(&quot; %c&quot;, &amp;opt);\n
         \tswitch (opt)\n
         \t{\n
         \tcase \'+\':\n
@@ -534,32 +534,61 @@ m
     <!-- ID POINTERS -->
 
     <string name="f4i9q1">
+        Write a program to input two variables then swap them using the pointers without using the third variable with the use of a function.
 
 
     </string>
 
     <string name="f4i9s1">
-
+        #include&lt;stdio.h&gt;\n
+        void swap(int *a,int *b){\n
+        \t&amp;a=&amp;a+&amp;b;\n
+        \t&amp;b=&amp;a-&amp;b;\n
+        \t&amp;a=&amp;a-&amp;b;\n
+        }\n
+        void main(){\n
+        \tint x,y;\n
+        \tprintf(&quot;x = &quot;);\n
+        \tscanf(&quot;%d&quot;, &amp;x);\n
+        \tprintf(&quot;y = &quot;);\n
+        \tscanf(&quot;%d&quot;, &amp;y);\n
+        \tprintf(&quot;AFTER SWAPPING\\n&quot;);\n
+        \tswap(&amp;x,&amp;y);\n
+        \tprintf(&quot;x=%d\\n&quot;y=%d&quot;,x,y);\n
+        }
 
     </string>
 
     <string name="f4i9q2">
-
+    Write and Execute a program that takes stores address of a variable in a pointer and then add 17 to the value using the pointer.
 
     </string>
 
     <string name="f4i9s2">
+        #include&lt;stdio.h&gt;\n
+        void main(){\n
+        \tint x;\n
+        \tint *p;\n
+        \tprintf(&quot;x = &quot;);\n
+        \tscanf(&quot;%d&quot;, &amp;x);\n
+        \tp=&amp;x;\n
+        \t*p=*p+17;\n
+        \tprintf(&quot;x = %d&quot;,*p);\n
+        }
+        
 
 
     </string>
 
     <string name="f4i9q3">
+        Write a program that takes input of one char,one int and one float and prints the address of each of them.
 
 
     </string>
 
     <string name="f4i9q4">
-
+    Write and Execute a program that take 2 int as input and after that takes 1 character as input and then swap the two int and
+        prints all the three values finally.
 
     </string>
 

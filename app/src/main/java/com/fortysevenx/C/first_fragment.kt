@@ -299,7 +299,8 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                             "as -:\n Day\n Night\n so the \\n is used to print from new line, similarly \\t is used to add a tab space"
 
                 foot.text =
-                    "All of these operators are very crucial for logical operations you will see in if-else blocks."
+                    "pls remember that is you take an input of a character after taking input of a int then you should use a space before %c" +
+                            " in the scanf() otherwise your scanf() will take endline as input and you wont be able to give input to it."
             }
             5 -> {
                 tv.text = "Logical Statements/decisions - if else"
