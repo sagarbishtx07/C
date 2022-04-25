@@ -679,31 +679,71 @@ m
     <!-- ID Arrays and Strings -->
 
     <string name="f4i11q1">
+        Write and execute a program that takes 10 integers as input then adds 10 to all the
+         number and then prints all the 10 integers.
 
 
     </string>
 
     <string name="f4i11s1">
+        \n
+        #include&lt;stdio.n&gt;\n
+        void main(){\n
+        \tint a[10],i;\n
+        \tprint("Enter Values - \\n");\n
+        \tfor(i=0;i&lt;10;i++){\n
+        \tscanf(&quot;%d&quot;,&amp;a[i]);\n
+        \ta[i]=a[i]+10;\n
+        \t}\n
+        \tprintf(&quot;Values + 10 -:\n&quot;);\n
+        \tfor(i=0;i&lt;10;i++){\n
+        \tprintf(&quot;%d\\t&quot;,a[i]);\n
+        \t}\n
 
 
     </string>
 
     <string name="f4i11q2">
-
+        Write and execute a program that inputs a string then prints all the even places and odd places/indexes of the string
+        in two separate lines.\n
+        for ex -:\n
+        input - : &quot;HIGHWAY&quot;\n
+        output -: \n&quot;ODD PLACES -: HGWY\n
+        EVEN PLACES -: IHA\n\n
 
     </string>
 
     <string name="f4i11s2">
-
+        \n
+        #include&lt;stdio.h&gt;\n
+        #include&lt;string.h&gt;\n
+        void main(){\n
+        \tchar st[20];\n
+        \tint i,len;\n
+        \tscanf(&quot;%s&quot;,st);\n
+        \tlen = strlen(st);\n
+        \tprintf(&quot;ODD PLACES -: \\n&quot;);\n
+        \tfor(i=0;i&lt;len;i++){\n
+        \tif(i%2==0)\n
+        \tprintf(&quot;%c\t&quot;,st[i]);\n
+        \t}\n
+        \tprintf(&quot;\\nEVEN PLACES -: \\n&quot;);\n
+        \tfor(i=0;i&lt;len;i++){\n
+        \tif(i%2!=0)\n
+        \tprintf(&quot;%c\t&quot;,st[i]);\n
+        \t}\n
+        }
 
     </string>
 
     <string name="f4i11q3">
-
+        Write and Execute a program to input 10 string and display them in descending order, i.e. last string first
+         and first string at last.
 
     </string>
 
     <string name="f4i11q4">
+        Write and E. a program to input 10 integer values in an array and then print only the even valus in it.
 
 
     </string>
@@ -714,15 +754,26 @@ m
     </string>
 
 
-    <!-- ID Pointers and Arrays -->
+    <!-- ID Pointers in Array-->
 
     <string name="f4i12q1">
-
+        Write and Execute a program that passes an array to a function using pointers and also pass the length
+         of array then prints all the elements of array from that function.
 
     </string>
 
     <string name="f4i12s1">
-
+        \n
+        #include&lt;stdio.h&gt;\n
+        void point_array(int* a,int len){\n
+        \tint i;
+        \tfor(i=0;i&lt;len;i++)\n
+        \tprintf(&quot;%d\t&quot;,a[i]);\n
+        }\n
+        void main(){\n
+        \tint a[]={23,34,12,1,231,785};\n
+        \tpoint_array(a,7);\n
+        \t}
 
     </string>
 
