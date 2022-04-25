@@ -778,21 +778,39 @@ m
     </string>
 
     <string name="f4i12q2">
-
+        Write and execute a program to dynamically allocate an array of 10 elements
+         using the malloc function then store and print the values in it.
 
     </string>
 
     <string name="f4i12s2">
-
+        \n
+        #include&lt;stdio.&gt;\n
+        void main(){\n
+        \tint *a,i;\n
+        \ta=malloc(sizeOf(int)*10);\n
+        \tprintf(&quot;Enter Values &quot;);\n
+        \tfor(i=0;i&lt;10;i++)\n
+        \tscanf(&quot;%d&quot;,&amp;a[i]);\n
+        \tprintf(&quot;The Values entered are -: \\n\\n&quot;);\n
+        \tfor(i=0;i&lt;10;i++)\n
+        \tprintf(&quot;%d\t&quot;,a[i]);\n
+        }\n
 
     </string>
 
     <string name="f4i12q3">
+        W and E a program that inputs an array of 10 elements that and passes the address of that array to a function
+         and then the function will display the values of that array that are at even indices.\n
+        \ti.e. output only a[0],a[2],a[4] ....a[_even_index_].
 
 
     </string>
 
     <string name="f4i12q4">
+        W and Execute a program that inputs 20 values then takes a value x as input and searches the value x in the array
+         ,if it found the value in it print the (index number+1) which is the position of that
+         value at which the value is found.
 
 
     </string>
@@ -806,16 +824,39 @@ m
     <!-- ID MULTIDIMENSIONAL ARRAY -->
 
     <string name="f4i13q1">
-
+        A program to input an array of 3x3 the print the elements of left diagonal and the right diagonal.
 
     </string>
 
     <string name="f4i13s1">
+        \n
+        #include&lt;stdio.h&gt;\n
+        void main(){\n
+        \tint a[3][3],i,j;\n
+        \tprintf(&quot;Enter values \\n&quot;);\t
+        \tfor(i=0;i&lt;3;i++){\n
+        \tfor(j=0;j&lt;3;j++){\n
+        \t\tscanf(&quot;%d&quot;,&amp;a[i][j]);\n
+        \t}}\n
+        \tprintf(&quot;Elements of left diagonal are -:&quot;);\n
+        \tfor(i=0;i&lt;3;i++){\n
+        \tfor(j=0;j&lt;3;j++){\n
+        \tif(i==j){\n
+        \tprintf(&quot;%d\\t&quot;,a[i][j]);\n
+        \t}}\n
+        \tprintf(&quot;\\nElements of right diagonal are -:&quot;);\n
+        \tfor(i=0;i&lt;3;i++){\n
+        \tfor(j=0;j&lt;3;j++){\n
+        \tif(i+j==2){\n
+        \tprintf(&quot;%d\\t&quot;,a[i][j]);\n
+        \t}}\n
+        \t}
 
 
     </string>
 
     <string name="f4i13q2">
+
 
 
     </string>
