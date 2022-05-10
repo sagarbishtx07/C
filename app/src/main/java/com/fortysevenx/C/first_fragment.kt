@@ -877,19 +877,65 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         " 0+2+1=3(size of matrix/row/column). "
             }
             14->{
-                tv.text=""
-                p1.text=""
-                sh1.text=""
-                p2.text=""
-                sh2.text=""
-                p3.text=""
+                tv.text="User Defined data types"
+                p1.text="If you have followed through the whole course till now then you might have seen that we have used many data" +
+                        " types and arrays and strings but there is still some things that are missing like if you have declared an" +
+                        " array of integers then if you would want to store some characters or float value then you would have to" +
+                        " declare another variable/array for that.\n If we want some flexibility while  declaring or defining the" +
+                        " data types that we use according to our needs that's when we have user defined data types, in C we have" +
+                        " Structures."
+                sh1.text="Structures"
+                p2.text="Structure is a collection of more than one types of data, like array is a collection of only similar type" +
+                        " of data whereas structure is a collection of different data types which are defined by the user which makes" +
+                        " it a user defined data type.\n" +
+                        "Syntax for Structure -: \n" +
+                        "struct struct_name{\n" +
+                        "\tdata_type1 var_name;\n" +
+                        "\tdata_type2 var_name;\n" +
+                        "\t....so on\n" +
+                        "}"
+                sh2.text="Understanding structures with an example."
+                p3.text="Suppose you want to collect some information about all the student of you class that is their rollno's, their names" +
+                        " and their percentage in last exams.\n" +
+                        "You can use a C program where you can declare an String for storing their name and an int variable for storing" +
+                        " their roll no's and a float for storing their percentages but it would be better if we could make a block" +
+                        " of all these 3 variables and name that block student info and then easily use that block to store the information" +
+                        " of the students, and the block that we are talking about is the structure let's implement it." +
+                        "\n\n#include<stdio.h>\n" +
+                        "struct studentinfo{\n" +
+                        "\tint r_no;\n" +
+                        "\tchar name[30];\n" +
+                        "\tfloat percent;\n" +
+                        "}\n" +
+                        "void main(){\n" +
+                        "\tstruct studentinfo st;\n" +
+                        "\tprintf(\"Enter details \\n\");\n" +
+                        "\tprintf(\"Name - \");\n" +
+                        "\tscanf(\"%s\",&st.name);\n" +
+                        "\tprintf(\"Rollno. - \");\n" +
+                        "\tscanf(\"%d\",&st.r_no);\n" +
+                        "\tprintf(\"Percentage - \");\n" +
+                        "\tscanf(\"%f\",&st.percent);\n" +
+                        "\tprintf(\"\\nDetails Entered are - \\n\");\n" +
+                        "\tprintf(\"Rollno - %d\\n\",st.r_no);\n" +
+                        "\tprintf(\"Name - %d\\n\",st.name);\n" +
+                        "\tprintf(\"Percentage - %d\\n\",st.percent);\n" +
+                        "}\n" +
+                        "\n Here's a little explanation for the above program here first we declared an structure name studentinfo in which " +
+                        "we declared there data type/variable name,roll no and percentage. Then as i said we have now declared a user defined " +
+                        "data types that is struct studentinfo now to use this we have initialized a variable st of type studentinfo inside main()." +
+                        " st will be called as the object of structure as it contains the images of our structure" +
+                        " then to access the elements of structure we have used the dot '.' operator. like for storing value inside the name variable" +
+                        " of studentinfo we use st.name which tell that we have a structure st, inside which we are accessing the name variable." +
+                        " So that's how we accessed all the elements of our structure and then we stored and displayed the value from them. " +
+                        "This program might not have been sufficient to show you that structures are vary useful so check out the next program."
                 sh3.text=""
                 p4.text = ""
                 foot.text=""
             }
         }
 
-767890861
+//767890861
         
         //tv.text=c_id.toString()
         return view
