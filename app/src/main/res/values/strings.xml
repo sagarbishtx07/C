@@ -213,12 +213,12 @@ m
 
     <!-- ID 6 -->
 
-    <string name="f4i5q1">
+    <string name="f3i6q1">
         Write a program to check that the given number is positive or negative.
 
     </string>
 
-    <string name="f4i5s1">
+    <string name="f3i6s1">
         \n
         #include&lt;stdio.h&gt;\n
         void main(){\n
@@ -233,12 +233,12 @@ m
 
     </string>
 
-    <string name="f4i5q2">
+    <string name="f3i6q2">
         Write and Execute a program to reverse a 2 digit int value.
 
     </string>
 
-    <string name="f4i5s2">
+    <string name="f3i6s2">
         \n
         #include&lt;stdio.h&gt;\n
         void main(){\n
@@ -256,7 +256,7 @@ m
 
     </string>
 
-    <string name="f4i5q3">
+    <string name="f3i6q3">
         W and E a program that checks whether the given number is the square of any number between
         2 and 7 or not,If its a square of the number from 2 and 7 print YES otherwise print NO .\n
 
@@ -266,7 +266,7 @@ m
 
     </string>
 
-    <string name="f4i5q4">
+    <string name="f3i6q4">
         Write and Execute a program that prints the number(between 1 and 8) taken as input from the user
          in words.\n
         For example-:\n
@@ -276,19 +276,19 @@ m
 
     </string>
 
-    <string name="f4i5q5">
+    <string name="f3i6q5">
 
 
     </string>
 
     <!-- ID LOOPS -->
 
-    <string name="f4i6q1">
+    <string name="f3i7q1">
         Write and Execute a program that prints the table of 19 using for loop.
 
     </string>
 
-    <string name="f4i6s1">
+    <string name="f3i7s1">
         #include&lt;stdio.h&gt;\n
         void main(){\n
         \tint i;\n
@@ -299,13 +299,13 @@ m
 
     </string>
 
-    <string name="f4i6q2">
+    <string name="f3i7q2">
         Write a program that takes two values from the user a and b and prints the values from a to b.
 
 
     </string>
 
-    <string name="f4i6s2">
+    <string name="f3i7s2">
     \n
         #include&lt;stdio.h&gt;\n
         void main(){\n
@@ -320,7 +320,7 @@ m
 
     </string>
 
-    <string name="f4i6q3">
+    <string name="f3i7q3">
 
         Write and Execute a program that prints the table of 25 but only for the odd places or values.\n
         for example -:\n
@@ -330,14 +330,14 @@ m
 
     </string>
 
-    <string name="f4i6q4">
+    <string name="f3i7q4">
         Write a program that prints all the even numbers between 0 and 51 using while loop.
 
 
 
     </string>
 
-    <string name="f4i6q5">
+    <string name="f3i7q5">
 
 
     </string>
@@ -345,13 +345,13 @@ m
 
     <!-- ID Nested Loop and Switch Case -->
 
-    <string name="f4i7q1">
+    <string name="f3i8q1">
         Write and Execute a program that reverses the given int number.
 
 
     </string>
 
-    <string name="f4i7s1">
+    <string name="f3i8s1">
         \n
         #include&lt;stdio.h&gt;\n
         void main()\n
@@ -370,7 +370,7 @@ m
 
     </string>
 
-    <string name="f4i7q2">
+    <string name="f3i8q2">
         Write and Execute a program that prints the words for number between 1 and 5 inserted by user by
         using the switch case.\n
         for ex - : \n\t
@@ -379,7 +379,7 @@ m
 
     </string>
 
-    <string name="f4i7s2">
+    <string name="f3i8s2">
                \n
         #include&lt;stdio.h&gt;\n
         void main(){\n
@@ -409,13 +409,13 @@ m
 
     </string>
 
-    <string name="f4i7q3">
+    <string name="f3i8q3">
           Write and Execute a program that checks whether a number is divisible by 5 and then checks
          that if its even or odd with the use of nested if-else.
 
     </string>
 
-    <string name="f4i7q4">
+    <string name="f3i8q4">
         W and E a program to build a calculator that inputs 2 number from user and then give the user
          choice for the option between +,-,*,/ and then uses the switch case to implement those operations.
        \n Note - : you should be able to make this program on your own but even after trying many times if
@@ -424,7 +424,7 @@ m
 
     </string>
 
-    <string name="f4i7q5">
+    <string name="f3i8q5">
 
 
     </string>
@@ -432,12 +432,12 @@ m
 
     <!-- ID FUNCTIONS -->
 
-    <string name="f4i8q1">
+    <string name="f3i9q1">
         Write and Execute a program to build an interactive calculator with the use of functions.
 
     </string>
 
-    <string name="f4i8s1">
+    <string name="f3i9s1">
         /n
         #include &lt;stdio.h&gt;\n
         void calculator(int x, int y)\n
@@ -482,12 +482,12 @@ m
 
     </string>
 
-    <string name="f4i8q2">
+    <string name="f3i9q2">
         Write a function in C that prints all the even numbers between 2 values passed to it.
 
     </string>
 
-    <string name="f4i8s2">
+    <string name="f3i9s2">
         #include&gt;stdio.h&lt;\n
         void even(int a,int b){
         \tint i;\n
@@ -508,7 +508,7 @@ m
 
     </string>
 
-    <string name="f4i8q3">
+    <string name="f3i9q3">
         Write a program with a function that checks whether the number sent to it as
          an argument is negative or positive.
 
@@ -519,21 +519,21 @@ m
 
     </string>
 
-    <string name="f4i8q4">
+    <string name="f3i9q4">
         Write a program with a function that takes 3 value and returns the biggest value.
 
 
     </string>
 
-    <string name="f4i8q5">
+    <string name="f3i9q5">
         Write a function that prints the square of first 10 natural numbers.
 
     </string>
 
 
-    <!-- ID POINTERS -->
+    <!-- ID POINTERS 10-->
 
-    <string name="f4i9q1">
+    <string name="f3i10q1">
         Write a program to input two variables then swap them and print them.(you can use the third/temporary
          variable for swapping.)
 
@@ -541,7 +541,7 @@ m
 
     </string>
 
-    <string name="f4i9s1">
+    <string name="f3i10s1">
         #include&lt;stdio.h&gt;\n
         void swap(int a,int b){\n
         \tint temp;
@@ -562,12 +562,12 @@ m
 
     </string>
 
-    <string name="f4i9q2">
+    <string name="f3i10q2">
     Write and Execute a program that takes stores address of a variable in a pointer and then add 17 to the value using the pointer.
 
     </string>
 
-    <string name="f4i9s2">
+    <string name="f3i10s2">
         #include&lt;stdio.h&gt;\n
         void main(){\n
         \tint x;\n
@@ -583,19 +583,19 @@ m
 
     </string>
 
-    <string name="f4i9q3">
+    <string name="f3i10q3">
         Write a program that takes input of one char,one int and one float and prints the address of each of them.
 
 
     </string>
 
-    <string name="f4i9q4">
+    <string name="f3i10q4">
     Write and Execute a program that take 2 int as input and after that takes 1 character as input and then swap the two int and
         prints all the three values finally.
 
     </string>
 
-    <string name="f4i9q5">
+    <string name="f3i10q5">
 
 
     </string>
@@ -603,13 +603,13 @@ m
 
     <!-- ID More about FUNCTIONS -->
 
-    <string name="f4i10q1">
+    <string name="f3i11q1">
         Write a program to input two variables then swap them using the pointers without using the third variable with the use of a function.
 
 
     </string>
 
-    <string name="f4i10s1">
+    <string name="f3i11s1">
         #include&lt;stdio.h&gt;\n
         void swap(int *a,int *b){\n
         \t&amp;a=&amp;a+&amp;b;\n
@@ -630,13 +630,13 @@ m
 
     </string>
 
-    <string name="f4i10q2">
+    <string name="f3i11q2">
         Write a program with a function that takes 2 number and returns their product inside a pointer.
 
 
     </string>
 
-    <string name="f4i10s2">
+    <string name="f3i11s2">
         #include&lt;stdio.h&gt;\n
         int* sum(int *a,int *b){\n
         \tint sum;\n
@@ -657,20 +657,20 @@ m
 
     </string>
 
-    <string name="f4i10q3">
+    <string name="f3i11q3">
         Write a function that returns zero if the value sent to it is odd and returns zero if
         the value sent is even.
 
 
     </string>
 
-    <string name="f4i10q4">
+    <string name="f3i11q4">
         Write and execute a program with a function that takes three values as pointers and returns a pointer
         which is the biggest of all three value and then prints the biggest value.
 
     </string>
 
-    <string name="f4i10q5">
+    <string name="f3i11q5">
 
 
     </string>
@@ -678,14 +678,14 @@ m
 
     <!-- ID Arrays and Strings -->
 
-    <string name="f4i11q1">
+    <string name="f3i12q1">
         Write and execute a program that takes 10 integers as input then adds 10 to all the
          number and then prints all the 10 integers.
 
 
     </string>
 
-    <string name="f4i11s1">
+    <string name="f3i12s1">
         \n
         #include&lt;stdio.n&gt;\n
         void main(){\n
@@ -703,7 +703,7 @@ m
 
     </string>
 
-    <string name="f4i11q2">
+    <string name="f3i12q2">
         Write and execute a program that inputs a string then prints all the even places and odd places/indexes of the string
         in two separate lines.\n
         for ex -:\n
@@ -713,7 +713,7 @@ m
 
     </string>
 
-    <string name="f4i11s2">
+    <string name="f3i12s2">
         \n
         #include&lt;stdio.h&gt;\n
         #include&lt;string.h&gt;\n
@@ -736,19 +736,19 @@ m
 
     </string>
 
-    <string name="f4i11q3">
+    <string name="f3i12q3">
         Write and Execute a program to input 10 string and display them in descending order, i.e. last string first
          and first string at last.
 
     </string>
 
-    <string name="f4i11q4">
+    <string name="f3i12q4">
         Write and E. a program to input 10 integer values in an array and then print only the even valus in it.
 
 
     </string>
 
-    <string name="f4i11q5">
+    <string name="f3i12q5">
 
 
     </string>
@@ -756,13 +756,13 @@ m
 
     <!-- ID Pointers in Array-->
 
-    <string name="f4i12q1">
+    <string name="f3i13q1">
         Write and Execute a program that passes an array to a function using pointers and also pass the length
          of array then prints all the elements of array from that function.
 
     </string>
 
-    <string name="f4i12s1">
+    <string name="f3i13s1">
         \n
         #include&lt;stdio.h&gt;\n
         void point_array(int* a,int len){\n
@@ -777,13 +777,13 @@ m
 
     </string>
 
-    <string name="f4i12q2">
+    <string name="f3i13q2">
         Write and execute a program to dynamically allocate an array of 10 elements
          using the malloc function then store and print the values in it.
 
     </string>
 
-    <string name="f4i12s2">
+    <string name="f3i13s2">
         \n
         #include&lt;stdio.&gt;\n
         void main(){\n
@@ -799,7 +799,7 @@ m
 
     </string>
 
-    <string name="f4i12q3">
+    <string name="f3i13q3">
         W and E a program that inputs an array of 10 elements that and passes the address of that array to a function
          and then the function will display the values of that array that are at even indices.\n
         \ti.e. output only a[0],a[2],a[4] ....a[_even_index_].
@@ -807,7 +807,7 @@ m
 
     </string>
 
-    <string name="f4i12q4">
+    <string name="f3i13q4">
         W and Execute a program that inputs 20 values then takes a value x as input and searches the value x in the array
          ,if it found the value in it print the (index number+1) which is the position of that
          value at which the value is found.
@@ -815,7 +815,7 @@ m
 
     </string>
 
-    <string name="f4i12q5">
+    <string name="f3i13q5">
 
 
     </string>
@@ -823,12 +823,12 @@ m
 
     <!-- ID MULTIDIMENSIONAL ARRAY -->
 
-    <string name="f4i13q1">
+    <string name="f3i14q1">
         A program to input an array of 3x3 the print the elements of left diagonal and the right diagonal.
 
     </string>
 
-    <string name="f4i13s1">
+    <string name="f3i14s1">
         \n
         #include&lt;stdio.h&gt;\n
         void main(){\n
@@ -855,28 +855,44 @@ m
 
     </string>
 
-    <string name="f4i13q2">
+    <string name="f3i14q2">
+        Write a program that generates an 2D array where first row is filled with the multiples of 2 second
+         row filled with multiples of 9 and third row filled with multiples of 15 and print the array in
+         a matrix format.
 
+    </string>
+
+    <string name="f3i14s2">
+        #include&lt;stdio.h&gt;\n
+        void main(){\n
+        \tint a[3][3],i,j;\n
+        \tfor(i=0;i&lt;3;i++){\n
+        \tfor(j=0;j&lt;3;j++){\n
+        \tif(i==0)\n
+        \tprintf(&quot;%d\\t&quot;,(j+1)*2);\n
+        \telse if(i==1)\n
+        \tprintf(&quot;%d\\t&quot;,(j+1)*9);\n
+        \telse\n
+        \tprintf(&quot;%d\\t&quot;,(j+1)*15);\n
+        \t}}\n
+        }\n
+
+    </string>
+
+    <string name="f3i14q3">
+        Write and execute a program that copies all the elements of one 3x3 array a into another
+         3x3 array b then print both the 2D array.
+
+    </string>
+
+    <string name="f3i14q4">
+        Write and execute a program that transposes a given(user input) 3 x 3 matrix. Transposing
+        a matrix means that converting row elements into column elements and vice versa.
 
 
     </string>
 
-    <string name="f4i13s2">
-
-
-    </string>
-
-    <string name="f4i13q3">
-
-
-    </string>
-
-    <string name="f4i13q4">
-
-
-    </string>
-
-    <string name="f4i13q5">
+    <string name="f3i14q5">
 
 
     </string>

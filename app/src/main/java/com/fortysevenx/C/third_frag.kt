@@ -71,7 +71,7 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                                  R.string.f3i4q3,
                                  R.string.f3i4q4,
                                  R.string.f3i4q5,
-/*
+
                                  R.string.f3i5q1,
                                  R.string.f3i5s1,
                                  R.string.f3i5q2,
@@ -95,7 +95,63 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                                  R.string.f3i7q3,
                                  R.string.f3i7q4,
                                  R.string.f3i7q5,
-                          */
+
+            R.string.f3i8q1,
+            R.string.f3i8s1,
+            R.string.f3i8q2,
+            R.string.f3i8s2,
+            R.string.f3i8q3,
+            R.string.f3i8q4,
+            R.string.f3i8q5,
+
+            R.string.f3i9q1,
+            R.string.f3i9s1,
+            R.string.f3i9q2,
+            R.string.f3i9s2,
+            R.string.f3i9q3,
+            R.string.f3i9q4,
+            R.string.f3i9q5,
+
+            R.string.f3i10q1,
+            R.string.f3i10s1,
+            R.string.f3i10q2,
+            R.string.f3i10s2,
+            R.string.f3i10q3,
+            R.string.f3i10q4,
+            R.string.f3i10q5,
+
+            R.string.f3i11q1,
+            R.string.f3i11s1,
+            R.string.f3i11q2,
+            R.string.f3i11s2,
+            R.string.f3i11q3,
+            R.string.f3i11q4,
+            R.string.f3i11q5,
+
+            R.string.f3i12q1,
+            R.string.f3i12s1,
+            R.string.f3i12q2,
+            R.string.f3i12s2,
+            R.string.f3i12q3,
+            R.string.f3i12q4,
+            R.string.f3i12q5,
+
+            R.string.f3i13q1,
+            R.string.f3i13s1,
+            R.string.f3i13q2,
+            R.string.f3i13s2,
+            R.string.f3i13q3,
+            R.string.f3i13q4,
+            R.string.f3i13q5,
+
+            R.string.f3i14q1,
+            R.string.f3i14s1,
+            R.string.f3i14q2,
+            R.string.f3i14s2,
+            R.string.f3i14q3,
+            R.string.f3i14q4,
+            R.string.f3i14q5,
+
         )
         when(c_id){
             0->{
@@ -172,6 +228,51 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q5.text=getString(stid[(c_id*7)+6])
             }
             8->{
+                q1.text=getString(stid[(c_id*7)])
+                s1.text=getString(stid[(c_id*7)+1])
+                q2.text=getString(stid[(c_id*7)+2])
+                s2.text=getString(stid[(c_id*7)+3])
+                q3.text=getString(stid[(c_id*7)+4])
+                q4.text=getString(stid[(c_id*7)+5])
+                q5.text=getString(stid[(c_id*7)+6])
+            }
+            9->{
+                q1.text=getString(stid[(c_id*7)])
+                s1.text=getString(stid[(c_id*7)+1])
+                q2.text=getString(stid[(c_id*7)+2])
+                s2.text=getString(stid[(c_id*7)+3])
+                q3.text=getString(stid[(c_id*7)+4])
+                q4.text=getString(stid[(c_id*7)+5])
+                q5.text=getString(stid[(c_id*7)+6])
+            }
+            10->{
+                q1.text=getString(stid[(c_id*7)])
+                s1.text=getString(stid[(c_id*7)+1])
+                q2.text=getString(stid[(c_id*7)+2])
+                s2.text=getString(stid[(c_id*7)+3])
+                q3.text=getString(stid[(c_id*7)+4])
+                q4.text=getString(stid[(c_id*7)+5])
+                q5.text=getString(stid[(c_id*7)+6])
+            }
+            11->{
+                q1.text=getString(stid[(c_id*7)])
+                s1.text=getString(stid[(c_id*7)+1])
+                q2.text=getString(stid[(c_id*7)+2])
+                s2.text=getString(stid[(c_id*7)+3])
+                q3.text=getString(stid[(c_id*7)+4])
+                q4.text=getString(stid[(c_id*7)+5])
+                q5.text=getString(stid[(c_id*7)+6])
+            }
+            12->{
+                q1.text=getString(stid[(c_id*7)])
+                s1.text=getString(stid[(c_id*7)+1])
+                q2.text=getString(stid[(c_id*7)+2])
+                s2.text=getString(stid[(c_id*7)+3])
+                q3.text=getString(stid[(c_id*7)+4])
+                q4.text=getString(stid[(c_id*7)+5])
+                q5.text=getString(stid[(c_id*7)+6])
+            }
+            13->{
                 q1.text=getString(stid[(c_id*7)])
                 s1.text=getString(stid[(c_id*7)+1])
                 q2.text=getString(stid[(c_id*7)+2])

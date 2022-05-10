@@ -774,7 +774,9 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         "Remember in the last section when we were inputting string we didn't write '&' ampersand symbol in the scanf(\"%s\",str);" +
                         " we missed the '&' because the str[20] was a character array and the str itself is a pointer which means it already holds " +
                         "some address so we don't need the '&' to get the address for the scanf(). "
+
                 sh2.text = "Accessing array elements with pointers"
+
                 p3.text = "Now we know that to access first element of the array without using the square brackets we do it by" +
                         "*(a+0) or *a. To access the other elements of the array -: *(a+element_index) ,for second element *(a+1)" +
                         " to access the third element *(a+2) and so on. When we declare a array suppose of 5 elements - a[5] mem1ory" +
@@ -792,7 +794,9 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         "be accessed as *(a+0),*(a+1).. so we put it inside a loop of 5 and *(a+i) will give the elements of the array " +
                         "as the value of i changes from 0 to 4. Practice this program and try to implement more array based program using this " +
                         "method."
+
                 sh3.text="Dynamic Memory Allocation"
+
                 p4.text="Although this topic needs good understanding of pointers and if in future you will learn data structure in C" +
                         " then you will have to understand dynamic memory allocation but i will introduce the basics of this for now." +
                         "\n\tTo understand dynamic memory allocation first we need to know what is Static memory allocation. Memory allocation" +
@@ -804,6 +808,7 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         " static method. Now to solve this problem we have dynamic memory allocation in which we can change/reallocate and free the memory " +
                         " that we decide to give or change. It mainly has 3 functions to do so i.e. - malloc(),free(),realloc(). Which you will" +
                         "study about later when you read about data structure or you probably would use them in list,nodes,stack,queue,trees,graphs etc."
+
                 foot.text="Although we have finished about pointers in beginner level but you should practice pointers as they have many" +
                         " use in C and many programs are based on pointers and dynamic memory allocation in competitive program so it would" +
                         " be very beneficial to master these."
