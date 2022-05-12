@@ -967,9 +967,27 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         " program gets completely executed the code of it is removed from the ram. But in real life we would be needing to save the data, for example" +
                         " if we make a program to input rollno marks and percentage of students of class then we would want to save those details permanently in our secondary" +
                         " storage from where we can retrieve those information later or use that information/data in another program. To read and write into some other file we" +
-                        " need to learn file handling."
-                sh1.text=""
-                p2.text=""
+                        " need to learn file handling - working with files."
+                sh1.text="Basics of File Handling"
+                p2.text="Lets first look at some basic syntax then we will understand it -:" +
+                        "\n" +
+                        "#include<stdio.h>\n" +
+                        "void main(){\n" +
+                        "\tFILE *fp;\n" +
+                        "\tfp = fopen(\"FILE1.txt\",\"mode(r or w)\");\n" +
+                        "\tfp.close();\n" +
+                        "}\n\n" +
+                        "Understanding this syntax - Inside main the first line starts with word FILE which gives us a pointer to " +
+                        " that would point to address of opened file, consider FILE word similar to int char words where to insert" +
+                        " an integer we need 'int' word similarly here to operate with files we have 'FILE'.\n" +
+                        "Then *fp is pointer. In the next line  we have an fopen function which open the file whose name is specified " +
+                        "inside its first argument/parameter  and the second argument/parameter  will tell that in which mode we would want to " +
+                        "open the file in. Suppose we are opening a file for the first time or opening a file that doesn't existed " +
+                        "before the we would open it in 'write mode' for which we will pass \"w\" as the second argument/parameter .\n" +
+                        "and if that file existed before or we want to read data from the pre-existing file then we would " +
+                        "open it in read mode that is we would pass \"r\" as the second argument/parameter.\n" +
+                        "There are many more modes in file handling such as rb which is used from reading binary data but here" +
+                        " we would only use the .txt files and read(r) and write(w) mode."
                 sh2.text=""
                 p3.text=""
                 sh3.text=""
