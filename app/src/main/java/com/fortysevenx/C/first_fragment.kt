@@ -901,7 +901,8 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         " their roll no's and a float for storing their percentages but it would be better if we could make a block" +
                         " of all these 3 variables and name that block student info and then easily use that block to store the information" +
                         " of the students, and the block that we are talking about is the structure let's implement it." +
-                        "\n\n#include<stdio.h>\n" +
+                        "\n\n\t- - - code - - - \n" +
+                        "\n#include<stdio.h>\n" +
                         "struct studentinfo{\n" +
                         "\tint r_no;\n" +
                         "\tchar name[30];\n" +
@@ -929,8 +930,50 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         " of studentinfo we use st.name which tell that we have a structure st, inside which we are accessing the name variable." +
                         " So that's how we accessed all the elements of our structure and then we stored and displayed the value from them. " +
                         "This program might not have been sufficient to show you that structures are vary useful so check out the next program."
+                sh3.text="One more example about structures"
+                p4.text = "Let's do the same above program but this time for 10 students using for loop.\n" +
+                        "\n" +
+                        "\t - - - code - - - \n\n" +
+                        "\n#include<stdio.h>\n" +
+                        "struct studentinfo{\n" +
+                        "\tint r_no;\n" +
+                        "\tchar name[30];\n" +
+                        "\tfloat percent;\n" +
+                        "}\n" +
+                        "void main(){\n" +
+                        "\tstruct studentinfo st[10];\n" +
+                        "\tint i;\n" +
+                        "\tprintf(\"Enter details \\n\");\n" +
+                        "\tfor(i=0;i<10;i++){\n" +
+                        "\tprintf(\"%d. Name - \",i);\n" +
+                        "\tscanf(\"%s\",&st[i].name);\n" +
+                        "\tprintf(\"Rollno. - \");\n" +
+                        "\tscanf(\"%d\",&st[i].r_no);\n" +
+                        "\tprintf(\"Percentage - \");\n" +
+                        "\tscanf(\"%f\",&st[i].percent);\n\t}\n" +
+                        "\tprintf(\"\\nDetails Entered are - \\n\");\n" +
+                        "\tfor(i=0;i<10;i++){\n" +
+                        "\tprintf(\"%d. Rollno - %d\\n\",i,st[i].r_no);\n" +
+                        "\tprintf(\"Name - %d\\n\",st[i].name);\n" +
+                        "\tprintf(\"Percentage - %d\\n\\n\",st[i].percent);\n" +
+                        "\t}\n}\n" +
+                        "\n" +
+                        "Program is mostly same as the above program its just this time we did it for 10 students so this makes it more practical doing this way."
+                foot.text=""
+            }
+            15->{
+                tv.text="Permanently saving the data"
+                p1.text="Whenever we run a program its running code is temporarily saved and executed in the ram, as the ram is volatile that means as soon as our" +
+                        " program gets completely executed the code of it is removed from the ram. But in real life we would be needing to save the data, for example" +
+                        " if we make a program to input rollno marks and percentage of students of class then we would want to save those details permanently in our secondary" +
+                        " storage from where we can retrieve those information later or use that information/data in another program. To read and write into some other file we" +
+                        " need to learn file handling."
+                sh1.text=""
+                p2.text=""
+                sh2.text=""
+                p3.text=""
                 sh3.text=""
-                p4.text = ""
+                p4.text=""
                 foot.text=""
             }
         }
