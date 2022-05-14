@@ -1025,7 +1025,7 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                 p4.text="File handling is actually one of the things that is very useful when it comes down to making most of the" +
                         " practical applications be it a program for making class attendance register to a facebook like program " +
                         "you would need a way to save all the data and then further retrieve the data."
-                foot.text=""
+                foot.text="Task - Read more about file handling and other modes and file types also."
             }
         }
 
