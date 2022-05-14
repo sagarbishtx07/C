@@ -279,7 +279,7 @@ object quest{
             "Yes we can change the length of array by adding another array to it",
             "Yes we can change the length of array by the use of dynamic memory allocation",
             "Both 1 and 3 are correct",
-            3+4))
+            2))
 
         quesList.add(
             Questions(51,"What do we mean by dynamic memory allocation?",
@@ -298,8 +298,45 @@ object quest{
             "a=x;",
             "*a=&x[1];",
             2+12))
+        //13
 
-       // quesList.add(Questions(50,"","","","","",0))
+       quesList.add(Questions(54,
+           "Which of the following correctly defines the starting and ending index of an array in C? (n=number of elements in array",
+           "start index = 1 and end index = l",
+           "start index = 1 and end index = l-1",
+           "start index = 0 and end index = l",
+           "start index = 0 and end index = l-1",
+           3))
+
+       quesList.add(Questions(55,"Which of the following is incorrect for string and characters?",
+           "A string is an array of characters",
+           "In C string is under double quotes and character under single quotes",
+           "Characters can also be under double quotes same as string in C",
+           "Both string can character when converted to int give ASCII values of respective characters",
+           2+4))
+
+       quesList.add(Questions(56,"Which header file provide some essential functions such as strlen(),gets(),strcat() ets " +
+               "which are useful when working with strings in C ?",
+           "stdio.h",
+           "conio.h",
+           "string.h",
+           "dos.h",2+8))
+
+       quesList.add(Questions(57,"Which of the function can you use to input a string which contains spaces?",
+           "strcat()",
+           "gets()",
+           "puts()",
+           "strlen()",1+12))
+
+       quesList.add(Questions(58,"","","","","",0))
+       quesList.add(Questions(59,"","","","","",0))
+       quesList.add(Questions(60,"","","","","",0))
+       quesList.add(Questions(61,"","","","","",0))
+
+       quesList.add(Questions(62,"","","","","",0))
+       quesList.add(Questions(63,"","","","","",0))
+       quesList.add(Questions(64,"","","","","",0))
+       quesList.add(Questions(65,"","","","","",0))
 
 
         return quesList
