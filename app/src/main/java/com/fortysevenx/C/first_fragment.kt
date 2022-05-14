@@ -988,10 +988,43 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         "open it in read mode that is we would pass \"r\" as the second argument/parameter.\n" +
                         "There are many more modes in file handling such as rb which is used from reading binary data but here" +
                         " we would only use the .txt files and read(r) and write(w) mode."
-                sh2.text=""
-                p3.text=""
-                sh3.text=""
-                p4.text=""
+                sh2.text="Program to write to a file f1.txt and then read data from the same file"
+                p3.text="\n\b" +
+                        "\t - - - code - - - \n\n" +
+                        "#include<stdio.h>\n" +
+                        "void main(){\n" +
+                        "    FILE *f;\n" +
+                        "    int a;\n" +
+                        "    char s[20];\n" +
+                        "    f = fopen(\"f1.txt\", \"w\");\n" +
+                        "    printf(\"Enter a string and a number\");\n" +
+                        "    scanf(\"%[^\\n]%*c\", s);\n" +
+                        "    scanf(\"%d\", &a);\n" +
+                        "    fprintf(f, \"%s\\n%d\", s, a);\n" +
+                        "    fclose(f);\n" +
+                        "    f = fopen(\"f1.txt\", \"r\");\n" +
+                        "    fscanf(f, \"%[^\\n]%*c%d\", s, &a);\n" +
+                        "    printf(\"Data entered in file -:\\n\");" +
+                        "    printf(\"%s %d\", s, a);\n" +
+                        "    fclose(f);" +
+                        "}\n\n" +
+                        "code explanation - Since we are dealing with file or doing file handling so we created a file pointer" +
+                        "f and here we would store a name and a string in a file so we declared 2 variables an int and a string " +
+                        "for it. Then we created a file named f1.txt using the fopen function by opening it in write mode. Then we" +
+                        " take input of string and a number, while taking the input of the string you might have noticed that" +
+                        " we have used \"%[^\\n]%*c\" <-this expression while says that take all the input including the spaces" +
+                        " until \\n or newline character is encountered and then remove the \\n from it or in short it takes" +
+                        " String inputs which has spaces in them which normally scanf function can't take. After that we stored " +
+                        "those using the fprintf function which write the data" +
+                        "given to it in the file. The \\n after %s is given because so that it adds a separator between the string" +
+                        " and the number while writing in the file. Then we close the file as we should close the file always after" +
+                        " operating on it but also in this case we have to reopen file in read mode to read the data from it.\n" +
+                        "\tThe we reopen the same file f1.txt in read mode then we use the fscanf function to write the data that is read from" +
+                        " file and then stores it inside the s and a variables respectively. Then we just print the data."
+                sh3.text="More use cases of file handling"
+                p4.text="File handling is actually one of the things that is very useful when it comes down to making most of the" +
+                        " practical applications be it a program for making class attendance register to a facebook like program " +
+                        "you would need a way to save all the data and then further retrieve the data."
                 foot.text=""
             }
         }

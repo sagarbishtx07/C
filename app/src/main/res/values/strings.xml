@@ -737,13 +737,13 @@ m
     </string>
 
     <string name="f3i12q3">
-        Write and Execute a program to input 10 string and display them in descending order, i.e. last string first
-         and first string at last.
+        Write and Execute a program to input full name of a person or a string containing spaces.[Hint -: Use
+        &quot;%[^\n]%*c&quot; instead of %s as this scanf whitespaces also;
 
     </string>
 
     <string name="f3i12q4">
-        Write and E. a program to input 10 integer values in an array and then print only the even valus in it.
+        Write and E. a program to input 10 integer values in an array and then print only the even values in it.
 
 
     </string>
