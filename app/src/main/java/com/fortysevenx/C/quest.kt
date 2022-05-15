@@ -328,15 +328,68 @@ object quest{
            "puts()",
            "strlen()",1+12))
 
-       quesList.add(Questions(58,"","","","","",0))
-       quesList.add(Questions(59,"","","","","",0))
-       quesList.add(Questions(60,"","","","","",0))
-       quesList.add(Questions(61,"","","","","",0))
+        //14
 
-       quesList.add(Questions(62,"","","","","",0))
-       quesList.add(Questions(63,"","","","","",0))
-       quesList.add(Questions(64,"","","","","",0))
-       quesList.add(Questions(65,"","","","","",0))
+       quesList.add(Questions(58,"If *a is the starting element of an array then what will be the next 2 elements?",
+           "*a+1 and *a+2",
+           "*(a+1) and *(a+2)",
+           "*(a+2) and *(a+4)",
+           "*a+2 and *a+4",
+           1))
+
+       quesList.add(Questions(59,
+           "What is dynamic memory allocation in array?",
+           "Allocating memory at the run time",
+           "Flexible memory allocation that is allocated memory can be changed later",
+           "Allocating memory then assigning it to a pointer.",
+           "All of the above",
+           3+4))
+
+       quesList.add(Questions(60,
+           "Which is the best method to calculate the number of elements in array if we dont know the length of array.",
+           "Using strlen function",
+           "running a loots until \\n is encountered",
+           "dividing the total size of array by size of each element",
+           "none of the above",
+           2+8))
+
+       quesList.add(Questions(61,
+           "Which is the correct syntax for allocation an int array of length 5 using dynamic memory allocation.",
+           "a={1,2,3,4,5}",
+           "*a = calloc(5*sizeof(int))",
+           "*a = malloc(5*sizeof(int))",
+           "int *a[5];",
+           2+12))
+
+        //15
+       quesList.add(Questions(62,
+           "Which of the following is valid for 2-D array.",
+           "It is an array with 2 or more rows",
+           "It is denoted by the syntax a[i][j]",
+           "in a[i][j] i is row index and j is column index",
+           "All of the above",
+           0))
+
+       quesList.add(Questions(63,
+           "What is a square matrix.",
+           "A 2-D array with 1 row and 1 column",
+           "A multidimensional array with i>j",
+           "A multidimensional array with equal number of rows and columns ",
+           "A array which consist of square of all the elements in its first row",
+           2+4))
+
+        quesList.add(Questions(64,"What do you mean by transpose of a square matrix a.",
+            "A matrix which contains the index numbers of all the elements of a",
+            "A 2-D array which contains the index number starting from 1 of all elements of a.",
+            "A matrix which contains all the row elements of a in its column and all the column elements of a in its rows.",
+            "A 2-D array with reciprocal values of each elements of a.",
+            2+8))
+
+        quesList.add(Questions(65,"Which of the following is not true for a 2-D array",
+            "Its size can be calculated by size of one element into total number of elements i.e. - i x j x n",
+            "a[2][4] will give the element in the second column and 3rd row",
+            "a[2][4] will give the element in the second row and 4th column",
+            "a[9][9] is s 9 cross 9 square matrix",1+12))
 
 
         return quesList
