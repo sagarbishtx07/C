@@ -391,6 +391,76 @@ object quest{
             "a[2][4] will give the element in the second row and 4th column",
             "a[9][9] is s 9 cross 9 square matrix",1+12))
 
+        //16 Structures
+        quesList.add(
+            Questions(66,
+            "Which of these best describes the difference between structure and function",
+            "Function is also a data type same as structure.",
+            "Structures are used as a data type whereas function is method defined by us.",
+            "Structure is not reusable but function is reusable",
+            "Structure cannot be used as d data type but function can be used",1)
+        )
+
+        quesList.add(Questions(67,
+            "Which is the correct syntax for creating a variable of a struct employee{}.",
+            "struct emp1;",
+            "struct employee;",
+            "struct employee emp1;",
+            "employee emp1",2+4))
+
+        quesList.add(Questions(68,
+            "What is wrong with this piece of code.\n\t" +
+                    "struct emp1(\n\t" +
+                    "int x;\n" +
+                    "};",
+            "semi colon at the end",
+            "s is in Lowercase(small letters) in struct",
+            "no curly brackets used",
+            "all of the above",2+8))
+
+        quesList.add(Questions(69,
+            "Which is the correct syntax for initializing a struct using dynamic memory allocation",
+            "struct emp* = malloc(sizeof(struct));",
+            "struct *emp = sizeof(struct emp));",
+            "struct emp = sizeof((struct emp));",
+            "struct emp = (struct *)sizeof(struct));",0 ))
+
+        //17 File Handling
+        quesList.add(
+            Questions(70,
+        "What is the need for file handling?.",
+        "It help us save the data that we entered into the main memory.",
+        "It helps to read and write data from RAM",
+        "It helps to permanently save and retrieve data.",
+        "It is used to write and create text files only.",
+        2)
+        )
+
+        quesList.add(Questions(70,
+            "Which is not a correct syntax for initializing a file pointer.",
+            "FILE *fp;",
+            "FILE *fp = fopen(\"F1.txt\",\"r\");",
+            "File *fp = Fopen(\"F1.txt\",\"w\");",
+            "FILE *fp = fopen(\"F1.txt\",\"w\");",
+            2+4))
+
+        quesList.add(Questions(70,
+            "Why do we have to close the opened file using fclose().",
+            "Because it will not save the data without closing the file",
+            "It is a good practice and removes the opened file from ram.",
+            "It also helps if we have to reopen file in the same program then if we had closed it then we can use the " +
+                    "same FILE variable to open the file.",
+            "Both 2 and 3 are correct",
+            3+8))
+
+        quesList.add(Questions(70,
+            "Which header file is used in file handling or which header file contains the keywords and functions for" +
+                    " file handling in C.",
+            "conio.h",
+            "stlib.h",
+            "stdio.h",
+            "dos.h",
+            2+12))
 
         return quesList
     }
