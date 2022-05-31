@@ -892,12 +892,86 @@ m
 
     </string>
 
-    <string name="f3i14q5">
+<!--    Structures-->
+    <string name="f3i15q1">
+        Write and execute a program that takes name,mail-id and roll number of a student inside a structure and then displays the information.
+    </string>
+
+    <string name="f3i15s1">
+        #include&lt;stdio.h&gt;
+        struct info
+        {
+            int r_no;
+            char email[30];
+            char name[20];
+        };
+        int main()
+        {
+            struct info inf;
+            printf(&quot;Enter Details : &quot;);
+            printf(&quot;\\nRoll no\\t&quot;);
+            scanf(&quot;%d&quot;, &amp;inf.r_no);
+            printf(&quot;em@il id\\t&quot;);
+            scanf(&quot;%s&quot;, inf.email);
+            printf(&quot;name\\t&quot;);
+            scanf(&quot;%s&quot;, inf.name);
+            printf(&quot;\\n\\nDetails entered are&quot;);
+            printf(&quot;\\nRoll no\\t%d\\n&quot;, inf.r_no);
+            printf(&quot;em@il id\\t%s\\n&quot;, inf.email);
+            printf(&quot;name\\t%s&quot;, inf.name);
+}
+
+    </string>
+
+    <string name="f3i15q2">
+        Write and execute a program to input 2 pointer int variables and one int variable with the use of malloc function.
+
+    </string>
+
+    <string name="f3i15s2">
+        \nNOTE - when we use a pointer declaration on a structure or pointer of a structure we use &quot;->&quot; instead of
+         &quot;.&quot;.
+        #include&lt;\nstdio.h&gt;\n
+        #include&lt;\nstdlib.h&gt;\n
+        struct demo\n
+        {\n
+        \tint *a, *b;\n
+        \tint data;\n
+        };\n
+        void main()\n
+        {\n
+        \tstruct demo *d;\n
+        \tint a, b;\n
+        \td = malloc(sizeof(struct demo));\n
+        \tprintf(&quot;\nEnter a:\\t&quot;\n);\n
+        \tscanf(&quot;\n%d&quot;\n, &amp;\na);\n
+        \tprintf(&quot;\nb:\\t&quot;\n);\n
+        \tscanf(&quot;\n%d&quot;\n, &amp;\nb);\n
+        \tprintf(&quot;\ndata:\\t&quot;\n);\n
+        \tscanf(&quot;\n%d&quot;\n, &amp;\nd->data);\n
+        \td-&lt;\na = &amp;\na;\n
+        \td-&lt;\nb = &amp;\nb;\n
+        \tprintf(&quot;\n\\n\\nDetails entered are :\\n&quot;\n);\n
+        \tprintf(&quot;\na:\\t %d \\n b:\\t %d \\n data:\\t %d&quot;\n, *d->a, *d->b, d->data);\n
+        }\n
 
 
     </string>
 
+    <string name="f3i15q3">
 
+
+    </string>
+
+    <string name="f3i15q4">
+
+
+    </string>
+
+    <string name="f3i15q5">
+
+
+    </string>
 
 
 </resources>
