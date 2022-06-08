@@ -905,6 +905,8 @@ m
             char email[30];
             char name[20];
         };
+
+
         int main()
         {
             struct info inf;
@@ -959,17 +961,22 @@ m
     </string>
 
     <string name="f3i15q3">
+        Write and execute a program which inputs the name(String format),id(Int format) and address(string format) of 20 students\n
+        and then displays the student name,id and address of all 20 students.
 
 
     </string>
 
     <string name="f3i15q4">
+        Write a program that creates 2 instances of an structure name emp (struct emp1,emp2;) and stores name and id in one structure emp1
+        and then copy all the data of emp1 to emp2 and display the name and id from emp2.
 
 
     </string>
 
     <string name="f3i15q5">
-
+        DO the above program but with the use of dynamic memory allocation (struct *emp1,*emp2;).
+        Hint -: see example 2 program above.
 
     </string>
 
