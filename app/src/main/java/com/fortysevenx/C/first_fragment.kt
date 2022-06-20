@@ -867,7 +867,7 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         "The elements that go diagonally are called diagonal elements. There are 2 diagonals in an square" +
                         " matrix.\n" +
                         "Right Diagonal -: The diagonal going from right top to bottom left.\n" +
-                        "Left Diagonal -: The diagonal going from left top to right bottom\n\n" +
+                        "Left Diagonal -: The diagonal going from l eft top to right bottom\n\n" +
                         "\tLeft Diagonal has a property that all the elements along the left diagonal in a square matrix" +
                         " will have the index of row and column equal. For ex- the elements of the left diagonal will be" +
                         " like a[1][1],[2][2],b[0][0].\n\t" +
@@ -1002,6 +1002,9 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         "    scanf(\"%d\", &a);\n" +
                         "    fprintf(f, \"%s\\n%d\", s, a);\n" +
                         "    fclose(f);\n" +
+
+
+
                         "    f = fopen(\"f1.txt\", \"r\");\n" +
                         "    fscanf(f, \"%[^\\n]%*c%d\", s, &a);\n" +
                         "    printf(\"Data entered in file -:\\n\");" +
@@ -1022,7 +1025,21 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         "\tThe we reopen the same file f1.txt in read mode then we use the fscanf function to write the data that is read from" +
                         " file and then stores it inside the s and a variables respectively. Then we just print the data."
                 sh3.text="More use cases of file handling"
-                p4.text="File handling is actually one of the things that is very useful when it comes down to making most of the" +
+                p4.text="before some use cases there are some little things that would be used in file handling programs -:\n" +
+                        "\tf=fopen(\"names.txt\",\"r\")" +
+                        "\tdo\n" +
+                        "\t{\n" +
+                        "\tch=fgetc(f);\n" +
+                        "\tprintf(\"%c\",ch);\n" +
+                        "\t}while(ch!=EOF);\n\t" +
+                        "here we have opened some file f in read mode and we want to read the contents in this file here we are reading the contents of " +
+                        " file character by character the do while loop has a condition in while that \"ch!=EOF\" this tell that this loop will run " +
+                        "till there are character in the file or the file is not read completely EOF stands for end of file so we have a variable ch" +
+                        "which is of character type (char ch;) to read character by character all the elements of the file and fgetc(f) will fetch the character " +
+                        "from the file f and then go to next character and then we print the character to output.\n" +
+                        "This method is unlike the previous method above to read the file but this method is more easy and reliable to read from file..." +
+                        "there is also a example program in code section using this method." +
+                        "\n\n\nFile handling is actually one of the things that is very useful when it comes down to making most of the" +
                         " practical applications be it a program for making class attendance register to a facebook like program " +
                         "you would need a way to save all the data and then further retrieve the data."
                 foot.text="Task - Read more about file handling and other modes and file types also."

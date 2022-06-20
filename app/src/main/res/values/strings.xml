@@ -891,6 +891,9 @@ m
 
 
     </string>
+    <string name="f3i14q5">
+
+    </string>
 
 <!--    Structures-->
     <string name="f3i15q1">
@@ -980,5 +983,52 @@ m
 
     </string>
 
+<!--    FILE HANDLING-->
+    <string name="f3i16q1">
+        Write a file handling program to input and save 5 names in a file and then later read the names from the file.
+    </string>
+
+    <string name="f3i16s1">
+     #include&lt;stdio.h&gt;\n
+     void main()\n
+    {\n
+    \tFILE*f;
+    \tint i;
+    \tchar s[20];
+    \tchar ch;
+    \tf=fopen(&quot;names.txt&quot;,&quot;w&quot;);
+    \tfor(i=0;i&lt;5;i++)
+    \t{
+    \tprintf(&quot;Entername%d\\t&quot;,i);
+    \tscanf(&quot;%[^\\n]%*c&quot;,s);
+    \tfprintf(f,&quot;Name:%s\\n&quot;,s);
+    \t}
+    \tfclose(f);
+
+    \tf=fopen(&quot;names.txt&quot;,&quot;r&quot;);
+    \tdo
+    \t{
+    \tch=fgetc(f);
+    \tprintf(&quot;%c&quot;,ch);
+    \t}while(ch!=EOF);
+    \tfclose(f);
+    \t}
+    </string>
+
+    <string name="f3i16q2">
+        Input 5 names and 5 roll number in a file but this time using a structure and then read those name and rollno from the file.
+    </string>
+
+    <string name="f3i16s2">
+    </string>
+
+    <string name="f3i16q3">
+    </string>
+
+    <string name="f3i16q4">
+    </string>
+
+    <string name="f3i16q5">
+    </string>
 
 </resources>
