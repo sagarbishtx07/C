@@ -1027,12 +1027,21 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                 sh3.text="More use cases of file handling"
                 p4.text="before some use cases there are some little things that would be used in file handling programs -:\n" +
                         "\tf=fopen(\"names.txt\",\"r\")" +
+                        "\tif(f==NULL){\n" +
+                        "\tfprintf(stderr,\"\\nError\");\n" +
+                        "\nexit(1);\n" +
+                        "\n}" +
                         "\tdo\n" +
                         "\t{\n" +
                         "\tch=fgetc(f);\n" +
                         "\tprintf(\"%c\",ch);\n" +
                         "\t}while(ch!=EOF);\n\t" +
-                        "here we have opened some file f in read mode and we want to read the contents in this file here we are reading the contents of " +
+                        "here we have opened some file f in read mode. We have written if(f==NULL) this just means that if there" +
+                        " was some error in opening the file like file don't exist or insufficient memory etc then f will be NULL" +
+                        " so in this case we wouldn't be able to operate further on tour file so that's why we will print" +
+                        " and error message using stderr which is used for printing error you can use simple printf also but this would" +
+                        " be better to use here than just printf.\n\n" +
+                        "\tAfter that we want to read the contents in this file here we are reading the contents of " +
                         " file character by character the do while loop has a condition in while that \"ch!=EOF\" this tell that this loop will run " +
                         "till there are character in the file or the file is not read completely EOF stands for end of file so we have a variable ch" +
                         "which is of character type (char ch;) to read character by character all the elements of the file and fgetc(f) will fetch the character " +
