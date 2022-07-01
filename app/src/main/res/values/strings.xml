@@ -992,40 +992,77 @@ m
      #include&lt;stdio.h&gt;\n
      void main()\n
     {\n
-    \tFILE*f;
-    \tint i;
-    \tchar s[20];
-    \tchar ch;
-    \tf=fopen(&quot;names.txt&quot;,&quot;w&quot;);
-    \tfor(i=0;i&lt;5;i++)
-    \t{
-    \tprintf(&quot;Entername%d\\t&quot;,i);
-    \tscanf(&quot;%[^\\n]%*c&quot;,s);
-    \tfprintf(f,&quot;Name:%s\\n&quot;,s);
-    \t}
-    \tfclose(f);
+    \tFILE*f;\n
+    \tint i;\n
+    \tchar s[20];\n
+    \tchar ch;\n
+    \tf=fopen(&quot;names.txt&quot;,&quot;w&quot;);\n
+    \tfor(i=0;i&lt;5;i++)\n
+    \t{\n
+    \tprintf(&quot;Entername%d\\t&quot;,i);\n
+    \tscanf(&quot;%[^\\n]%*c&quot;,s);\n
+    \tfprintf(f,&quot;Name:%s\\n&quot;,s);\n
+    \t}\n
+    \tfclose(f);\n
 
-    \tf=fopen(&quot;names.txt&quot;,&quot;r&quot;);
-    \tdo
-    \t{
-    \tch=fgetc(f);
-    \tprintf(&quot;%c&quot;,ch);
-    \t}while(ch!=EOF);
-    \tfclose(f);
-    \t}
+    \tf=fopen(&quot;names.txt&quot;,&quot;r&quot;);\n
+    \tdo\n
+    \t{\n
+    \tch=fgetc(f);\n
+    \tprintf(&quot;%c&quot;,ch);\n
+    \t}while(ch!=EOF);\n
+    \tfclose(f);\n
+    \t}\n
     </string>
 
     <string name="f3i16q2">
-        Input 5 names and 5 roll number in a file but this time using a structure and then read those name and rollno from the file.
+        Input name and roll number of a student in a file but this time using a structure and then read those name and rollno from the file.
     </string>
 
     <string name="f3i16s2">
+        #include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+struct student\n
+{\n
+    int rollno;\n
+    char name[30];\n
+};\n
+\n
+void main()\n
+{\n
+    FILE *f;\n
+    f = fopen(&quot;std.txt&quot;, &quot;w&quot;);\n
+    struct student s, rd;\n
+    if (f == NULL)\n
+    {\n
+        fprintf(stderr, &quot;\nERROR unable to open file&quot;);\n
+        exit(1);\n
+    }\n
+    printf(&quot;Enter Name\\t&quot;);\n
+    gets(s.name);\n
+    printf(&quot;Enter Roll No\\t&quot;);\n
+    scanf(&quot;%d&quot;, &amp;s.rollno);\n
+    fwrite(&amp;s, sizeof(struct student), 1, f);\n
+    fclose(f);\n
+    f = fopen(&quot;std.txt&quot;, &quot;r&quot;);\n
+    if (f == NULL)\n
+    {\n
+        fprintf(stderr, &quot;\nEmpty File&quot;);\n
+        exit(1);\n
+    }\n
+    fread(&amp;rd, sizeof(struct student), 1, f);\n
+    printf(&quot;\\nName\\t%s\\nRoll No.\\t%d&quot;, rd.name, rd.rollno);\n
+}\n
+
     </string>
 
     <string name="f3i16q3">
+        Write a file handling program to store and read a paragraph of length 50 to 60 words.
     </string>
 
     <string name="f3i16q4">
+        Write a file handling program Input name and roll number of 5 students in a file using array and structure and then read those name and rollno from the file.
     </string>
 
     <string name="f3i16q5">
