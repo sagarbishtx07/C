@@ -1053,6 +1053,33 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         "you would need a way to save all the data and then further retrieve the data."
                 foot.text="Task - Read more about file handling and other modes and file types also."
             }
+            16->{
+                tv.text="Some more concepts of C"
+                p1.text="Although at this point we are mostly done with our beginner level C course but atlast there are 2 more topics" +
+                        " which are Enums and TypeDef."
+                sh1.text="ENUMS - Enumerated Data type"
+                p2.text="It a user defined data type in C like you might have seen that we have used NULL in some pointer and file handling" +
+                        " programs just as C has already some meaning assigned to NULL word similarly using enums we predefine some words, although" +
+                        " they usually aren't much useful.\n" +
+                        "\tProgram to understand Enums -:\n" +
+                        "\n\t - - - code - - - \n\n" +
+                        "\t#include<stdio.h>\n" +
+                        "\tenum countries{\n\t\tUSA,\n\t\tRussia,\n\t\tIndia,\n\t\tChina,\n\t\tUK\n\t};\n" +
+                        "\tvoid main(){\n" +
+                        "\t\tenum countries C;\n" +
+                        "\t\tC=USA;\n" +
+                        "\t\tprintf(\"%d\\n\",C);" +
+                        "\t\tC=Russia;\n"+
+                        "\t\tprintf(\"%d\\n\",C+1);\n" +
+                        "\t}\n\n" +
+                        "understanding above program - "
+
+                sh2.text=""
+                p3.text=""
+                sh3.text=""
+                p4.text=""
+                foot.text=""
+            }
         }
 
 //767890861

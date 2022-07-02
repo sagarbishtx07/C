@@ -21,6 +21,7 @@ const val ID:String="ID"
         textList.add(CardDetails(14,"Multidimensional Array"))
         textList.add(CardDetails(15,"Structures"))
         textList.add(CardDetails(16,"File Handling"))
+        textList.add(CardDetails(17,"Enum TypeDef and See you soon"))
         return textList
     }
 }
