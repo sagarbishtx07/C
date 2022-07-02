@@ -1072,13 +1072,48 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         "\t\tC=Russia;\n"+
                         "\t\tprintf(\"%d\\n\",C+1);\n" +
                         "\t}\n\n" +
-                        "understanding above program - "
+                        "understanding above program - at line number 2 we have defined an enum type named countries and set" +
+                        " elements in it as USA,Russia,India,China and UK now whenever value is assigned to enum data type then the" +
+                        " first name takes the value 0 and second takes 1 and so on. Therefore here it means that USA=0,Russia=1,India=2 and" +
+                        " so on are the value assigned here.This will be more clear inside main where we will use these.\n" +
+                        "Now in the main we instantiated enum and declared a C which is of enum countries type. now we set the initial value" +
+                        " of C as USA we can set the value of C as any element from inside the defined elements in the enum countries.\n" +
+                        "Then we print C now it will not print USA as USA is now the value the value inside USA is 0 by default so it will print 0.\n" +
+                        "Now we set C=Russia and then added 1 to it before printing since C was Russia and Russia value was 1 so C+1 will be equals" +
+                        " 2."
 
-                sh2.text=""
-                p3.text=""
-                sh3.text=""
-                p4.text=""
-                foot.text=""
+                sh2.text="Typedef"
+                p3.text="You might have seen in structure programs that we once declared a structure then to use it inside the main " +
+                        "function we had to write struct with it. Now to save us some time from everytime writing struct we can use typedef" +
+                        " which will be more clear from this example -:\n" +
+                        "\n\t - - - code - - - \n\n " +
+                        "\t#include<stdio.h>\n" +
+                        "\ttypedef struct std{\n" +
+                        "\t\tint rollno.;\n" +
+                        "\t}\n" +
+                        "\tvoid main(){\n" +
+                        "\t\tstd s1;\n" +
+                        "\t\ts1.rollno=31;\n" +
+                        "\t}\n\n" +
+                        "\tThe only thing we did to make use of typedef was, we wrote typedef keyword before the variable type and then we " +
+                        " can use the variable or in this case the struct name std without writing struct student std in the whole program." +
+                        "You can see once we defined typedef struct std and after which we only mentioned std inside main() unlike normally" +
+                        " where we had to write whole struct student std s1;\n"
+                sh3.text="What's Next?"
+                p4.text="\t This is the last part or module or our C beginner level course, hope you didn't have had much problem going through " +
+                        "the course.\n\tAlthough you can choose what's next you would do like learning some new language or continuing mastering C, there" +
+                        " are somethings that i would like to recommend to you which you can do after this course which will help you be a better " +
+                        "programmer -:\n" +
+                        "\tNow you should go to the intermediate and advanced level in this for this best way would be to choose some projects like " +
+                        " working Notes app, or Notepad like text editor using file handling or some 2D game, you just have to search in google or youtube" +
+                        " and you will get many helpful links,programs and videos. If you are having any problem in some topic in C practice questions " +
+                        "related to that search on stackoverflow or some other forums they are very helpful." +
+                        "\n\n\t->If you want to crack job interviews then i would recommend you practing competitive coding(CP) in which program will vary" +
+                        " from slightly difficult to very difficult and would require your logical and mathematical thinking. Nowadays most job interviews" +
+                        " for software developer have one or two round of competitive coding. You will have to practice a lot in this and also if you" +
+                        " get into competitive coding then make sure to learn data structure, its very important and will certainly help in cracking " +
+                        "a decent job.:)"
+                foot.text="prinntf(\"Workhard to make yourself better programmer than you were yestarday\");"
             }
         }
 
