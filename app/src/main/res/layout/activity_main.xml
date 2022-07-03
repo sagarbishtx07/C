@@ -391,6 +391,78 @@
                 />
 
         </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="230dp"
+            android:elevation="25dp"
+            app:cardCornerRadius="15dp"
+            android:padding="5dp"
+            app:cardBackgroundColor="@color/card"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="C a r d 4"
+                android:id="@+id/tv15"
+                android:padding="12dp"
+                android:textSize="15sp"
+                android:gravity="center"
+                />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="230dp"
+            android:elevation="25dp"
+            app:cardCornerRadius="15dp"
+            android:padding="5dp"
+            app:cardBackgroundColor="@color/card"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="C a r d 4"
+                android:id="@+id/tv16"
+                android:padding="12dp"
+                android:textSize="15sp"
+                android:gravity="center"
+                />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="230dp"
+            android:elevation="25dp"
+            app:cardCornerRadius="15dp"
+            android:padding="5dp"
+            app:cardBackgroundColor="@color/card"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="C a r d 4"
+                android:id="@+id/tv17"
+                android:padding="12dp"
+                android:textSize="15sp"
+                android:gravity="center"
+                />
+
+        </androidx.cardview.widget.CardView>
 
 
 

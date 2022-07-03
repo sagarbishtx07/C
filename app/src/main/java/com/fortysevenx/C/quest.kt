@@ -3,7 +3,7 @@ package com.fortysevenx.C
 object quest{
     fun getQuest():ArrayList<Questions>{
         val quesList = ArrayList<Questions>()
-        //0
+        //0 Intro
             quesList.add(Questions(1,"Which of these is not a programming language?",
                 "Java","HTML","Unity","Python",2));
 
@@ -16,7 +16,7 @@ object quest{
                 "Learning lots of programming languages in less time","First Mastering one language then moving to other",
                 "Improving your logic building and implementation of logic in programs that you make","Both 2 and 3",3+12));
 
-        //1
+        //1 Setting Up
             quesList.add(Questions(5,"What is the use of compiler?","It saves the code for us, so it doesn't get lost if there was some unexpected power cut.",
                 "It removes the errors and warnings from the program.","Compiler coverts the code into readable file.","It scans the code for error and syntax checking if " +
                         "errors are found it displays the error" +
@@ -28,7 +28,7 @@ object quest{
                 "It tells the computer the location/path of the bin file of the compiler where the program for executing our code exists.","It installs the compiler in our" +
                         " computer so we can run the code without any problem","None of these",2+12))
 
-        //2
+        //2 First Program
             quesList.add(Questions(9,"Which of the following type of brackets is used to the define the definition of program or specify the code inside of a block of code.",
                 "Circular brackets ( )"
                 ,"Curly Brackets { }",
@@ -48,7 +48,7 @@ object quest{
                 "It contains the information about the location of C compiler installed in our system.",
                 "It is the Standard Input output header file and it contains the information related to input output functions.","op4",2+12))
 
-        //3
+        //3 Variables Data Types
             quesList.add(Questions(13,"Which of these is not a data type in C?","struct","number","int","float",1))
             quesList.add(Questions(14,"What is the range of integers that we could normally store in the int data type with using long int?","0 to 1 million ",
                 "-32767 to 32767","0 to 32767","0 to 65535",1+4))
@@ -56,7 +56,7 @@ object quest{
             quesList.add(Questions(15,"Which of the following values is wrong to put inside an int?","32767","-4000","3132.42","0",2+8))
             quesList.add(Questions(16,"To store 5.43234 which data type will you prefer?","Int","Double","Point","Float",1+12))
 
-        //4
+        //4 Format specifies and Taking input
         quesList.add(Questions(17,"Which of these is not a valid format specifier for data types?",
             "%d",
             "%s",
@@ -80,7 +80,7 @@ object quest{
                 "a>=b is a correct expression for comparison between a and b in c",2+12))
 
 
-        //5
+        //5 if-else
         quesList.add(Questions(21,"What is a Boolean Value?",
             "Value which is only divisible by 100",
             "Values which can only be positive or negative",
@@ -105,7 +105,7 @@ object quest{
             "FIRE","ICE","Program will give error","Program will run but will not give output",0+12))
 
 
-        //6
+        //6 Loops
         quesList.add(Questions(25,"Which of the following type of loop will definitely run once no matter the condition?",
             "For Loop",
             "While Loop",
@@ -128,7 +128,7 @@ object quest{
             "25","10","50","15",3+12))
 
 
-        //7
+        //7 Nested Loops and Switch Case
         quesList.add(Questions(29,"What does nesting means in programming?",
             "Using one or more than one loop inside other loop",
             "Using one or more than one if statement inside other",
@@ -166,7 +166,7 @@ object quest{
             "Both 1 and 3",2+12))
 
 
-        //8
+        //8 Functions
         quesList.add(Questions(33,"Which of the following is not true for a function in C?",
             "Functions helps in reducing lines of code.",
             "We can pass as many parameters as we need in function.",
@@ -188,7 +188,7 @@ object quest{
             "function can be called from inside main().","function can be called from inside another function",
             "ALL OF THE ABOVE",3+12))
 
-        //9
+        //9 Pointers
         quesList.add(Questions(37,"Which one is correct for '&' and '*' for pointers?",
             "'&' provides the address and '*' also provides the address",
             "'*' provides the address and '&' points to that address",
@@ -214,7 +214,7 @@ object quest{
             "We can store value in an pointer.",
             "We can store the address of the variable which is storing the value.",2+12))
 
-        //10
+        //10 More about functions
         quesList.add(Questions(41,"Which of the following way is the correct way of passing pointer/address for two int variable x and y to the function sum(int *a,int *b)?",
             "sum(&x,&y);",
             "sum(*x,*y);",
@@ -243,7 +243,7 @@ object quest{
             "Functions cannot return pointer variable.",3+12))
 
 
-        //11
+        //11 Array and strings
         quesList.add(Questions(45,"Determine the correct properties of this array of length 6 -:" +
                 "\n\tint a[]={2,3,-1,45,0,9};",
             "starting index 1 and last index 6",
@@ -273,7 +273,7 @@ object quest{
             "we cannot print the whole string at once without using loop",3+12))
 
 
-        //12
+        //12 Pointers in array
         quesList.add(Questions(49,"Can we change the length of array in C once we declare it",
             "No array is a static data type and its length cannot be changed normally",
             "Yes we can change the length of array by adding another array to it",
@@ -298,8 +298,8 @@ object quest{
             "a=x;",
             "*a=&x[1];",
             2+12))
-        //13
 
+        //13 2D array
        quesList.add(Questions(54,
            "Which of the following correctly defines the starting and ending index of an array in C? (n=number of elements in array",
            "start index = 1 and end index = l",
@@ -328,8 +328,7 @@ object quest{
            "puts()",
            "strlen()",1+12))
 
-        //14
-
+        //14 Structures
        quesList.add(Questions(58,"If *a is the starting element of an array then what will be the next 2 elements?",
            "*a+1 and *a+2",
            "*(a+1) and *(a+2)",
@@ -361,7 +360,7 @@ object quest{
            "int *a[5];",
            2+12))
 
-        //15
+        //15 FileHandling
        quesList.add(Questions(62,
            "Which of the following is valid for 2-D array.",
            "It is an array with 2 or more rows",

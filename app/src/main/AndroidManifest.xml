@@ -28,7 +28,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/SS_Theme.C"></activity>
+            android:theme="@style/AppTheme"></activity>
 
     </application>
 

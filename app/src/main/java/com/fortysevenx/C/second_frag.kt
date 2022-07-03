@@ -303,8 +303,132 @@ selectedOV(i,opList,id,q_id);
                 q4.text= opList[j+3].ques
 
                 for(i in 0..3){
+                    i1+=4;
+                    i2+=4
+                    i3+=4;
+                    i4+=4;
+                    id[i1].text = opList!![j].opt1
+                    id[i2].text = opList!![j].opt2
+                    id[i3].text = opList!![j].opt3
+                    id[i4].text = opList!![j].opt4
+                    j+=1;
                  }
             }
+            11->{
+                j=4*q_id;
+
+                q1.text= opList!![j].ques
+                q2.text= opList[j+1].ques
+                q3.text= opList[j+2].ques
+                q4.text= opList[j+3].ques
+
+                for(i in 0..3){
+                    i1+=4;
+                    i2+=4
+                    i3+=4;
+                    i4+=4;
+                    id[i1].text = opList!![j].opt1
+                    id[i2].text = opList!![j].opt2
+                    id[i3].text = opList!![j].opt3
+                    id[i4].text = opList!![j].opt4
+                    j+=1;
+                }}
+            12->{
+                j=4*q_id;
+
+                q1.text= opList!![j].ques
+                q2.text= opList[j+1].ques
+                q3.text= opList[j+2].ques
+                q4.text= opList[j+3].ques
+
+                for(i in 0..3){
+                    i1+=4;
+                    i2+=4
+                    i3+=4;
+                    i4+=4;
+                    id[i1].text = opList!![j].opt1
+                    id[i2].text = opList!![j].opt2
+                    id[i3].text = opList!![j].opt3
+                    id[i4].text = opList!![j].opt4
+                    j+=1;
+                }}
+            13->{
+                j=4*q_id;
+
+                q1.text= opList!![j].ques
+                q2.text= opList[j+1].ques
+                q3.text= opList[j+2].ques
+                q4.text= opList[j+3].ques
+
+                for(i in 0..3){
+                    i1+=4;
+                    i2+=4
+                    i3+=4;
+                    i4+=4;
+                    id[i1].text = opList!![j].opt1
+                    id[i2].text = opList!![j].opt2
+                    id[i3].text = opList!![j].opt3
+                    id[i4].text = opList!![j].opt4
+                    j+=1;
+                }}
+            14->{
+                j=4*q_id;
+
+                q1.text= opList!![j].ques
+                q2.text= opList[j+1].ques
+                q3.text= opList[j+2].ques
+                q4.text= opList[j+3].ques
+
+                for(i in 0..3){
+                    i1+=4;
+                    i2+=4
+                    i3+=4;
+                    i4+=4;
+                    id[i1].text = opList!![j].opt1
+                    id[i2].text = opList!![j].opt2
+                    id[i3].text = opList!![j].opt3
+                    id[i4].text = opList!![j].opt4
+                    j+=1;
+                }}
+            15->{
+                j=4*q_id;
+
+                q1.text= opList!![j].ques
+                q2.text= opList[j+1].ques
+                q3.text= opList[j+2].ques
+                q4.text= opList[j+3].ques
+
+                for(i in 0..3){
+                    i1+=4;
+                    i2+=4
+                    i3+=4;
+                    i4+=4;
+                    id[i1].text = opList!![j].opt1
+                    id[i2].text = opList!![j].opt2
+                    id[i3].text = opList!![j].opt3
+                    id[i4].text = opList!![j].opt4
+                    j+=1;
+                }}
+            16->{
+                j=4*q_id;
+
+                q1.text= opList!![j].ques
+                q2.text= opList[j+1].ques
+                q3.text= opList[j+2].ques
+                q4.text= opList[j+3].ques
+
+                for(i in 0..3){
+                    i1+=4;
+                    i2+=4
+                    i3+=4;
+                    i4+=4;
+                    id[i1].text = opList!![j].opt1
+                    id[i2].text = opList!![j].opt2
+                    id[i3].text = opList!![j].opt3
+                    id[i4].text = opList!![j].opt4
+                    j+=1;
+                }}
+
         }
         return view
 
