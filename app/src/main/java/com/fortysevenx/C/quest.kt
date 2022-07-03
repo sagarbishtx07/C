@@ -299,69 +299,69 @@ object quest{
             "*a=&x[1];",
             2+12))
 
-        //13 2D array
+//        //13 2D array
+//       quesList.add(Questions(54,
+//           "Which of the following correctly defines the starting and ending index of an array in C? (n=number of elements in array",
+//           "start index = 1 and end index = l",
+//           "start index = 1 and end index = l-1",
+//           "start index = 0 and end index = l",
+//           "start index = 0 and end index = l-1",
+//           3))
+//
+//       quesList.add(Questions(55,"Which of the following is incorrect for string and characters?",
+//           "A string is an array of characters",
+//           "In C string is under double quotes and character under single quotes",
+//           "Characters can also be under double quotes same as string in C",
+//           "Both string can character when converted to int give ASCII values of respective characters",
+//           2+4))
+//
+//       quesList.add(Questions(56,"Which header file provide some essential functions such as strlen(),gets(),strcat() ets " +
+//               "which are useful when working with strings in C ?",
+//           "stdio.h",
+//           "conio.h",
+//           "string.h",
+//           "dos.h",2+8))
+//
+//       quesList.add(Questions(57,"Which of the function can you use to input a string which contains spaces?",
+//           "strcat()",
+//           "gets()",
+//           "puts()",
+//           "strlen()",1+12))
+//
+//        //14 Structures
+//       quesList.add(Questions(58,"If *a is the starting element of an array then what will be the next 2 elements?",
+//           "*a+1 and *a+2",
+//           "*(a+1) and *(a+2)",
+//           "*(a+2) and *(a+4)",
+//           "*a+2 and *a+4",
+//           1))
+//
+//       quesList.add(Questions(59,
+//           "What is dynamic memory allocation in array?",
+//           "Allocating memory at the run time",
+//           "Flexible memory allocation that is allocated memory can be changed later",
+//           "Allocating memory then assigning it to a pointer.",
+//           "All of the above",
+//           3+4))
+//
+//       quesList.add(Questions(60,
+//           "Which is the best method to calculate the number of elements in array if we dont know the length of array.",
+//           "Using strlen function",
+//           "running a loots until \\n is encountered",
+//           "dividing the total size of array by size of each element",
+//           "none of the above",
+//           2+8))
+//
+//       quesList.add(Questions(61,
+//           "Which is the correct syntax for allocation an int array of length 5 using dynamic memory allocation.",
+//           "a={1,2,3,4,5}",
+//           "*a = calloc(5*sizeof(int))",
+//           "*a = malloc(5*sizeof(int))",
+//           "int *a[5];",
+//           2+12))
+
+        //13 2d
        quesList.add(Questions(54,
-           "Which of the following correctly defines the starting and ending index of an array in C? (n=number of elements in array",
-           "start index = 1 and end index = l",
-           "start index = 1 and end index = l-1",
-           "start index = 0 and end index = l",
-           "start index = 0 and end index = l-1",
-           3))
-
-       quesList.add(Questions(55,"Which of the following is incorrect for string and characters?",
-           "A string is an array of characters",
-           "In C string is under double quotes and character under single quotes",
-           "Characters can also be under double quotes same as string in C",
-           "Both string can character when converted to int give ASCII values of respective characters",
-           2+4))
-
-       quesList.add(Questions(56,"Which header file provide some essential functions such as strlen(),gets(),strcat() ets " +
-               "which are useful when working with strings in C ?",
-           "stdio.h",
-           "conio.h",
-           "string.h",
-           "dos.h",2+8))
-
-       quesList.add(Questions(57,"Which of the function can you use to input a string which contains spaces?",
-           "strcat()",
-           "gets()",
-           "puts()",
-           "strlen()",1+12))
-
-        //14 Structures
-       quesList.add(Questions(58,"If *a is the starting element of an array then what will be the next 2 elements?",
-           "*a+1 and *a+2",
-           "*(a+1) and *(a+2)",
-           "*(a+2) and *(a+4)",
-           "*a+2 and *a+4",
-           1))
-
-       quesList.add(Questions(59,
-           "What is dynamic memory allocation in array?",
-           "Allocating memory at the run time",
-           "Flexible memory allocation that is allocated memory can be changed later",
-           "Allocating memory then assigning it to a pointer.",
-           "All of the above",
-           3+4))
-
-       quesList.add(Questions(60,
-           "Which is the best method to calculate the number of elements in array if we dont know the length of array.",
-           "Using strlen function",
-           "running a loots until \\n is encountered",
-           "dividing the total size of array by size of each element",
-           "none of the above",
-           2+8))
-
-       quesList.add(Questions(61,
-           "Which is the correct syntax for allocation an int array of length 5 using dynamic memory allocation.",
-           "a={1,2,3,4,5}",
-           "*a = calloc(5*sizeof(int))",
-           "*a = malloc(5*sizeof(int))",
-           "int *a[5];",
-           2+12))
-
-        //15 FileHandling
-       quesList.add(Questions(62,
            "Which of the following is valid for 2-D array.",
            "It is an array with 2 or more rows",
            "It is denoted by the syntax a[i][j]",
@@ -369,7 +369,7 @@ object quest{
            "All of the above",
            0))
 
-       quesList.add(Questions(63,
+       quesList.add(Questions(55,
            "What is a square matrix.",
            "A 2-D array with 1 row and 1 column",
            "A multidimensional array with i>j",
@@ -377,22 +377,22 @@ object quest{
            "A array which consist of square of all the elements in its first row",
            2+4))
 
-        quesList.add(Questions(64,"What do you mean by transpose of a square matrix a.",
+        quesList.add(Questions(56,"What do you mean by transpose of a square matrix a.",
             "A matrix which contains the index numbers of all the elements of a",
             "A 2-D array which contains the index number starting from 1 of all elements of a.",
             "A matrix which contains all the row elements of a in its column and all the column elements of a in its rows.",
             "A 2-D array with reciprocal values of each elements of a.",
             2+8))
 
-        quesList.add(Questions(65,"Which of the following is not true for a 2-D array",
+        quesList.add(Questions(57,"Which of the following is not true for a 2-D array",
             "Its size can be calculated by size of one element into total number of elements i.e. - i x j x n",
             "a[2][4] will give the element in the second column and 3rd row",
             "a[2][4] will give the element in the second row and 4th column",
             "a[9][9] is s 9 cross 9 square matrix",1+12))
 
-        //16 Structures
+        //14 Structures
         quesList.add(
-            Questions(66,
+            Questions(58,
             "Which of these best describes the difference between structure and function",
             "Function is also a data type same as structure.",
             "Structures are used as a data type whereas function is method defined by us.",
@@ -400,14 +400,14 @@ object quest{
             "Structure cannot be used as d data type but function can be used",1)
         )
 
-        quesList.add(Questions(67,
+        quesList.add(Questions(59,
             "Which is the correct syntax for creating a variable of a struct employee{}.",
             "struct emp1;",
             "struct employee;",
             "struct employee emp1;",
             "employee emp1",2+4))
 
-        quesList.add(Questions(68,
+        quesList.add(Questions(60,
             "What is wrong with this piece of code.\n\t" +
                     "struct emp1(\n\t" +
                     "int x;\n" +
@@ -417,16 +417,16 @@ object quest{
             "no curly brackets used",
             "all of the above",2+8))
 
-        quesList.add(Questions(69,
+        quesList.add(Questions(61,
             "Which is the correct syntax for initializing a struct using dynamic memory allocation",
             "struct emp* = malloc(sizeof(struct));",
             "struct *emp = sizeof(struct emp));",
             "struct emp = sizeof((struct emp));",
             "struct emp = (struct *)sizeof(struct));",0 ))
 
-        //17 File Handling
+        //15 File Handling
         quesList.add(
-            Questions(70,
+            Questions(62,
         "What is the need for file handling?.",
         "It help us save the data that we entered into the main memory.",
         "It helps to read and write data from RAM",
@@ -435,7 +435,7 @@ object quest{
         2)
         )
 
-        quesList.add(Questions(70,
+        quesList.add(Questions(63,
             "Which is not a correct syntax for initializing a file pointer.",
             "FILE *fp;",
             "FILE *fp = fopen(\"F1.txt\",\"r\");",
@@ -443,7 +443,7 @@ object quest{
             "FILE *fp = fopen(\"F1.txt\",\"w\");",
             2+4))
 
-        quesList.add(Questions(70,
+        quesList.add(Questions(64,
             "Why do we have to close the opened file using fclose().",
             "Because it will not save the data without closing the file",
             "It is a good practice and removes the opened file from ram.",
@@ -452,7 +452,7 @@ object quest{
             "Both 2 and 3 are correct",
             3+8))
 
-        quesList.add(Questions(70,
+        quesList.add(Questions(65,
             "Which header file is used in file handling or which header file contains the keywords and functions for" +
                     " file handling in C.",
             "conio.h",
@@ -460,6 +460,41 @@ object quest{
             "stdio.h",
             "dos.h",
             2+12))
+
+        //16 Enum and Typedef
+        quesList.add(
+            Questions(66,
+            "What is the data type of elements inside of enum.",
+            "String",
+        "Struct",
+        "Integer",
+        "Character",
+        2))
+
+        quesList.add(Questions(67,
+            "Which of the following is not true.",
+            "elements of enum can be used inside if-else",
+            "typedef are used to reduce writing the same syntax.",
+            "typedef can only be used with structures",
+            "elements of enum are integer type with first element value as 0 and so on.",
+            2+4))
+
+        quesList.add(Questions(66,
+            "Why is C and C++ language considered good for game development.",
+            "C/C++ programs are easy to implement.",
+            "C/C++ games are free.",
+            "Logic building is easy in C.",
+            "C/C++ programs are  fast in terms of processing.",
+            0))
+
+        quesList.add(Questions(68,
+            "Some tips that would help you in future.",
+            "practicing the concepts/programs that feels hard.",
+            "try to master some particular language first before moving to another.",
+            "dont always keep on learning try to implement them then learn next then implement that and so on.",
+            "its always You vs Yourself always be better than you were yestarday",
+            0))
+
 
         return quesList
     }

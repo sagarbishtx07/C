@@ -1090,15 +1090,16 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         "\t#include<stdio.h>\n" +
                         "\ttypedef struct std{\n" +
                         "\t\tint rollno.;\n" +
-                        "\t}\n" +
+                        "\t}s1;\n" +
                         "\tvoid main(){\n" +
-                        "\t\tstd s1;\n" +
-                        "\t\ts1.rollno=31;\n" +
+                        "\t\ts1 s;\n" +
+                        "\t\ts.rollno=31;\n" +
                         "\t}\n\n" +
                         "\tThe only thing we did to make use of typedef was, we wrote typedef keyword before the variable type and then we " +
                         " can use the variable or in this case the struct name std without writing struct student std in the whole program." +
-                        "You can see once we defined typedef struct std and after which we only mentioned std inside main() unlike normally" +
-                        " where we had to write whole struct student std s1;\n"
+                        "You can see once we defined typedef struct std s1 inside main() unlike normally" +
+                        " where we had to write whole struct student std s1; and after which we only mentioned s1 and after that whenever we mentioned s1 " +
+                        "program understood we meant struct std s1\n"
                 sh3.text="What's Next?"
                 p4.text="\t This is the last part or module or our C beginner level course, hope you didn't have had much problem going through " +
                         "the course.\n\tAlthough you can choose what's next you would do like learning some new language or continuing mastering C, there" +

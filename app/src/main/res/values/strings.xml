@@ -1068,4 +1068,77 @@ void main()\n
     <string name="f3i16q5">
     </string>
 
+    <string name="f3i17q1">
+        Write a program that uses enums as parameters in while and if-else statement.
+
+    </string>
+    <string name="f3i17s1"><![CDATA[
+    \n#include<stdio.h>\n
+     enum days\n
+        {\n
+        sun,\n
+        mon,\n
+        tue,\n
+        wed,\n
+        thurs,\n
+        fri,\n
+        sat\n
+    };/n
+int main()/n
+{\n
+    enum days day;\n
+    day = thurs;\n
+    while (day != 0)\n
+    {\n
+        printf("No Holiday\n");\n
+        day—;\n
+        if (day == 0)\n
+            printf("Sunday");\n
+    }\n
+    return 0;\n
+}\n
+
+    ]]></string>
+    <string name="f3i17q2">
+        Write a structure program with the use of Typedef.
+
+    </string>
+    <string name="f3i17s2">
+        <![CDATA[
+       #include <stdio.h>
+#include <string.h>
+typedef struct info
+{
+    int r_no;
+    char email[30];
+    char name[20];
+} inf;
+
+int main()
+{
+    inf i1;
+    i1.r_no = 31;
+    strcpy(i1.email, "dragoncoder@xyz.com");
+    strcpy(i1.name, "Mr. Coder");
+    printf("Rollno\t%d\n", i1.r_no);
+    printf("Name\t%s\n", i1.name);
+    printf("Email\t%s\n", i1.email);
+}
+]]>
+    </string>
+    <string name="f3i17q3">
+
+    </string>
+    <string name="f3i17q4">
+        Task : This last program is a task for you where you have to learn about goto statement in C and use it to create a
+        program which has a loop using if-else and goto statement without actually using a loop or in otherwords create a
+        conditional loop using goto and if-else.
+    </string>
+   <string name="f3i17q5">
+
+    </string>
+
+
+
+
 </resources>
