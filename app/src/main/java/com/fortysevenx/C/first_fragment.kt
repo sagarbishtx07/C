@@ -241,8 +241,8 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                 tv.text = "Taking Input and performing some operations over it"
                 p1.text =
                     "You might have used many applications which requires user to insert some data such as entering your name in a form" +
-                            " or inserting some numbers in calculator to add or multiply them later or entering a password somewhere all these" +
-                            "are the cases of giving input to the program or the program asking for input from the user to later perform" +
+                            " or inserting some numbers in calculator to add or multiply them later or entering a password somewhere all these " +
+                            "are the cases of giving input to the program or the program asking for input from the user to later perform " +
                             "some actions over it.\n\n" +
                             "scanf() - we use the scanf(\"\") to take input in C but before that we will learn about format specifiers"
                 //here
@@ -251,21 +251,21 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                 p2.text =
                     "when printing or taking input(scanning) any variable in c we have to mention its data type inside the printf(\"\") statement.\n for " +
                             "example int a=5; and we want to print a in the screen then we will do it by printf(\"%d\",a); here '%d' is the " +
-                            "format specifier that tells the compiler that the data type we are printing here is of type integer and same with scanning" +
+                            "format specifier that tells the compiler that the data type we are printing here is of type integer and same with scanning " +
                             "we have to mention the type of format specifier we will see in below section also there are format specifier for each data type -:\n" +
-                            "for integer type data - \t %d" +
-                            "for floating point - \t %f" +
-                            "for character data - \t %c" +
-                            "\t⁖ strings are stream of characters we will study later" +
-                            "for string - \t %s"
+                            "\tfor integer type data - \t %d\n" +
+                            "\tfor floating point - \t %f\n" +
+                            "\tfor character data - \t %c\n" +
+                            "\tfor string - \t %s\n"+
+                            "\t⁖ strings are stream of characters we will study later"
                 sh2.text = "Tanking Input using scanf()"
                 p3.text =
                     "We use the scanf() to take input in C the syntax for it is as follows-:\n" +
                             "\tscanf(\"__format specifier__\",&variable_name); " +
                             "\there format specifier will be filled with proper format specifier for the data type of vairable used after the comma" +
-                            ".\nfor example - scanf(\"%d\",&a); here a is an int type variable so we used %d format specifier. You might be thinking why" +
-                            "we used '&'(amperstand symbol) after comma(&a) in above scanf() statement while we didn't used in the printf() statement" +
-                            "that's because scanf() store the data at the memory location or address and we will read more about memory location and address" +
+                            ".\nfor example - scanf(\"%d\",&a); here a is an int type variable so we used %d format specifier. You might be thinking why " +
+                            "we used '&'(ampersand symbol) after comma(&a) in above scanf() statement while we didn't used in the printf() statement " +
+                            "that's because scanf() store the data at the memory location or address and we will read more about memory location and address " +
                             "in later section about pointers, which is actually one of the most important topic in learning C."
 
 
@@ -274,18 +274,18 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                     "C supports most primary arithmetic operations(+,-,*,/). we will be talking about some basic operations in brief and" +
                             "some other operations such as power(exponent function) or trignometric function will be covered later\n and there are some" +
                             "operators mentioned here" +
-                            "1. + , - , * , /  - are used same as in mathematics \n" +
-                            "2. % - if you are new to computer science or programming then you might think of it as percentage operator but here" +
+                            "\t1. + , - , * , /  - are used same as in mathematics. \n\n" +
+                            "\t2. % - if you are new to computer science or programming then you might think of it as percentage operator but here" +
                             "its used as the modulus operator or remainder operator it give us the remainder that we would get from dividing 2 numbers" +
                             "for ex - a= 11 % 5; will give 1(a=1) since 1 is the remainder when 11 is divided by 5.And although you might have guessed" +
-                            " but if you want to calculate percentage then you would have to do it by conventional method(divide by total and *100)\n" +
-                            "\tHere are the logical operators which are used of comparison which we will study more about in the later if-else section" +
-                            "3. '<' '>' '<=' '=>' '!' '!=' '!>' '!<' '==' '&&' '||'  -:\n" +
+                            " but if you want to calculate percentage then you would have to do it by conventional method(divide by total and *100).\n\n" +
+                            "\tHere are the logical operators which are used of comparison which we will study more about in the later if-else section\n\n" +
+                            "\t3. '<' '>' '<=' '=>' '!' '!=' '!>' '!<' '==' '&&' '||'  -:\n" +
                             "\t < - less than" +
                             "\t > -greater than" +
                             "\t == - checks if both number are equal to each other or not" +
                             "\t <= less than equal to  - when some number could be less than the number on right side and possibly could be equal to it" +
-                            "then we use this operator" +
+                            " then we use this operator" +
                             "\t >= greater than equal to" +
                             "\t ! not operator" +
                             "\t != not equal to" +
@@ -294,14 +294,16 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                             "\t && - Logical And" +
                             "\t || - Logical OR " +
                             "" +
-                            "\n4.'&' '|' '<<' '>>' - all these are bit wise operators which are used to perform operation in bit-level \n" +
-                            "5. \\n \\t \\v -all these operator that start with backslash are called escape sequence becuase they don't show themselves" +
-                            "in the output but they edit the statement that they are used in, for example printf(\"Day \\n Night \");  it will be printed" +
-                            "as -:\n Day\n Night\n so the \\n is used to print from new line, similarly \\t is used to add a tab space"
+                            "\n\t4.'&' '|' '<<' '>>' - all these are bit wise operators which are used to perform operation in bit-level \n\n" +
+                            "\t5. \\n \\t \\v -all these operator that start with backslash are called escape sequence becuase they don't show themselves " +
+                            "in the output but they edit the statement that they are used in, for example printf(\"Day \\n Night \");  it will be printed " +
+                            "as -:\n\n Day\n Night\n\n so the \\n is used to print from new line, similarly \\t is used to add a tab space."
 
                 foot.text =
-                    "pls remember that is you take an input of a character after taking input of a int then you should use a space before %c" +
-                            " in the scanf() otherwise your scanf() will take endline as input and you wont be able to give input to it."
+                    "pls remember that if you take an input of a character after taking input of a int then you should use a space before %c like " +
+                            "scanf(\" %c\",&c); and not scanf(\"%c\",&c); because when you input an integer and hit enter then the program does not store enter(endline) inside" +
+                            " the int and it remains in buffer and if you directly take an input of character after int then character store that endline inside it so that's why use " +
+                            " a space before %c if we take character input just after an integer or float input. You will understand more when you will come across this in programs."
             }
             5 -> {
                 tv.text = "Logical Statements/decisions - if else"
@@ -322,7 +324,25 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                     "1.Program to compare the height of 2 Person Tony and Steve and displays the Name of person who is taller."
                 im2.setImageResource(R.drawable.s602)
                 p3.text =
-                    "First 5 lines of code are about declaring 2 variable to store height of tony and steve and then asking them" +
+                    "\n\t - - - CODE - - - \n\n" +
+                            "#include <stdio.h>\n" +
+                            "void main()\n" +
+                            "{\n" +
+                            "    int h1, h2;\n" +
+                            "    printf(\"Enter your height in cms -: \\n\");\n" +
+                            "    printf(\"Tony -\\t\");\n" +
+                            "    scanf(\"%d\", &h1);\n" +
+                            "    printf(\"Steve -\\t\");\n" +
+                            "    scanf(\"%d\", &h2);\n" +
+                            "\n" +
+                            "    if (h1 > h2)\n" +
+                            "    {\n" +
+                            "        printf(\"Tony is Taller than Steve\");\n" +
+                            "    }\n" +
+                            "    else\n" +
+                            "        printf(\"Steve is taller than tony\");\n" +
+                            "}\n\n" +
+                            "First 4 lines of code are about declaring 2 variable to store height of tony and steve and then asking them" +
                             "to input their height using the printf() statement.Then from the 6th line we take input of h1 and h2 using the " +
                             "int format specifier - %d (note that we cannot print any text inside of scanf() statement otherwise it might cause problem" +
                             ". Then we use the if to check that if(h1>h2) so if its true then the code inside it gets executed and the statement " +
@@ -330,35 +350,52 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                 sh3.text = "2.Program to compare if a number is divisible by 2 or 3 or 7 or 11."
                 im3.setImageResource(R.drawable.s603)
                 p4.text =
-                    "Explanation of above program - From line 5 we take the input for the number that we would want to check whether its " +
-                            " divisible by 2 or 3 or both of them or if it would not be divisible from both 2 and 3 then we would just print one" +
-                            "more statement for it.\n\tFrom our first if block we check if number is divisible by 2(by taking a mod/% or remainder" +
+                    "\n\t - - -CODE - - - \n\n" +
+                            "#include <stdio.h>\n" +
+                            "void main()\n" +
+                            "{\n" +
+                            "    int n;\n" +
+                            "    printf(\"Enter the number to check if its divisible by 2 or 3 or both of them\\t\");\n" +
+                            "    scanf(\"%d\", &n);\n" +
+                            "\n" +
+                            "    if (n % 2 == 0 && n % 3 == 0)\n" +
+                            "        printf(\"Given number is divisible by both of them.\");\n" +
+                            "    else if (n % 2 == 0 && n % 3 != 0)\n" +
+                            "        printf(\"Given number is divisible by 2 but not by 3.\");\n" +
+                            "    else if (n % 2 != 0 && n % 3 == 0)\n" +
+                            "        printf(\"Given number is divisible by 3 but not by 2.\");\n" +
+                            "    else\n" +
+                            "        printf(\"Given number is not divisible by 2 pr 3.\");\n" +
+                            "}\n\n" +
+                            "Explanation of above program - From line 5 we take the input for the number that we would want to check whether its" +
+                            " divisible by 2 or 3 or both of them or if it would not be divisible from both 2 and 3 then we would just print one " +
+                            "more statement for it.\n\tFrom our first if block we check if number is divisible by 2(by taking a mod/% or remainder " +
                             "from a number if it comes zero than it means that the number is divisible by that number otherwise remainder is left " +
                             "and that number is not divisible by that number) and the '&&' symbol as we studied in the previous module means that" +
                             " both the statement should be true then only we will proceed inside the if block and the other statement on  the " +
                             "right side of '&&' checks whether the given number is also divisible by 3 or not so if both are true then it prints whatever" +
-                            " inside the if statement else goes to the next statement which is if else which check for another possible condition that is if it is" +
+                            " inside the if statement else goes to the next statement which is if else which check for another possible condition that is if it is " +
                             "divisible by 3 but not 2 similarly next one checks that if its divisible by 2 but not 3 and the last one only runs if above three are " +
                             "not true."
-                foot.text = "Plz perform the exercise and quiz by yourself"
+                foot.text = "Plz perform the exercise and quiz by yourself without directly searching the answer from net."
             }
             6 -> {
                 tv.text = "Loops"
                 p1.text =
                     "Imagine you have to print 'Hello World' in C then you would have to write printf(\"Hello World\") every time" +
-                            " then it would take some time but now imagine if you were to do it 100 or 1000 time then it would take very large amount" +
+                            " then it would take some time but now imagine if you were to do it 100 or 1000 time then it would take very large amount " +
                             "of time. That's where loops comes in to reduce the line of code that follow similar pattern or have repetition ."
                 sh1.text = "While Loop"
                 p2.text =
                     "While loop means that - this block of code will repeat itself or stay in loop while the condition is not false. \n" +
-                            "Syntax for while loop - :\n" +
+                            "Syntax for while loop - :\n\n" +
                             "\twhile(condition){\n" +
                             "\t\tstatement1;\n" +
                             "\t\tstatement2;\n" +
                             "\t\t......\n" +
-                            "\t}\n" +
-                            "here while loop checks for the condition inside the parenthesis(rounded brackets), if the condition gets satisfied then" +
-                            "the block of code inside it gets executed again and again and when the condition is false then the while loop stops.\n" +
+                            "\t}\n\n" +
+                            "here while loop checks for the condition inside the parenthesis(rounded brackets), if the condition gets satisfied then " +
+                            "the block of code inside it gets executed again and again and when the condition is false then the while loop stops.\n\n" +
                             "Example to demonstrate the use of while loop\n" +
                             "\n\t#include<stdio.h>\n" +
                             "\t\tvoid main(){\n" +
@@ -368,48 +405,48 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                             "\t\t\t\ta--;\n" +
                             "\t\t\t}\n" +
                             "\t\t}\n\n" +
-                            "code explanation - we will start from the line 3 we declare a variable 5 and next we write the while loop and put the " +
+                            "program explanation - we will start from the line 3 we declare a variable 5 and next we write the while loop and put the " +
                             "condition in it that while loop should run as long as a is greater than 5 and inside while loop we print the value of " +
                             "a each time loop runs now in next line we have a-- which is shortcut for 'a=a-1' which means every time we run the loop " +
                             "the value of a gets decreased or decremented by 1 each time.So after ist time the loop runs the value of a becomes a=5-1" +
                             " =4 then next time it become 3 then 2 then 1 after the 5th run value of a becomes zero and the condition inside the while" +
-                            " loop i.e. a>0 becomes false so the loop stops running.\n\t Note(Very Important) - if we didn't write a-- or a=a-1 inside the" +
-                            "loop then the value of a would never have decreased and a would never become zero so the conditon to rin the loop will never be" +
+                            " loop i.e. a>0 becomes false so the loop stops running.\n\n\t Note(Very Important) - if we didn't write a-- or a=a-1 inside the " +
+                            "loop then the value of a would never have decreased and a would never become zero so the condition to rin the loop will never be" +
                             " false and the loop will forever keep on running which would make the program to enter in the state of infinite loop which is " +
-                            " problematic and dangerous for the program and "
+                            "very troublesome can sometimes cause loss of code in some text editors if not saved."
                 sh2.text = "For Loop"
                 p3.text =
                     "In case of while loop we only have control of the ending of loop what if we want more control over the loop directly" +
-                            " i.e. from initialization(starting condition of loop in this case) of loop to the end of it that's where the For loop comes in.\n\t" +
-                            "syntax-:\n" +
+                            " i.e. from initialization(starting condition of loop in this case) of loop to the end of it that's where the For loop comes in.\n\n\t" +
+                            "for loop syntax-:\n\n" +
                             "\t\tfor(initialization; ending_condition;propagation)\n\n" +
-                            "Example to demonstrate the working of for loop.\n" +
+                            "Example to demonstrate the working of for loop.\n\n" +
                             "\t#include<stdio.h>\n" +
                             "\tvoid main(){\n" +
                             "\t\tint a;\n" +
                             "\t\tfor(a=1;a<=10;a++){\n" +
-                            "\t\t\tprintf(\"%d\n\",a);\n" +
+                            "\t\t\tprintf(\"%d\\n\",a);\n" +
                             "\t\t}\n" +
                             "}\n\npls perform this block of code for better understanding\n" +
-                            "code explanation - : from line 4 we declare the for loop using the for statement inside the parenthesis we initilize the " +
-                            " variable a to a =1 which we had declared in line 3, then we set the stop condition for the loop that until a is less than" +
-                            "or equals to 10 the loop should run and at last we set that every time the loop runs a is incremented by 1,pls note here that" +
-                            "the increment/decrement statement or the 3rd expression of for loop i.e. propagation is executed after all statements inside the for" +
-                            "loop is executed which means first the for loop initializes the vairable then checks the stop condition then goes to code inside" +
+                            "code explanation - : from line 4 we declare the for loop using the for statement inside the parenthesis we initialize the" +
+                            " variable a to a =1 which we had declared in line 3, then we set the stop condition for the loop that until a is less than  " +
+                            "or equals to 10 the loop should run and at last we set that every time the loop runs a is incremented by 1,pls note here that " +
+                            "the increment/decrement statement or the 3rd expression of for loop i.e. propagation is executed after all statements inside the for " +
+                            "loop is executed which means first the for loop initializes the variable then checks the stop condition then goes to code inside" +
                             " the loop then it increments a by 1. "
                 sh3.text = "do while loop"
                 p4.text =
                     "You might have came across some situation in some app or a game where the application might have ask you something" +
                             " - 'Do you want to Continue?(Y/n).So do while is made for similar situations its similar to while loop but unlike while" +
-                            " loop which checks for the condition before entering inside the loop, do while loop runs one time then checks the condition" +
-                            "\nSyntax for do while - :\n" +
+                            " loop which checks for the condition before entering inside the loop, do while loop runs one time then checks the condition\n" +
+                            "\nSyntax for do while - :\n\n" +
                             "\tdo{\n" +
                             "\nstatement ;\n" +
                             "\t.....\n" +
-                            "while(condition);\n" +
+                            "while(condition);\n\n" +
                             "so the loop start from the do statement and then goes inside the loop to execute whatever line of code are inside it" +
-                            " without checking the stop condition then after processing the statements inside it. The do while loops checks for the stop" +
-                            "condition here you can see that no matter what the stop conditon is do while loop will surely run once.\n" +
+                            " without checking the stop condition then after processing the statements inside it. The do while loops checks for the stop " +
+                            "condition here you can see that no matter what the stop condition is do while loop will surely run once.\n\n" +
                             "\nExample to get better understanding of do while loop.\n\n" +
                             "\t - - - code - - - \n\n" +
                             "\t#include<stdio.h>\n" +
@@ -422,12 +459,12 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                             "\t}" +
                             "\n\n" +
                             "code explanation - so if you had tried running this code or have understand some part of it then you might have already realised that" +
-                            " it is the same 'Do you want to continue?(y/n) ' statement that was mentioned earlier. so from line 3 we declared a character type" +
-                            "variable choice which will store y or n (yes/no) which we will use in condition of our loop then we have do statemnt which will send use" +
+                            " it is the same 'Do you want to continue?(y/n) ' statement that was mentioned earlier. so from line 3 we declared a character type " +
+                            "variable choice which will store y or n (yes/no) which we will use in condition of our loop then we have do statement which will send use " +
                             "inside the loop where we asked that 'Do you want to continue?(y/n)' then if user enters 'y' in the scanf which will store it inside our choice" +
                             " variable then the while(choice == 'y') will check that if 'y' is stored inside the choice variable then it  will run the loop again" +
                             " and if something else is stored inside of it then it will terminate the loop. "
-                foot.text = "pls perform all the expamples given in the code section"
+                foot.text = "loops can be created with the use of conditional statements and goto statements or function return statements. You will learn about functions in upcoming sections."
             }
             7 -> {
                 tv.text = "Nested Loops and Switch Statement"
