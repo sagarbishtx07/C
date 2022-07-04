@@ -60,18 +60,18 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                             "calculator. In C we don't do things easy way."
                 sh1.text = "C language is amazing"
                 p2.text =
-                    "If you search on the internet about C you will be surprised to find out that many of that programming languages\n" +
-                            "that are used now are either made on C or are influenced by C language, you might not be wrong if you say that C is the\n" +
+                    "If you search on the internet about C you will be surprised to find out that many of that programming languages " +
+                            "that are used now are either made on C or are influenced by C language, you might not be wrong if you say that C is the " +
                             "mother of most programming languages."
                 sh2.text = "Intro is over now the time to get to work"
                 p3.text =
-                    "So that's enough introduction for C language for now and let's talk about this course\n" +
-                            ".So this course is a beginner level course made to strengthen your fundamentals. Entire course is divided into sections and \n" +
-                            "each section is divided into 3 parts ,you have to read and understand the first part which contains the concepts then do \n" +
-                            "the exercise based on that. There will be times later that you might get stuck somewhere or in certain exercises(that are\n" +
+                    "So that's enough introduction for C language for now and let's talk about this course" +
+                            ".So this course is a beginner level course made to strengthen your fundamentals. Entire course is divided into sections and " +
+                            "each section is divided into 3 parts ,you have to read and understand the first part which contains the concepts then do " +
+                            "the exercise based on that. There will be times later that you might get stuck somewhere or in certain exercises(that are " +
                             "made hard so that you learn to think) but even if you get stuck don't stop trying. Keep pushing back."
 
-                foot.text = "Work hard to see yourself be a better programmer"
+                foot.text = "In Next section we will setup a workplace(code editor) to write and run C programs."
                 im0.setImageResource(R.drawable.s1i0)
                 im1.setImageResource(R.drawable.s1i1)
                 //im1.setImageResource(R.drawable.s1i2)
@@ -86,10 +86,10 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                             "you are unable to setup the editor then " +
                             "i would recommend you" +
                             " to watch a youtube video like\"HOW TO SETUP CODEBLOCKs/TURBO C TO RUN C PROGRAM.\" to easily do it. " +
-                            "\n\nBefore we start writing program we need to decide our setup someplace to write run/execute our programs.But first you should undertands these 3 terms\n" +
+                            "\n\nBefore we start writing program we need to decide our setup someplace to write run/execute our programs.But first you should understand these 3 terms\n" +
 
                             "\n\n" +
-                            "1.COMPILER - Compiler is the program that reads our code then understands it and checks for error and converts it into a language understandable by the computer\n" +
+                            "1.COMPILER - Compiler is the program that reads our code then understands it and checks for error and converts it into a language understandable by the computer" +
                             " and then then sends the code for execution. Every programming language have different compiler for them. To run your C program you would have" +
                             "to download the C compiler and then setup the path for it.\n" +
                             "\n\n" +
@@ -98,46 +98,46 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                             "in the system variables.Setting up path in simpler terms is to let your computer remember the location of c compiler so that we don't have to tell the computer every time we run the code.\n" +
                             "\n\n" +
                             "3. Text Editor and IDE -: " +
-                            "Text editor as the name says we edit text in here notepad in windows is the most popular example of it and when we use that text editor specially for writing\n" +
-                            "program and add some extra feature to support us in writing clean and nice programs then its called Code Editor. Most popular code edior are VS code, Sublime Code,Atom etc.\n" +
+                            "Text editor as the name says we edit text in here notepad in windows is the most popular example of it and when we use that text editor specially for writing" +
+                            " program and add some extra feature to support us in writing clean and nice programs then its called Code Editor. Most popular code editor are VS code, Sublime Code,Atom etc.\n" +
                             "\n" +
-                            "IDE - IDE's(Integrated Development Environment) are specially made chunky software which have lots of feature that really help in developing and managing big projects.Although IDE's are feature packed but they are also a bit\n" +
+                            "IDE - IDE's(Integrated Development Environment) are specially made chunky software which have lots of feature that really help in developing and managing big projects.Although IDE's are feature packed but they are also a bit " +
                             "more system resource consuming than normal code editors.\n" +
                             "\n" +
                             "Although on today time code editors come with some popular features(like code-prediction,code-correction ,auto-indentation, direct git support,debugging etc) required for most projects.And by the way all the " +
-                            "extra features that are being talked about here are optional for programing things can be accomplised without those features as well its just that when you would be working on big projects" +
+                            "extra features that are being talked about here are optional for programing things can be accomplished without those features as well its just that when you would be working on big projects" +
                             "some extra features that IDE's would provide would come in handy.\n"
                 sh1.text = "\nRunning C program In Windows"
                 p2.text =
                     "There are many ways in which you can run C program in windows but mainly we would recommend using these 2 methods :\n" +
                             "\n\t1.This method will require you to do most of the work manually (like setting the compiler and path for it) -: First you would need to download the C compiler most popular c compiler" +
-                            "\t is minGW which you can easily download and there you can find the detailed step by step guide to install as well set the path for C compiler in your system in which you will have" +
-                            "\tto add the location of the bin folder of mingw compiler in your system path( Press start key -> search environment variables -> select that then go to environment variables -> then " +
-                            "\tgo to the edit system variables section -> there add new -. browse to mingw bin directory -> OK)." +
-                            "\t\tAfter you properly setup the mingW and its path then you are good to go then you can use it to execute the C program in this way-:\n" +
-                            "\n\t\t\t(a)Write a C program in any text editor notepad/vs code/sublime/notepad++ etx save them with name ending with .c for example Program1.C.\n" +
-                            "\n\t\t\t(b)Browse to the location of saved file by navigating in command prompt and there compile the C file using the command gcc filen_name.c.\n" +
-                            "\n\n\t\t(c)After it sucessfully gets executed without any errors, type the name\tof the file and hit enter.\n" +
-                            "\n\t\t\t\tnote -:if it displays error then fix those errors by correcting them in the original file and save again\n" +
+                            " is minGW which you can easily download and there you can find the detailed step by step guide to install as well set the path for C compiler in your system in which you will have" +
+                            " to add the location of the bin folder of mingw compiler in your system path( Press start key -> search environment variables -> select that then go to environment variables -> then " +
+                            " go to the edit system variables section -> there add new -. browse to mingw bin directory -> OK).\n" +
+                            "\tAfter you properly setup the mingW and its path then you are good to go then you can use it to execute the C program in this way-:\n" +
+                            "\n\t(a)Write a C program in any text editor notepad/vs code/sublime/notepad++ etx save them with name ending with .c for example Program1.C.\n" +
+                            "\n\t(b)Browse to the location of saved file by navigating in command prompt and there compile the C file using the command gcc file_name.c.\n" +
+                            "\n\t(c)After it successfully gets executed without any errors, type the name\tof the file and hit enter.\n" +
+                            "\n\tnote -:if it displays error then fix those errors by correcting them in the original file and save again\n" +
                             "\n" +
                             "\n\n\t2. This is the easy way there are some popular C/C++ IDE such as Code Blocks and Turbo C which you can easily download from net and install in your system.\n" +
-                            "\n\t\tTurbo C - Turbo C is a very old C IDE/compiler althoough when you would use turbo C it might feel very outdated compared to todays standard but it works like charm and has plenty" +
-                            "\tof resources inside it in which you can acess lots of valuable information about tokens and library used in C program or which you want to use.\n" +
+                            "\n\t\tTurbo C - Turbo C is a very old C IDE/compiler although when you would use turbo C it might feel very outdated compared to today's standard but it works like charm and has plenty" +
+                            "\tof resources inside it in which you can access lots of valuable information about tokens and library used in C program or which you want to use.\n" +
                             "\n" +
                             "\n\tRunning a program in Turbo C -:\n" +
-                            "\n\t\t\t1.Download and install Turbo C.\n" +
-                            "\t\t\t2.Open it Create New file and save the file with .c extension at the send\n" +
-                            "\t\t\t\tnote -: while using turbo c pls make it into your habit foe saving the program whenever you make change in it cause if your program crashes or" +
+                            "\n\t\t1.Download and install Turbo C.\n" +
+                            "\t\t2.Open it Create New file and save the file with .c extension at the send\n" +
+                            "\t\t\tnote -: while using turbo c pls make it into your habit foe saving the program whenever you make change in it cause if your program crashes or" +
                             "goes into infinity loop then you would have to reopen turbo C and then it will load from last saved state.\n" +
-                            "\t\t\t3. Build and Run your program.\n" +
-                            "\t\t\t4. Since turbo C is very old and hasn't been updated for a long time some syntax that you would use in turbo C might cause error in other C compiler or vice versa\n" +
+                            "\t\t3. Build and Run your program.\n" +
+                            "\t\t4. Since turbo C is very old and hasn't been updated for a long time some syntax that you would use in turbo C might cause error in other C compiler or vice versa\n" +
                             "\t\t\tdon't worry it won't be much of a problem.\n" +
                             "\n" +
                             "\n\t\tCode Blocks - Code blocks is another popular C/C++ IDE its simple to use just remember when you download it try to download the version with compiler."
                 sh2.text = "\nRunning it on Android/IOS"
                 p3.text =
                     "\n\nYou can write and run C programs in your phone also there are some good apps in playstore that gives this feature on of which you can use is DCODER ,just search and install it on " +
-                            "\tyour phone, open it -> start coding -> make a new C file-> press the play button to execute(make sure to keep connected to internet for it to work)" +
+                            "\tyour phone, open it -> start coding -> make a new C file-> press the play button to execute(make sure to keep connected to internet for it to work)." +
                             "\n\nAlternatively you can also use many online compiler(just search C online compiler) of C available to run your code for free although i wouldn't recommend them since they are a bit slow when it comes to execution.\n"
                 foot.text =
                     "Plz perform the following quiz and practice programs(on code section) to improve your skills "
@@ -147,70 +147,71 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                 tv.text = "Writing our C first program"
                 im0.setImageResource(R.drawable.s3i0)
                 p1.text =
-                    "So now hopefully we have set up a ide or a text editor or an app to code and execute first C program" +
-                            ".Now we will be writing our first program.Open up a blank file in which have a dot C(.C) extension or simply" +
-                            "open an file and later save it file filename.C so that when we run our code our computer/device would know that" +
+                    "So now hopefully we have set up a ide or a text editor or an app to code and execute first C program " +
+                            ".Now we will be writing our first program.Open up a blank file in which have a dot C(.C) extension or simply " +
+                            "open an file and later save it file filename.C so that when we run our code our computer/device would know that " +
                             "this is a C file and so will be executed accordingly."
                 sh1.text = "Hello World Program"
                 p2.text =
-                    "If you ever had learnt any other language or attended a programming related course you might have seen that there" +
-                            "also the first program or piece of code you executed was HELLO WORLD program, its a tradition like you are saying" +
-                            "hello to the world from the program you wrote for the first time in my opinion its a nice tradition so we would follow" +
+                    "If you ever had learnt any other language or attended a programming related course you might have seen that there " +
+                            "also the first program or piece of code you executed was HELLO WORLD program, its a tradition like you are saying " +
+                            "hello to the world from the program you wrote for the first time in my opinion its a nice tradition so we would follow " +
                             "the same and write our first hello world program in C."
                 im1.setImageResource(R.drawable.s3i01)
                 sh2.text = "Understanding the program we made"
+                im2.setImageResource(R.drawable.s3i01)
                 p3.text =
                     "1. '//' - First Line of Code begins with double slash as you can see in the image above\n" +
-                            " -> // - double slash is just a comment that our compiler don't read when executing the program" +
-                            "its for us to understand the code better, when program gets large with lots of lines of code" +
-                            "// helps a lot to understand the code\n" +
+                            " \t\t// - double slash is just a comment that our compiler don't read when executing the program" +
+                            " its for us to understand the code better, when program gets large with lots of lines of code" +
+                            " //comments helps a lot to understand the code.\n" +
                             "\n2. '#include<stdio.h> - 2nd line is a header file include which begins with #include followed by a name in arrow brackets" +
                             " which is a library name that we want to include in our program ,the library contains all the " +
-                            "required files which we want to include in our program. here we have included stdio library" +
-                            "(#include<stdio>) which is contains necessary files and functions required for standard input" +
-                            "output ,later you will use many new libraries as needed by your program and .h means that its a header file" +
+                            "required files which we want to include in our program. here we have included stdio library " +
+                            "(#include<stdio>) which is contains necessary files and functions required for standard input " +
+                            "output ,later you will use many new libraries as needed by your program and .h means that its a header file " +
                             "since in C it stays at the top of program i.e. head of program therefore header file\n\n" +
-                            "3. 'void main()' -  it is the main part of our program like driver's seat in a car mostly everything" +
-                            "about our program is controlled through here when compiler executes the program it searches for the " +
+                            "3. 'void main()' -  it is the main part of our program like driver's seat in a car mostly everything " +
+                            "about our program is controlled through here when compiler executes the program it searches for the" +
                             " main function first (we will learn about functions later) where it gets the information about what to " +
                             "do and in which order things would be done and the word 'void' before main means nothing or null which we " +
-                            " will learn later when we will study functions and return types.\n\n" +
-                            "4. ' {  } ' - curly brackets are the container, anything that you would like to contain under something" +
-                            "in C should be in curly brackets although sometimes its not necessary but for functions like main() its" +
+                            "will learn later when we will study functions and return types.\n\n" +
+                            "4. ' {  } ' - curly brackets are the container, anything that you would like to contain under something " +
+                            "in C should be in curly brackets although sometimes its not necessary but for functions like main() its " +
                             "is necessary.\n\n" +
-                            "5. Print statement 'printf(); - printf is a predefined word in C which tells the compiler that whatever" +
-                            "comes under the curly bracket of printf will have to be displayed in the screen and it should be contained " +
-                            "inside of double inverted commas if you will use single inverted commas the program will show error while" +
-                            "executing and at the end the ';' semi colon symbol also known as terminator in C marks the end of line of code" +
-                            " in C whenever you will write next line of code or write another code instruction always use semi-colon otherwise" +
+                            "5. Print statement 'printf(); - printf is a function(we wil read about function more in later sections) that tells the compiler that whatever " +
+                            "comes inside of printf will have to be displayed in the screen and it should be contained " +
+                            "inside of double inverted commas if you will use single inverted commas the program will show error while " +
+                            "executing and at the end the ';' semi colon symbol also known as terminator in C marks the end of line of code " +
+                            " in C whenever you will write next line of code or write another code instruction always use semi-colon otherwise " +
                             "program throws error.(Lots of beginners does this mistake of forgetting to put semicolon ;)"
                 foot.text =
                     "Also one last thing at first you might do lots of simple syntax mistakes like forgetting a curly bracket or a " +
-                            "semi-colon so don't worry you will always be doing some mistakes.....doing mistakes and improvising on it" +
-                            " will surely make us a better coder."
+                            "semi-colon. Sometimes you might be struggling to run the program thinking something wrong" +
+                            " with the logic of your program but later you might find out it was just a simple comma or bracket. With practice you will improve."
             }
             3 -> {
                 tv.text = "Variables"
                 im0.setImageResource(R.drawable.s4i0)
                 p1.text =
-                    "Variables as its name says it stands for things that vary or can change its value, these are  similar" +
-                            "to the variables you might have studied and used in your maths classes. we assign a name to each variable" +
-                            "such as a,b,x,y,sum,total etc but before assigning them names we also specify their data types"
+                    "Variables as its name says it stands for things that vary or can change its value, these are  similar " +
+                            "to the variables you might have studied and used in your maths classes. we assign a name to each variable " +
+                            "such as a,b,x,y,sum,total etc but before assigning them names we also specify their data types."
                 sh1.text = "Data Types"
                 im1.setImageResource(R.drawable.s4i01)
                 p2.text =
                     "In C or also in many other languages you would have to specify which type of data you want to store" +
-                            " in  the variable before the variable name, you do like - int a =5; or char f ='k'.Their are mainly 4 types" +
-                            "of primary data types in C that are int, float,char and double which all store different types of data" +
-                            "or different size of data, heres a brief about each data types-:\n" +
-                            "1. INT - It store all the integer values i.r all number in a certain size limit which are not decimal point" +
-                            "or in simple words all non point numbers in a certain size limit. I think you might be getting curious" +
+                            " in  the variable before the variable name, you do like - int a =5; or char f ='k'.Their are mainly 4 types " +
+                            "of primary data types in C that are int, float,char and double which all store different types of data " +
+                            "or different size of data, here's a brief about each data types-:\n" +
+                            "1. INT - It store all the integer values i.r all number in a certain size limit which are not decimal point " +
+                            "or in simple words all non point numbers in a certain size limit. I think you might be getting curious " +
                             "about the size limit or the range of int, there's a program which we will be doing later to determine the " +
                             "size of int.Also, there are many sub/super types of int such as short int and long int which does the same " +
                             "job as int but give more range or higher capacity to store big numbers and vice versa.\n " +
                             "2.Float - It store the decimal point values, it is also called as precision floating point since more points" +
                             " is more precision.\n" +
-                            "3.Double -  It does the same thing as done by float i.e. stores decimal point values but its gives us higher" +
+                            "3.Double -  It does the same thing as done by float i.e. stores decimal point values but its gives us higher " +
                             "storage or more capacity to store very large point values.\n" +
                             "4.Char - It stores the character values or any value in its original form like 'a','b','c','2','+' or any " +
                             "single character." +
@@ -218,22 +219,22 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                 im2.setImageResource(R.drawable.s4i02)
                 sh2.text = "Size of each data type"
                 p3.text =
-                    "Although there are certain mentioned size for each data types here but pls note that these size mentioned here " +
+                            "Although there are certain mentioned size for each data types here but pls note that these size mentioned here " +
                             "are not fixed that is they can easily vary from compiler to compiler.You might be using some code editor or ide " +
-                            "for example some of you might be using Turbo C for coding(TurboC uses boreland compiler and most recent compiler" +
-                            "are called GNU/GCC/minGW compiler or GNU/GCC based comiler) and some might be using Code Blocks or GNU based code " +
-                            "editor so both of you might get different sizes for data types.So don't worry if some of you get 2 byts for int size" +
+                            "for example some of you might be using Turbo C for coding(TurboC uses borland compiler and most recent compiler " +
+                            "are called GNU/GCC/minGW compiler or GNU/GCC based compiler) and some might be using Code Blocks or GNU based code " +
+                            "editor so both of you might get different sizes for data types.So don't worry if some of you get 2 bytes for int size " +
                             "and some of you get 4 bytes for int size.\n Here are the size of data types in GNU based compiler.\n" +
                             "\t1. Int \t 4bytes\n" +
                             "\t2. Float\t 4bytes\n" +
                             "\t3. Char\t 1bytes\n" +
                             "\t4. Double\t 8bytes\n" +
-                            "also,Assignment stands for assigning some value to some variable (int a = 5) here 5 is being assigned to a variable which" +
-                            "is of type int never ever assign mismatching value for example - if you write char x =5 this is wrong since 5 is and" +
+                            "also,Assignment stands for assigning some value to some variable (int a = 5) here 5 is being assigned to a variable which " +
+                            "is of type int never ever assign mismatching value for example - if you write char x =5 this is wrong since 5 is and " +
                             "integer value and you are trying to assign it to a character data type.Correct way to do it is char x = '5' and in a" +
                             " similar way "
                 foot.text =
-                    "we will see how to take input and store it in a variable and then perform some operations on it"
+                    "now we will see how to take input and store it in a variable and then perform some operations on it"
             }
             4 -> {
                 im0.setImageResource(R.drawable.s5i0)

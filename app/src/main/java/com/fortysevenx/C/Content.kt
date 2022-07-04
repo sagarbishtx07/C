@@ -15,7 +15,7 @@ class Content : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding =  ActivityContentBinding.inflate(layoutInflater)
-        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+        //]getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         setContentView(binding.root)
         val id =intent.getIntExtra(Constants.ID,0)
         idf=id
