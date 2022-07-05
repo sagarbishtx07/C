@@ -388,15 +388,15 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                 sh1.text = "While Loop"
                 p2.text =
                     "While loop means that - this block of code will repeat itself or stay in loop while the condition is not false. \n" +
-                            "Syntax for while loop - :\n\n" +
+                            "Syntax for while loop - :\n\n\n" +
                             "\twhile(condition){\n" +
                             "\t\tstatement1;\n" +
                             "\t\tstatement2;\n" +
                             "\t\t......\n" +
-                            "\t}\n\n" +
+                            "\t}\n\n\n" +
                             "here while loop checks for the condition inside the parenthesis(rounded brackets), if the condition gets satisfied then " +
                             "the block of code inside it gets executed again and again and when the condition is false then the while loop stops.\n\n" +
-                            "Example to demonstrate the use of while loop\n" +
+                            "Example to demonstrate the use of while loop\n\n" +
                             "\n\t#include<stdio.h>\n" +
                             "\t\tvoid main(){\n" +
                             "\t\t\tint a = 5;\n" +
@@ -404,7 +404,7 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                             "\t\t\t\tprintf(\"%d a = \",a);\n" +
                             "\t\t\t\ta--;\n" +
                             "\t\t\t}\n" +
-                            "\t\t}\n\n" +
+                            "\t\t}\n\n\n" +
                             "program explanation - we will start from the line 3 we declare a variable 5 and next we write the while loop and put the " +
                             "condition in it that while loop should run as long as a is greater than 5 and inside while loop we print the value of " +
                             "a each time loop runs now in next line we have a-- which is shortcut for 'a=a-1' which means every time we run the loop " +
@@ -418,16 +418,17 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                 p3.text =
                     "In case of while loop we only have control of the ending of loop what if we want more control over the loop directly" +
                             " i.e. from initialization(starting condition of loop in this case) of loop to the end of it that's where the For loop comes in.\n\n\t" +
-                            "for loop syntax-:\n\n" +
-                            "\t\tfor(initialization; ending_condition;propagation)\n\n" +
-                            "Example to demonstrate the working of for loop.\n\n" +
+                            "for loop syntax-:\n\n\n" +
+                            "\t\tfor(initialization; ending_condition;propagation)\n\n\n" +
+                            "Example to demonstrate the working of for loop.\n\n\n" +
                             "\t#include<stdio.h>\n" +
                             "\tvoid main(){\n" +
                             "\t\tint a;\n" +
                             "\t\tfor(a=1;a<=10;a++){\n" +
                             "\t\t\tprintf(\"%d\\n\",a);\n" +
                             "\t\t}\n" +
-                            "}\n\npls perform this block of code for better understanding\n" +
+                            "}\n\n\n" +
+                            "remember to always perform/run/execute the example code as well for better understanding of concept.\n\n" +
                             "code explanation - : from line 4 we declare the for loop using the for statement inside the parenthesis we initialize the" +
                             " variable a to a =1 which we had declared in line 3, then we set the stop condition for the loop that until a is less than  " +
                             "or equals to 10 the loop should run and at last we set that every time the loop runs a is incremented by 1,pls note here that " +
@@ -448,7 +449,7 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                             " without checking the stop condition then after processing the statements inside it. The do while loops checks for the stop " +
                             "condition here you can see that no matter what the stop condition is do while loop will surely run once.\n\n" +
                             "\nExample to get better understanding of do while loop.\n\n" +
-                            "\t - - - code - - - \n\n" +
+                            "\t - - - code - - - \n\n\n" +
                             "\t#include<stdio.h>\n" +
                             "\tvoid main(){\n" +
                             "\t\tchar choice;\n" +
@@ -457,7 +458,7 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                             "\t\t\tscanf(\"%c\",&choice);\n" +
                             "\t\t}while(choice=='y');\n" +
                             "\t}" +
-                            "\n\n" +
+                            "\n\n\n" +
                             "code explanation - so if you had tried running this code or have understand some part of it then you might have already realised that" +
                             " it is the same 'Do you want to continue?(y/n) ' statement that was mentioned earlier. so from line 3 we declared a character type " +
                             "variable choice which will store y or n (yes/no) which we will use in condition of our loop then we have do statement which will send use " +
@@ -478,8 +479,30 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                             "gets false(i<3) therefore inner loop finish its execution and then it goes back to the outer loop outer loop increments the " +
                             "value of a to 1 and then again it goes to the inner loop which runs from 1 to 2 and prints the sum and it goes on until the " +
                             "outer loop finish it execution(a<5). "
-                sh1.text = "Switch Case"
-                p2.text =
+                sh1.text="Write a program to print the pattern given below using nested loop.\n" +
+                        "\n\t\t1 1 1 1 1\n" +
+                        "\t\t2 2 2 2 2\n" +
+                        "\t\t3 3 3 3 3\n" +
+                        "\t\t4 4 4 4 4\n" +
+                        "\t\t5 5 5 5 5.\n\n"
+                p2.text="\n\t - - - CODE - - - \n\n\n" +
+                        "#include <stdio.h>\n" +
+                        "void main()\n" +
+                        "{\n" +
+                        "    int i, j;\n" +
+                        "    for (i = 1; i <= 5; i++)\n" +
+                        "    {\n" +
+                        "        for (j = 1; j <= 5; j++)\n" +
+                        "        {\n" +
+                        "            printf(\" %d\", i);\n" +
+                        "        }\n" +
+                        "        printf(\"\\n\");\n" +
+                        "    }\n" +
+                        "}\n\n\n" +
+                        "As you can see we have created a nesting of loop or one loop inside another loop which is used to print the required pattern. In future you will see" +
+                        " loops which have more than one or two loops inside them."
+                sh2.text = "Switch Case"
+                p3.text =
                     "switch case statements are similar to the if else conditional statements but sometimes if we want to check the condition on the" +
                             "same operand or same variable then switch statement can save some lines of code and also it uses less number of brackets.The " +
                             "above image show the syntax of switch statement.\n" +
@@ -490,10 +513,57 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                             "You will have a better understanding in the next example.\nNote - Case in switch" +
                             " statement end with colon(:) not semi colon(;)"
                 //im1.setImageResource(R.drawable.s8i1)
-                sh2.text = ""
-                p3.text = ""
-                sh3.text = ""
-                p4.text = ""
+//                sh2.text = ""
+//                p3.text = ""
+                sh3.text = "Using switch case to make a very simple number of alphabet convertor."
+                p4.text = "#include <stdio.h>\n" +
+                        "void main()\n" +
+                        "{\n" +
+                        "    int i;\n" +
+                        "    printf(\"\\n\\t\\t NUMBER TO LETTER CONVERTOR \\n\\n\");\n" +
+                        "    printf(\"Enter a number from 1 to 10\\t\");\n" +
+                        "    scanf(\"%d\", &i);\n" +
+                        "    switch (i)\n" +
+                        "    {\n" +
+                        "    case 1:\n" +
+                        "        printf(\"ONE\");\n" +
+                        "        break;\n" +
+                        "    case 2:\n" +
+                        "        printf(\"TWO\");\n" +
+                        "        break;\n" +
+                        "    case 3:\n" +
+                        "        printf(\"THREE\");\n" +
+                        "        break;\n" +
+                        "    case 4:\n" +
+                        "        printf(\"FOUR\");\n" +
+                        "        break;\n" +
+                        "    case 5:\n" +
+                        "        printf(\"FIVE\");\n" +
+                        "        break;\n" +
+                        "    case 6:\n" +
+                        "        printf(\"SIX\");\n" +
+                        "        break;\n" +
+                        "    case 7:\n" +
+                        "        printf(\"SEVEN\");\n" +
+                        "        break;\n" +
+                        "    case 8:\n" +
+                        "        printf(\"EIGHT\");\n" +
+                        "        break;\n" +
+                        "    case 9:\n" +
+                        "        printf(\"NINE\");\n" +
+                        "        break;\n" +
+                        "    case 10:\n" +
+                        "        printf(\"TEN\");\n" +
+                        "        break;\n" +
+                        "    default:\n" +
+                        "        printf(\"number is not in range 1 to 10\");\n" +
+                        "        break;\n" +
+                        "    }\n" +
+                        "}\n\n\n" +
+                        "from switch(i) the program checks i and matches it with the case, for i=1 program will run case 1 for i=2 program will run case 2 and so on. If the entered" +
+                        " number is not present in any of the case in our program if the entered number is not from 1 to 10 then the default case will run. Break statement is the mini version" +
+                        " of exit statement it means whenever this line comes then current bounds/block has ended or in switch case at break statement program will come out of switch block."
+                foot.text="search for pattern program example in C and try to make some of those pattern by your own, they will help to increase your thinking skills in C to generate complex logics."
             }
             8 -> {
                 tv.text = "Functions"
