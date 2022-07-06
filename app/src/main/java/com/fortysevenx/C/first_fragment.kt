@@ -140,7 +140,7 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                             "\tyour phone, open it -> start coding -> make a new C file-> press the play button to execute(make sure to keep connected to internet for it to work)." +
                             "\n\nAlternatively you can also use many online compiler(just search C online compiler) of C available to run your code for free although i wouldn't recommend them since they are a bit slow when it comes to execution.\n"
                 foot.text =
-                    "Plz perform the following quiz and practice programs(on code section) to improve your skills "
+                    "Plz perform the following quiz and practice programs(on code section) to improve your skills."
                 //im1.setImageResource(R.drawable.s1i1)
             }
             2 -> {
@@ -234,7 +234,8 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                             "integer value and you are trying to assign it to a character data type.Correct way to do it is char x = '5' and in a" +
                             " similar way "
                 foot.text =
-                    "now we will see how to take input and store it in a variable and then perform some operations on it"
+                    "Sometimes the code given here in examples might not run as it is and might require you to do some changes or correction you if program throws some error " +
+                            "you can check for simple mistakes like semicolon missing or bracket missing and also read the error and warnings that compiler gives."
             }
             4 -> {
                 im0.setImageResource(R.drawable.s5i0)
@@ -567,19 +568,20 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
             }
             8 -> {
                 tv.text = "Functions"
+                im0.setImageResource(R.drawable.func1)
                 p1.text =
                     "Functions are like machines in real life. Machines helps in our work although making a machine takes effort" +
                             " but after we finish them then they helps us in the task for whatever we made them , Machines do the same work" +
                             " for us so that we don't have to do every time. For example -: Fan is a machine that we made without it we" +
                             " would have to blow air using  some piece of cardboard or so by doing some repetitive motion every time but we" +
-                            " made fan to solve this problem and it does the work for us so that we dont have to do the repetitive motion" +
-                            ".\n Lets take example of another machine that is Television Remote press 1 it directs us to channel number 1" +
+                            " made fan to solve this problem and it does the work for us so that we don't have to do the repetitive motion" +
+                            ".\n\n\t Lets take example of another machine that is Television Remote press 1 it directs us to channel number 1" +
                             "we press volume up button it increases the volume for us so every time we are giving some different type of " +
                             "input it does different type of work for us.\n" +
-                            "Functions are no different than machines they are machines but on the software level, they reduce the line of code" +
+                            "\n\tFunctions are no different than machines they are machines but on the software level, they reduce the line of code" +
                             " use and do the same kind of work for us.\n "
                 sh1.text = "Writing our first function"
-                p2.text = "We will understand it by the following example -:\n" +
+                p2.text = "We will understand it by the following example -:\n\n" +
                         "\t - - - code - - - \n\n" +
                         "\n\t#include<stdio.h>\n" +
                         "\tvoid add();\t\\\\declaration\n" +
@@ -595,34 +597,34 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         "\t\tscanf(\"%d\",&b);\n" +
                         "\t\tsum=a+b;\n" +
                         "\t\tprintf(\"Total =%d \",sum);\n" +
-                        "\t}\n\n" +
-                        "So there are 3 parts in the lifecycle of a function -:\n" +
+                        "\t}\n\n\n" +
+                        "So there are 3 parts in the lifecycle of a function -:\n\n" +
                         "1.Declaration - : From the above code -in the line 2 'void add(); this is saying that we have declared a function" +
                         " with name add similar to declaring a variable and the rounded brackets after its name denotes that it is a function " +
-                        "\n2.Definition - we have declared our function but we also have to define that what it would do, so below the main block" +
+                        "\n\n2.Definition - we have declared our function but we also have to define that what it would do, so below the main block" +
                         " at the last of program we have defined our function that we declared earlier we define it inside the curly brackets " +
-                        " and everything that we defined inside the curly bracket will run when the function is called. This time we dont use" +
+                        " and everything that we defined inside the curly bracket will run when the function is called. This time we don't use" +
                         "the semi-colon/terminator after the end of function like we did in declaration." +
-                        "\n3. Function Calling - now we have declared and defined our function but it won't run until the main() function calls it" +
+                        "\n\n3. Function Calling - now we have declared and defined our function but it won't run until the main() function calls it" +
                         " remember during the start of our course we said main() is like the control center of the program, so to run the function" +
                         " we simply type the name of the function wi" +
                         "th brackets() and then the code inside it get executed.We can call a function as " +
-                        "many times as we want. "
+                        "many times as we want.\n "
                 sh2.text = "Return Types"
                 p3.text =
                     "we mentioned about the function and even in main() did you notice something? yes it's the word 'void' that " +
                             " has came across many times it simply means nothing or empty, which is a return types" +
                             ".A return type is something that a function returns, return type can be of many types such as -:\n" +
-                            "'void','int','float' all type of data types and may more(structure) that we will study later," +
+                            "\t'void','int','float' all type of data types and may more(structure) that we will study later," +
                             "although we have not made any use of " +
                             "it until now because we had return type of our function as 'void' which means the function is returning " +
-                            "nothing but later we will use it in many programs ."
+                            "nothing but later we will use it in many programs."
                 sh3.text = "Arguments and Parameters "
                 p4.text =
                     "In the above examples of function we have only seen function with empty brackets it means that we are not sending" +
                             " any thing to the function but we can send values to the function these are known as arguments,this example will make " +
                             " it more clear -:\n\n" +
-                            "\t - - - code - - - \n\n" +
+                            "\t - - - code - - - \n\n\n" +
                             "\t#include<stdio.h>\n" +
                             "\tvoid add(int a,int b)\t \\\\parameters declared\n" +
                             "\t{\n\t\tint c;\n" +
@@ -632,48 +634,49 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                             "\tprintf(\"Ist Number -: \");\t scanf(\"%d\",&x);" +
                             "\n\t\tprintf(\"2nd Number -: \");\t scanf(\"%d\",&y);" +
                             "\n\t\tadd(x,y);\n" +
-                            "\t}\n" +
+                            "\t}\n\n\n" +
                             "First thing that you might have had noticed that we have skipped the function declaration part and directly " +
-                            " defined the function this is same as sometime we declare variables like - : \n\t int a;\n\ta=5;\n and sometimes" +
-                            " we do it like -:\n\t int a = 5;\n in one line only both are correct.\nNow coming back to our program above about arguments " +
-                            "and parameters, so in line 2 you can see that we have passed some values to the function add(the values inside brackets) int a" +
+                            " defined the function this is same as sometime we declare variables like - : \n\n\t int a;\n\t\ta=5;\n\n and sometimes" +
+                            " we do it like -:\n\t\n int a = 5;\n\n in one line only both are correct.\n\nNow coming back to our program above about arguments " +
+                            "and parameters, so in line 2 you can see that we have passed some values to the function add(the values inside brackets) int a " +
                             "and int b so these are what we call parameters it tell that these are the values that are demanded by function to run or " +
                             "these values should be passed when the function is called.Now in the main function you can see we have first input 2 values " +
                             "in x and y and then we have passed it to function add(x,y); these values that are now being passed to the function is called as the" +
                             " arguments it should be of the same data type of as parameters.\n"
                 foot.text =
-                    "In next module we will study more about functions before that please perform the programs and quiz in the right sections."
+                    "In next module we will study more about pointers which are one of the most important part of C."
             }
             9 -> {
                 tv.text = "Pointers"
                 p1.text =
-                    "One of the many reason that why C/C++ is recommended for beginners to learn is that it teaches the concept of memory and variable addressing with the help of pointers" +
-                            " very well.  " +
+                    "One of the many reason that why C/C++ is recommnded for beginners to learn is that it teaches the concept of memory and variable addressing with the help of pointers" +
+                            " very well.\n" +
                             "\n" +
-                            "DO you ever wondered while declaring variables in C that how are they getting stored in the memory or how are they getting retrieved when ever we print " +
+                            "Do you ever wondered while declaring variables in C that how are they getting stored in the memory or how are they getting retrieved when ever we print " +
                             " or take input.Pointers will help use learn and understand this and then we will see how to apply them in program and even make use of it to great " +
-                            "extent."
+                            "extent.\n"
                 sh1.text = "What are Pointers?"
                 p2.text =
                     "Every data that you store inside a variable or somewhere in memory has an address associated to it using that address it is retrieved for further use. We can" +
                             " point to the value that is stored at that address by using the name of the variable or by using pointers - point to the memory address.Although you can " +
                             "find the memory address but memory address can be very random, so for our understanding we will use some 5 digit numbers to understand pointers.\n" +
-                            "Suppose you have declared a variable int a; you can guess that as integer has a value of 2/4 bytes (depending on the compiler used) so there is a block of " +
+                            "\n\tSuppose you have declared a variable int a; you can guess that as integer has a value of 2/4 bytes (depending on the compiler used) so there is a block of " +
                             "2/4 bytes gets reserved in the memory for a with some address for say 20000 so when ever we say a then our compiler will go to retrieve the value at address" +
                             " 20000 but since we have not given any value to int a it stores some garbage value for now so now,\n" +
-                            "a=5;\t we have stored an integer value 5 at address 20000, we will retrieve it using the pointers as well as the conventional way but before that we will" +
-                            "learn the difference between '*' and '&' "
+                            "a=5;\t we have stored an integer value 5 at address 20000, we will retrieve it using the pointers as well as the conventional way but before that we will " +
+                            "learn the difference between '*' and '&' \n"
                 sh2.text = "'*' and '&' "
+                im2.setImageResource(R.drawable.point)
                 p3.text =
                     "'&' - if you want to get the address of some variable where its stored in memory then you would have to use the '&' operator like in the previous case where " +
-                            "we stored 5 at memory address 20000 in variable a now if we want to print the address of a then we would use &a whihc will give use 20000\n\n" +
+                            "we stored 5 at memory address 20000 in variable a now if we want to print the address of a then we would use &a which will give use 20000\n\n" +
                             "'*' - now we have seen how to get address but what if we already have address but we want the value which is stored at that address then we would use " +
-                            "the '*' pointer symbol like suppose we have a variable b which is storing 20000 and we want to find out the value at this address then we would use" +
+                            "the '*' pointer symbol like suppose we have a variable b which is storing 20000 and we want to find out the value at this address then we would use " +
                             " *b which would give us the value present at 20000 address. "
                 sh3.text = "Working with pointers "
                 p4.text =
                     "we will use the following program to demonstrate the use of pointers in more detail-:\n\n" +
-                            "\t- - - code - - - \n" +
+                            "\t- - - code - - - \n\n\n" +
                             "\t#include<stdio.h>\n" +
                             "\tvoid main(){\n" +
                             "\t\tint *a,b;\n" +
@@ -685,8 +688,8 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                             "\t\\\\now we will print the address and then directly use the address\n" +
                             "\t\tprintf(\"address = %p\",&b);\n" +
                             "\t\tprintf(\"address = %\",a);\n" +
-                            "\t}\n\n" +
-                            "code explanation - from line 3, we have declared a pointer type variable and a integer.The pointer type variable is meant to store address the '*' says" +
+                            "\t}\n\n\n" +
+                            "code explanation - from line 3, we have declared a pointer type variable and an integer.The pointer type variable is meant to store address the '*' says" +
                             " to the compiler that its a pointer type variable which will hold and integer value, remember that at the time of printing/accessing or using the pointer" +
                             " type variable if you use * in its name(*a) then it will give the value at that address as a will hold address and *a means point to the address a means " +
                             "the value present at a.\nNow we give b a value 5 after which we given the address of b to our pointer now we printed b, first using the simple method and " +
@@ -704,8 +707,9 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                             " and passing the address of the value(reference) and how it affects the value at the address.\n"
                 sh1.text = "passing a pointer to function"
                 p2.text =
-                    "let's understand with the help of this example in which we will add the first number into second number and display the result - :\n" +
-                            "\t - - - code - - - \n\n" +
+                    "at this point we have learnt about functions and pointers now we will see how to pass pointers to function and work with them with the help of " +
+                            "this program in which we will add the first number into second number and display the result - :\n" +
+                            "\t - - - code - - - \n\n\n" +
                             "\t#include<stdio.h>\n" +
                             "\tvoid addWithP(int *a,int *b){" +
                             "\n\t\t*b=*a+*b;" +
@@ -721,9 +725,9 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                             "\t\taddWithoutP(a2,b2);\n" +
                             "\t\tprintf(\"b1=%d\n\",b1);\n" +
                             "\t\tprintf(\"b2=%d\n\",b2);\n" +
-                            "\t}\n\n" +
-                            "code exp - in the first function there are 2 pointer type parameters so it will take the address as parameter unlike the second function which just have normal" +
-                            " parameters in the 1st function we will add the value directly at the address due to which the original value at the address will change.But in the second function " +
+                            "\t}\n\n\n" +
+                            "understanding the above program - in the first function there are 2 pointer type parameters so it will take the address as parameter unlike the second function which just have normal" +
+                            " parameters in the 1st function we will add the value directly at the address due to which the original value at the address will change.But in the second function" +
                             " no pointer is being passed so the function creates new variable where it copies the data that is being sent to it in the parameters into that new variables and thus " +
                             "then performs the calculation so it doesn't performs any operation on the original data but on the copy of it due to which the original data stays intact and unchanged" +
                             ". now getting inside the main function now since the first function takes the pointer variables as the parameters so we will send the address of the a1 and b1 as arguments" +
@@ -732,14 +736,15 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                             " address due to which its original value changes."
 
 
-                sh2.text = "Call By Value Vs Call By Reference"
+                sh2.text = "Call By Value vs Call By Reference"
                 p3.text =
                     "It is a very popularly asked question in C/C++ about the difference between call by value and call by reference.\n" +
-                            "\nCall by Value - When we call a function by passing the value to it which then used as local values and the original values remain unchanged,like in  the " +
-                            " case of the above 2nd function in which we sent the values and it didn't affect the original values that is Call by Values.Remember it sends local copies of data " +
-                            " not original data .\n" +
-                            "Call by Reference - Like in the above first function we passed the address of the variable due to which the original value was also affected from the operation and " +
-                            " this is what is called Call by Reference (Reference as the word means address)" +
+                            "\nCall by Value - When we call a function by passing the value to it which then used as local values and the original values remain unchanged,like in  the" +
+                            " case of the above 2nd function in which we sent the values and it didn't affect the original values that is Call by Values.Remember it sends local copies of data" +
+                            " not original data .\n\n" +
+                            "Call by Reference - Like in the above first function we passed the address of the variable and unlike the case in call by value where a local copy" +
+                            " of data passed is generated in call by reference no copy is made and operations are performed in original value due to which the original value was also affected from the operation and " +
+                            "this is what is called Call by Reference (Reference as the word means address)" +
                             "The above program was the example for call by value vs call by reference there is one more very popular example about it. In the code section to right which will make it more clear."
                 sh3.text = "Returning a pointer"
                 p4.text =
@@ -763,9 +768,13 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                             "\t\tbig_num = big(&a,&b);\n" +
                             "\t\tprintf(\"Bigger Number = %d\",*big_num);" +
                             "\n\t}\n" +
-                            "before you proceed to code explanation we recommend you to go through the program and rrun it in yourself and understand so that you get good " +
-                            "practise of pointers\n" +
-                            "code explanation - : "
+                            "before you proceed to code explanation you should go through the program and run it in yourself and try to understand the program."+
+                            "code explanation - : In this program inside main we took two int number to compare which is greater among them and then send those two numbers to " +
+                            "the function by passing their address to the function(big(&a,&b);) where their address was received by the pointers *a and *b then they were compared and then" +
+                            " the greater number was returned as address which in turn was received or stored inside pointer *big_num and which was later displayed.\n" +
+                            "\tIn the same line where we passed the pointers to functions we also have set the function call equal to big_num which will store whatever function" +
+                            " returns inside big_num."
+                foot.text="Pointers might somewhat feeling tough at begging but once you understand them they are very fun to work with."
             }
             11->{
                 tv.text="Arrays"
@@ -774,20 +783,21 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         " to store the same type of data for same type of data will be a very bad idea and actually it will also" +
                         " take too much time. So we hae arrays which are collection of similar data types. "
                 sh1.text="Working with Arrays "
-                p2.text="First we declare an array and syntax for it is as follows=:\n" +
+                im1.setImageResource(R.drawable.array)
+                p2.text="First we declare an array and there are more than one way to declare ayyar and syntax for it is as follows=:\n\n" +
                         "\t 1st way to declare an array\n" +
-                        "\tdata_type name[array_length];\n" +
-                        "for example-: int a[50];\t here we declared an array of 50 integer type variables in one go" +
+                        "\tdata_type name[array_length];\n\n" +
+                        "for example-: int a[50];\t here we declared an array of 50 integer type variables in one go\n" +
                         "\n\t 2nd way to declare an array\n" +
                         "\tdata_type name[]={data};\n" +
                         "for ex-:  int a[]={23,45,11}; \n" +
                         "here we have declared an integer type array inside which we have stored 3 values;\n" +
                         "TO access an array we do it like a[0] which gives the data present at first position or the zero index in the" +
                         " array,the index is the number that we give inside the square brackets that specifies the position of data" +
-                        " that we want to access from the array and remember that the index for array starts from zero and goes to" +
+                        " that we want to access from the array and remember that the index for array starts from zero and goes to " +
                         "the total length - 1(l-1),for example if you have an array a of 10 elements then ist element will be located " +
-                        "at a[0] and the last element will be accessed as a[9], all these will be more clear with the example below.\n" +
-                        "\t - - - code - - - \n\n" +
+                        "at a[0] and the last element will be accessed as a[9], all these will be more clear with the example below.\n\n" +
+                        "\t - - - code - - - \n\n\n" +
                         "\t#incldude<stdio.h>\n" +
                         "\tvoid main(){\n" +
                         "\t\tint a[10],i;\n" +
@@ -799,25 +809,26 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         "\t\tfor(i=0;i<10;i++){\n" +
                         "\t\tprintf(\"%d\t\",a[i]);\n" +
                         "\t\t}\n" +
-                        "\t}\n\n" +
-                        " code exp - so here we have first declared an int array of 10 elements we can add values to each " +
+                        "\t}\n\n\n" +
+                        "above code explanation - so here we have first declared an int array of 10 elements we can add values to each " +
                         "elements manually like a[0] =3,a[1] =4 ....so on, but that would be too much time so we used a loop" +
                         " of 10 then asked the user to input the values and then whenever we input the value of i changes as " +
                         " the loop proceeds and therefore every time we are inputting to the next element in the array.\n" +
-                        "then at last we run the loop again to print the values inside the array,here you might have realised that how much array " +
+                        "At last we run the loop again to print the values inside the array,here you might have realised that how much array " +
                         "saves the time and lines of code for us that we were able to take 10 inputs and do 10 outputs in just 4 or 5 lines of code."
 
                 sh2.text="String - Array of characters"
+                im2.setImageResource(R.drawable.string)
                 p3.text="String as the name means is a chain of characters like Apple its made from A,p,p,l,e which is a combination " +
-                        "of characters. It can contain any alphabetical character and numbers and many special characters like 'Apple 2'," +
+                        "of characters. It can contain any alphabetical character and numbers and many special characters like 'Apple 2', " +
                         "'tony@gmail.com' all are valid strings but some characters such as back slash \\ are not simple to store in string." +
                         " Although most other programming languages have a dedicated data type called String for storing strings but in C" +
                         " we have to store it inside the array of characters.\n" +
                         "To declare a string in C the syntax is as follows-:\n" +
                         "char name[String_Length] = \"String\";\n" +
                         "Here's a program to understand the concept in more detail -:\n" +
-                        "In this program we will declare a string and then print the individual character with spaces in between.\n" +
-                        "\t - - - code - - - \n" +
+                        "In this program we will declare a string and then print the individual character with spaces in between.\n\n" +
+                        "\t - - - code - - - \n\n" +
                         "\n" +
                         "\t#include<stdio.h> \n" +
                         "\tvoid main(){\n" +
@@ -826,18 +837,18 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         "\t\tfor(i=0;i<10;i++){\n" +
                         "\t\t\tprintf(\"%c\t\",str[i]);\n" +
                         "\t\t}\n" +
-                        "\t}\n\n" +
+                        "\t}\n\n\n" +
                         "code explanation - : as we talked before to declare a string in C we use a character array so we declare a array of characters str of length 10 and stored " +
                         " 'TURBOSNAIL' string in it. Then we used a loop of 10 iterations(repetitions) to print our str string, remember as its an array so it will follow the indexing of arrays" +
                         " that is ist character at position 0 and last at 9 (10 - 1). "
 
                 sh3.text="Some operations on Strings"
-                p4.text="\n\tFinding Length of String\n\n" +
+                p4.text=""+
                         "\tIn the previous program we knew that our string was of length 10 but what if we don't know about the length" +
                         " of the given string or we need to perform some operations on string but it requires us to know about the length" +
                         " of string, So there are mainly 2 methods for this one of the method you will find in the code section to the right and the " +
                         "other method is here where we will use the header file <String.h>.We will see using this program -: \n" +
-                        "\t - - - code - - - \n" +
+                        "\n\t - - - code - - - \n\n\n" +
                         "\t#include<string.h>\n" +
                         "\t#include<stdio.h>\n" +
                         "\tvoid main(){\n" +
@@ -851,7 +862,7 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         "\t\tprintf(\"\nNow we will print the string in reverse \n" +
                         "\t\tfor(i=ln-1;i>=0;i--){\n" +
                                 "\t\t\tprintf(\"\t%c\",str[i]);"+
-                                "\n\t\t}\n\t}" +
+                                "\n\t\t}\n\t}\n" +
                         "\n\ncode explanation - : here in this program we use the string.h header file remember that header file is a library " +
                                 "of many necessary functions and more that we use and they helps us in our program, so in this string.h header file" +
                                 " it many contains string related functions such as a strlen() function which gives us the length of string in integer" +
@@ -866,6 +877,7 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                                 "print the string backwards.This part might be little hard to get if you are very new to programming but understand this part very " +
                                 "thoroughly and don't move to next part until you understand this part because it will strength you knowledge about strings which will be " +
                                 "very much need for becoming good programmer."
+                foot.text="for arrays and strings you in addition to the programs in this section you should try to solve at least 10 to 15 different program in C."
 
             }
             12 ->{
