@@ -952,19 +952,21 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
             }
             13->{
                 tv.text = "What are multidimensional array?"
+                im0.setImageResource(R.drawable.twod)
                 p1.text = "As we have studied in the previous sections about the array where we have declared arrays only with" +
                         " one row but what if we want to store more information in the same array there we use multidimensional array." +
                         " Here's a little representation for it.\n\t" +
-                        " One dimensional array(Normal array/1D array that we have declared till now).\n" +
+                        " One dimensional array(Normal array/1D array that we have declared till now).\n\n" +
                         "\t\tint a[5] = {2,3,4,5,6};\n\n" +
-                        " Multi-Dimensional array(2D array)\n" +
+                        " Multi-Dimensional array(2D array)\n\n" +
                         "\t\t int b[3][5]={{2,5,7,11,13},\n" +
                         "\t\t              {3,6,9,12,15},\n" +
                         "\t\t              {5,10,20,40,80}};\n" +
-                        "\nHere you might have easily recognised the array a which is a simple one dimensional array, but the array b is a multidimensional " +
+                        "\nHere the first one you might have easily recognised the array a which is a simple one dimensional array, but the array b is a multidimensional " +
                         " 2D array which contains multiple rows which adds an extra dimension so its a 2D array."
                 sh1.text = "How does the 3D array look like?"
-                p2.text = "After reading about the 2 dimensional array above you might be wondering what is 3 dimensional array or how it " +
+                im1.setImageResource(R.drawable.threed)
+                p2.text = "After reading about the 2 dimensional array above you might be wondering what is 3 dimensional array or how it" +
                         " look like. As you might have realised that 2D array is a collection of more than one one dimensional array, So similar to" +
                         " a 2D array a 3 Dimensional array is a collection of one or more 2 dimensional array as you can see in the image. But working" +
                         " in this section you will not find any 3D array or work with it as it becomes a bit complex very easily and as a beginner " +
@@ -972,25 +974,25 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         "in future working with 3D arrays."
 
                 sh2.text = "Working with 2D array"
-                p3.text = "Declaration and initialization format-: \n" +
-                        "\tint a[no._of_rows][no._of_columns]={\n" +
+                p3.text = "Declaration and initialization format-: \n\n" +
+                        "\tint a[no._of_rows][no._of_columns]={" +
                         "                                      {},\n" +
                         "                                      {}};\n" +
-                        "Example-:\n" +
+                        "\nExample-:\n\n" +
                         "\t\t int b[3][5]={{2,5,7,11,13},\n" +
                         "\t\t              {3,6,9,12,15},\n" +
                         "\t\t              {5,10,20,40,80}};\n" +
-                        "\nPROGRAM to initialize elements of 2D array by taking input from the user.\n" +
-                        "\n\t - - - code - - - \n\n\t" +
+                        "\nProgram to initialize elements of 2D array by taking input from the user.\n" +
+                        "\n\t - - - code - - - \n\n\n\t" +
                         "#include<stdio.h>\n\t" +
                         "void main(){\n\t\t" +
                         "int a[3][5],i,j;\n\t\t" +
-                        "printf(\"Enter Values in 2D array\");" +
+                        "printf(\"Enter Values in 2D array\");\n\t\t" +
                         "for(i=0;i<3;i++){\n\t\t\t" +
                         "for(j=0;j<5;j++){\n\t\t\t\t" +
                         "scanf(\"%d\",&a[i][j]);\n\t\t\t" +
                         "}\n\t\t}\n\t" +
-                        "}\n\n" +
+                        "}\n\n\n" +
                         "\t although this is a simple program but there are few things to mention, first the first square " +
                         "brackets of the 2D array indicates the row number that is why we have used it as outer loop since" +
                         " first the row will have to filled for which we have the inner loop to input columns in row" +
@@ -1000,7 +1002,7 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                 p4.text = "Matrix is another name for 2D array but often whenever the matrix name will pop there will" +
                         " be many chances that we are dealing with a square matrix\n" +
                         "\nSQUARE MATRIX - 2D array with equal number of rows and columns. For ex - : a[3][3],b[5][5];\n" +
-                        "\nSome terms in square matrix.\n\t" +
+                        "\nSome terms in square matrix.\n\n\t" +
                         "The elements that go diagonally are called diagonal elements. There are 2 diagonals in an square" +
                         " matrix.\n" +
                         "Right Diagonal -: The diagonal going from right top to bottom left.\n" +
@@ -1009,9 +1011,11 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         " will have the index of row and column equal. For ex- the elements of the left diagonal will be" +
                         " like a[1][1],[2][2],b[0][0].\n\t" +
                         "Right Diagonal has a property that all the elements along the right diagonal in the square matrix will " +
-                        "satisfy the relation that i+j+1=size of matrix where i=row number and j= column number. For example if we have a matrix 3x3 (a[3][3]) then the" +
+                        "satisfy the relation that i+j+1=size of matrix where i=row number and j= column number. For example if we have a matrix 3x3 (a[3][3]) then the " +
                         "elements in the right diagonal will will be like a[0][2] which is satisfying the relation" +
                         " 0+2+1=3(size of matrix/row/column). "
+                foot.text="In the previous section as we saw how pointers can be used to access array elements, in a similar way they " +
+                        "work with 2-D array also."
             }
             14->{
                 tv.text="User Defined data types"
@@ -1024,8 +1028,8 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                 sh1.text="Structures"
                 p2.text="Structure is a collection of more than one types of data, like array is a collection of only similar type" +
                         " of data whereas structure is a collection of different data types which are defined by the user which makes" +
-                        " it a user defined data type.\n" +
-                        "Syntax for Structure -: \n" +
+                        " it a user defined data type.\n\n" +
+                        "Syntax for Structure -: \n\n" +
                         "struct struct_name{\n" +
                         "\tdata_type1 var_name;\n" +
                         "\tdata_type2 var_name;\n" +
@@ -1038,7 +1042,7 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         " their roll no's and a float for storing their percentages but it would be better if we could make a block" +
                         " of all these 3 variables and name that block student info and then easily use that block to store the information" +
                         " of the students, and the block that we are talking about is the structure let's implement it." +
-                        "\n\n\t- - - code - - - \n" +
+                        "\n\n\t- - - code - - - \n\n" +
                         "\n#include<stdio.h>\n" +
                         "struct studentinfo{\n" +
                         "\tint r_no;\n" +
@@ -1058,7 +1062,7 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         "\tprintf(\"Rollno - %d\\n\",st.r_no);\n" +
                         "\tprintf(\"Name - %d\\n\",st.name);\n" +
                         "\tprintf(\"Percentage - %d\\n\",st.percent);\n" +
-                        "}\n" +
+                        "}\n\n" +
                         "\n Here's a little explanation for the above program here first we declared an structure name studentinfo in which " +
                         "we declared there data type/variable name,roll no and percentage. Then as i said we have now declared a user defined " +
                         "data types that is struct studentinfo now to use this we have initialized a variable st of type studentinfo inside main()." +
@@ -1069,8 +1073,8 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         "This program might not have been sufficient to show you that structures are vary useful so check out the next program."
                 sh3.text="One more example about structures"
                 p4.text = "Let's do the same above program but this time for 10 students using for loop.\n" +
-                        "\n" +
-                        "\t - - - code - - - \n\n" +
+                        "\n\n" +
+                        "\t - - - code - - - \n\n\n" +
                         "\n#include<stdio.h>\n" +
                         "struct studentinfo{\n" +
                         "\tint r_no;\n" +
@@ -1094,12 +1098,13 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         "\tprintf(\"Name - %d\\n\",st[i].name);\n" +
                         "\tprintf(\"Percentage - %d\\n\\n\",st[i].percent);\n" +
                         "\t}\n}\n" +
-                        "\n" +
+                        "\n\n" +
                         "Program is mostly same as the above program its just this time we did it for 10 students so this makes it more practical doing this way."
-                foot.text=""
+                foot.text="Just like you are learning 'Structure' in C you will learn 'Class' in C++ which are somewhat improvised version of structures."
             }
             15->{
                 tv.text="Permanently saving the data"
+                im0.setImageResource(R.drawable.fileh)
                 p1.text="Whenever we run a program its running code is temporarily saved and executed in the ram, as the ram is volatile that means as soon as our" +
                         " program gets completely executed the code of it is removed from the ram. But in real life we would be needing to save the data, for example" +
                         " if we make a program to input rollno marks and percentage of students of class then we would want to save those details permanently in our secondary" +
@@ -1107,27 +1112,27 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         " need to learn file handling - working with files."
                 sh1.text="Basics of File Handling"
                 p2.text="Lets first look at some basic syntax then we will understand it -:" +
-                        "\n" +
+                        "\n\n" +
                         "#include<stdio.h>\n" +
                         "void main(){\n" +
                         "\tFILE *fp;\n" +
                         "\tfp = fopen(\"FILE1.txt\",\"mode(r or w)\");\n" +
                         "\tfp.close();\n" +
                         "}\n\n" +
-                        "Understanding this syntax - Inside main the first line starts with word FILE which gives us a pointer to " +
+                        "Understanding this syntax - Inside main the first line starts with word FILE which gives us a pointer to" +
                         " that would point to address of opened file, consider FILE word similar to int char words where to insert" +
                         " an integer we need 'int' word similarly here to operate with files we have 'FILE'.\n" +
                         "Then *fp is pointer. In the next line  we have an fopen function which open the file whose name is specified " +
                         "inside its first argument/parameter  and the second argument/parameter  will tell that in which mode we would want to " +
                         "open the file in. Suppose we are opening a file for the first time or opening a file that doesn't existed " +
-                        "before the we would open it in 'write mode' for which we will pass \"w\" as the second argument/parameter .\n" +
-                        "and if that file existed before or we want to read data from the pre-existing file then we would " +
+                        "before the we would open it in 'write mode' for which we will pass \"w\" as the second argument/parameter.\n" +
+                        " If that file existed before or we want to read data from the pre-existing file then we would " +
                         "open it in read mode that is we would pass \"r\" as the second argument/parameter.\n" +
-                        "There are many more modes in file handling such as rb which is used from reading binary data but here" +
+                        " There are many more modes in file handling such as rb which is used from reading binary data but here" +
                         " we would only use the .txt files and read(r) and write(w) mode."
                 sh2.text="Program to write to a file f1.txt and then read data from the same file"
                 p3.text="\n\b" +
-                        "\t - - - code - - - \n\n" +
+                        "\t - - - code - - - \n\n\n" +
                         "#include<stdio.h>\n" +
                         "void main(){\n" +
                         "    FILE *f;\n" +
@@ -1139,30 +1144,27 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         "    scanf(\"%d\", &a);\n" +
                         "    fprintf(f, \"%s\\n%d\", s, a);\n" +
                         "    fclose(f);\n" +
-
-
-
                         "    f = fopen(\"f1.txt\", \"r\");\n" +
                         "    fscanf(f, \"%[^\\n]%*c%d\", s, &a);\n" +
                         "    printf(\"Data entered in file -:\\n\");" +
                         "    printf(\"%s %d\", s, a);\n" +
                         "    fclose(f);" +
                         "}\n\n" +
-                        "code explanation - Since we are dealing with file or doing file handling so we created a file pointer" +
+                        "code explanation - Since we are dealing with file or doing file handling so we created a file pointer " +
                         "f and here we would store a name and a string in a file so we declared 2 variables an int and a string " +
                         "for it. Then we created a file named f1.txt using the fopen function by opening it in write mode. Then we" +
                         " take input of string and a number, while taking the input of the string you might have noticed that" +
                         " we have used \"%[^\\n]%*c\" <-this expression while says that take all the input including the spaces" +
                         " until \\n or newline character is encountered and then remove the \\n from it or in short it takes" +
                         " String inputs which has spaces in them which normally scanf function can't take. After that we stored " +
-                        "those using the fprintf function which write the data" +
+                        "those using the fprintf function which write the data " +
                         "given to it in the file. The \\n after %s is given because so that it adds a separator between the string" +
                         " and the number while writing in the file. Then we close the file as we should close the file always after" +
                         " operating on it but also in this case we have to reopen file in read mode to read the data from it.\n" +
                         "\tThe we reopen the same file f1.txt in read mode then we use the fscanf function to write the data that is read from" +
                         " file and then stores it inside the s and a variables respectively. Then we just print the data."
                 sh3.text="More use cases of file handling"
-                p4.text="before some use cases there are some little things that would be used in file handling programs -:\n" +
+                p4.text="before some use cases there are some little things that would be used in file handling programs -:\n\n" +
                         "\tf=fopen(\"names.txt\",\"r\")" +
                         "\tif(f==NULL){\n" +
                         "\tfprintf(stderr,\"\\nError\");\n" +
@@ -1172,7 +1174,7 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         "\t{\n" +
                         "\tch=fgetc(f);\n" +
                         "\tprintf(\"%c\",ch);\n" +
-                        "\t}while(ch!=EOF);\n\t" +
+                        "\t}while(ch!=EOF);\n\n\t" +
                         "here we have opened some file f in read mode. We have written if(f==NULL) this just means that if there" +
                         " was some error in opening the file like file don't exist or insufficient memory etc then f will be NULL" +
                         " so in this case we wouldn't be able to operate further on tour file so that's why we will print" +
@@ -1180,26 +1182,27 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         " be better to use here than just printf.\n\n" +
                         "\tAfter that we want to read the contents in this file here we are reading the contents of " +
                         " file character by character the do while loop has a condition in while that \"ch!=EOF\" this tell that this loop will run " +
-                        "till there are character in the file or the file is not read completely EOF stands for end of file so we have a variable ch" +
+                        "till there are character in the file or the file is not read completely EOF stands for end of file so we have a variable ch " +
                         "which is of character type (char ch;) to read character by character all the elements of the file and fgetc(f) will fetch the character " +
                         "from the file f and then go to next character and then we print the character to output.\n" +
-                        "This method is unlike the previous method above to read the file but this method is more easy and reliable to read from file..." +
+                        "This method is unlike the previous method above to read the file but this method is more easy and reliable to read from file, " +
                         "there is also a example program in code section using this method." +
                         "\n\n\nFile handling is actually one of the things that is very useful when it comes down to making most of the" +
-                        " practical applications be it a program for making class attendance register to a facebook like program " +
+                        " practical applications be it a program for making class attendance register to a any big application like facebook, microsoft word etc where" +
                         "you would need a way to save all the data and then further retrieve the data."
-                foot.text="Task - Read more about file handling and other modes and file types also."
+                foot.text="Try to make a username and password saver using file handling where user will first give his username and password and you save it in a file and then later" +
+                        " verify the user by using the password you have stored in file."
             }
             16->{
                 tv.text="Some more concepts of C"
-                p1.text="Although at this point we are mostly done with our beginner level C course but atlast there are 2 more topics" +
+                p1.text="Although at this point we are mostly done with our beginner level C course but at last there are 2 more topics" +
                         " which are Enums and TypeDef."
                 sh1.text="ENUMS - Enumerated Data type"
                 p2.text="It a user defined data type in C like you might have seen that we have used NULL in some pointer and file handling" +
                         " programs just as C has already some meaning assigned to NULL word similarly using enums we predefine some words, although" +
                         " they usually aren't much useful.\n" +
                         "\tProgram to understand Enums -:\n" +
-                        "\n\t - - - code - - - \n\n" +
+                        "\n\t - - - code - - - \n\n\n" +
                         "\t#include<stdio.h>\n" +
                         "\tenum countries{\n\t\tUSA,\n\t\tRussia,\n\t\tIndia,\n\t\tChina,\n\t\tUK\n\t};\n" +
                         "\tvoid main(){\n" +
@@ -1208,7 +1211,7 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         "\t\tprintf(\"%d\\n\",C);" +
                         "\t\tC=Russia;\n"+
                         "\t\tprintf(\"%d\\n\",C+1);\n" +
-                        "\t}\n\n" +
+                        "\t}\n\n\n" +
                         "understanding above program - at line number 2 we have defined an enum type named countries and set" +
                         " elements in it as USA,Russia,India,China and UK now whenever value is assigned to enum data type then the" +
                         " first name takes the value 0 and second takes 1 and so on. Therefore here it means that USA=0,Russia=1,India=2 and" +
@@ -1223,7 +1226,7 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                 p3.text="You might have seen in structure programs that we once declared a structure then to use it inside the main " +
                         "function we had to write struct with it. Now to save us some time from everytime writing struct we can use typedef" +
                         " which will be more clear from this example -:\n" +
-                        "\n\t - - - code - - - \n\n " +
+                        "\n\t - - - code - - - \n\n\n" +
                         "\t#include<stdio.h>\n" +
                         "\ttypedef struct std{\n" +
                         "\t\tint rollno.;\n" +
@@ -1231,7 +1234,7 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         "\tvoid main(){\n" +
                         "\t\ts1 s;\n" +
                         "\t\ts.rollno=31;\n" +
-                        "\t}\n\n" +
+                        "\t}\n\n\n" +
                         "\tThe only thing we did to make use of typedef was, we wrote typedef keyword before the variable type and then we " +
                         " can use the variable or in this case the struct name std without writing struct student std in the whole program." +
                         "You can see once we defined typedef struct std s1 inside main() unlike normally" +
@@ -1240,9 +1243,9 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                 sh3.text="What's Next?"
                 p4.text="\t This is the last part or module or our C beginner level course, hope you didn't have had much problem going through " +
                         "the course.\n\tAlthough you can choose what's next you would do like learning some new language or continuing mastering C, there" +
-                        " are somethings that i would like to recommend to you which you can do after this course which will help you be a better " +
-                        "programmer -:\n" +
-                        "\tNow you should go to the intermediate and advanced level in this for this best way would be to choose some projects like " +
+                        " are somethings that i would like to recommend to you -:\n" +
+                        "\tNow you should go to the intermediate and advanced level in this for this first practice lots of question that test your thinking and then " +
+                        "to master C the best way would be to choose some projects like " +
                         " working Notes app, or Notepad like text editor using file handling or some 2D game, you just have to search in google or youtube" +
                         " and you will get many helpful links,programs and videos. If you are having any problem in some topic in C practice questions " +
                         "related to that search on stackoverflow or some other forums they are very helpful." +
