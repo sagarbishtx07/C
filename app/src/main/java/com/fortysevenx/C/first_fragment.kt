@@ -768,7 +768,7 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                             "\t\tbig_num = big(&a,&b);\n" +
                             "\t\tprintf(\"Bigger Number = %d\",*big_num);" +
                             "\n\t}\n" +
-                            "before you proceed to code explanation you should go through the program and run it in yourself and try to understand the program."+
+                            "before you proceed to code explanation you should go through the program and run it in yourself and try to understand the program.\n\n"+
                             "code explanation - : In this program inside main we took two int number to compare which is greater among them and then send those two numbers to " +
                             "the function by passing their address to the function(big(&a,&b);) where their address was received by the pointers *a and *b then they were compared and then" +
                             " the greater number was returned as address which in turn was received or stored inside pointer *big_num and which was later displayed.\n" +
@@ -790,7 +790,7 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         "for example-: int a[50];\t here we declared an array of 50 integer type variables in one go\n" +
                         "\n\t 2nd way to declare an array\n" +
                         "\tdata_type name[]={data};\n" +
-                        "for ex-:  int a[]={23,45,11}; \n" +
+                        "\nfor ex-:  int a[]={23,45,11}; \n" +
                         "here we have declared an integer type array inside which we have stored 3 values;\n" +
                         "TO access an array we do it like a[0] which gives the data present at first position or the zero index in the" +
                         " array,the index is the number that we give inside the square brackets that specifies the position of data" +
@@ -843,40 +843,39 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         " that is ist character at position 0 and last at 9 (10 - 1). "
 
                 sh3.text="Some operations on Strings"
-                p4.text=""+
-                        "\tIn the previous program we knew that our string was of length 10 but what if we don't know about the length" +
+                p4.text="In the previous program we knew that our string was of length 10 but what if we don't know about the length" +
                         " of the given string or we need to perform some operations on string but it requires us to know about the length" +
                         " of string, So there are mainly 2 methods for this one of the method you will find in the code section to the right and the " +
-                        "other method is here where we will use the header file <String.h>.We will see using this program -: \n" +
+                        "other method is here where we will use the header file <string.h>.We will see using this program -: \n" +
                         "\n\t - - - code - - - \n\n\n" +
                         "\t#include<string.h>\n" +
                         "\t#include<stdio.h>\n" +
                         "\tvoid main(){\n" +
-                        "\t\tchar str[20];\n" +
-                        "\t\tint ln;\n" +
-                        "\t\tprintf(\"Enter a string between 0 to 20 words \n\");\n"
-                        "\t\tscanf(\"%s\",str);\n" +
-                        "\t\tln=strlen(str);\n" +
-                        "\t\tprintf(\"Length of given string is %d\",ln);\n" +
-                        "\t\tprintf(\"The given string is -: %s \n\",str);\n" +
-                        "\t\tprintf(\"\nNow we will print the string in reverse \n" +
-                        "\t\tfor(i=ln-1;i>=0;i--){\n" +
-                                "\t\t\tprintf(\"\t%c\",str[i]);"+
-                                "\n\t\t}\n\t}\n" +
-                        "\n\ncode explanation - : here in this program we use the string.h header file remember that header file is a library " +
-                                "of many necessary functions and more that we use and they helps us in our program, so in this string.h header file" +
-                                " it many contains string related functions such as a strlen() function which gives us the length of string in integer" +
-                                " that we put inside its brackets,now back to our program we initialized a 20 length string and now user can insert any " +
-                                "length of string between 0 to 20 above it, the program will not take the string letters after 19 index.\n\t" +
-                                "if you already have noticed it better and if not then see that in scanf statement we have not used '&' character which " +
-                                "as i told you before tell the address at which data is to be stored.We will talk about it in the next section where we will " +
-                                "learn more about pointers and array and addressing after that we used the above mentioned strlen() function to calculate the length" +
-                                " of the string that user has entered after that we print the string using %s format specifier which tells its string and here we used" +
-                                " just the name of the string and not the square brackets to print the full string, after that we used a loop that run backwards from" +
-                                " the end of the string(ln-1 because the indexing goes to the length - 1 and starts from zero), to the starting index 0 which will " +
-                                "print the string backwards.This part might be little hard to get if you are very new to programming but understand this part very " +
-                                "thoroughly and don't move to next part until you understand this part because it will strength you knowledge about strings which will be " +
-                                "very much need for becoming good programmer."
+                        "\tchar str[20];\n" +
+                        "\tint ln;\n" +
+                        "\tprintf(\"Enter a string between 0 to 20 words\\n\");\n"+
+                        "\tscanf(\"%s\",str);\n" +
+                        "\tln=strlen(str);\n" +
+                        "\tprintf(\"Length of given string is %d\",ln);\n" +
+                        "\tprintf(\"The given string is -: %s \n\",str);\n" +
+                        "\tprintf(\"\\nNow we will print the string in reverse\\n\"); \n" +
+                        "\tfor(i=ln-1;i>=0;i--){\n" +
+                        "\t\tprintf(\"\t%c\",str[i]);"+
+                        "\n\t} }\n\n\n" +
+                        "code explanation - here in this program we use the string.h header file remember that header file is a library " +
+                        "of many necessary functions and more that we use and they helps us in our program, so in this string.h header file" +
+                        " it many contains string related functions such as a strlen() function which gives us the length of string in integer" +
+                        " that we put inside its brackets,now back to our program we initialized a 20 length string and now user can insert any " +
+                        "length of string between 0 to 20 above it, the program will not take the string letters after 19 index.\n\t" +
+                        "if you already have noticed it better and if not then see that in scanf statement we have not used '&' character which " +
+                        "as i told you before tell the address at which data is to be stored.We will talk about it in the next section where we will " +
+                        "learn more about pointers and array and addressing after that we used the above mentioned strlen() function to calculate the length" +
+                        " of the string that user has entered after that we print the string using %s format specifier which tells its string and here we used" +
+                        " just the name of the string and not the square brackets to print the full string, after that we used a loop that run backwards from" +
+                        " the end of the string(ln-1 because the indexing goes to the length - 1 and starts from zero), to the starting index 0 which will " +
+                        "print the string backwards.This part might be little hard to get if you are very new to programming but understand this part very " +
+                        "thoroughly and don't move to next part until you understand this part because it will strength you knowledge about strings which will be " +
+                        "very much need for becoming good programmer."
                 foot.text="for arrays and strings you in addition to the programs in this section you should try to solve at least 10 to 15 different program in C."
 
             }
@@ -893,23 +892,23 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         " a pointer,if you write *a or *(a+0) it will do the same work as a[0] and give you the first element of the array.\n\t" +
                         "Remember in the last section when we were inputting string we didn't write '&' ampersand symbol in the scanf(\"%s\",str);" +
                         " we missed the '&' because the str[20] was a character array and the str itself is a pointer which means it already holds " +
-                        "some address so we don't need the '&' to get the address for the scanf(). "
+                        "some address so we don't need the '&' to get the address for the scanf()."
 
                 sh2.text = "Accessing array elements with pointers"
 
-                p3.text = "Now we know that to access first element of the array without using the square brackets we do it by" +
+                p3.text = "Now we know that to access first element of the array without using the square brackets we do it by " +
                         "*(a+0) or *a. To access the other elements of the array -: *(a+element_index) ,for second element *(a+1)" +
                         " to access the third element *(a+2) and so on. When we declare a array suppose of 5 elements - a[5] mem1ory" +
                         " gets divided into 5 parts  with each having address as a,a+1,a+2.... so to access elements there -*(a),*(a+1)" +
                         " *(a+2),..... so on.\n\n" +
                         "Lets access the elements of the array using the pointer notations in the following program -:\n" +
-                        "\n\t - - - code - - - \n" +
+                        "\n\t - - - code - - - \n\n\n" +
                         "\t#include<stdio.h>\n" +
                         "\tvoid main(){\n" +
                         "\t\tint a[]={10,20,40,80,160},i;\n" +
                         "\t\tfor(i=0;i<5;i++)\n" +
                         "\t\t\tprintf(\"Element No %d is = %d\",i,*(a+i));\n" +
-                        "\t}\n" +
+                        "\t}\n\n\n" +
                         "\ncode explanation - we declare an array of 5 elements and as we know that using pointer elements will " +
                         "be accessed as *(a+0),*(a+1).. so we put it inside a loop of 5 and *(a+i) will give the elements of the array " +
                         "as the value of i changes from 0 to 4. Practice this program and try to implement more array based program using this " +
@@ -927,7 +926,25 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
                         " we cannot allocate or declare some variables at the run time because we won't be able to give storage/memory to them in the" +
                         " static method. Now to solve this problem we have dynamic memory allocation in which we can change/reallocate and free the memory " +
                         " that we decide to give or change. It mainly has 3 functions to do so i.e. - malloc(),free(),realloc(). Which you will" +
-                        "study about later when you read about data structure or you probably would use them in list,nodes,stack,queue,trees,graphs etc."
+                        "study about later when you read about data structure or you probably would use them in list,nodes,stack,queue,trees,graphs etc.\n\n\n" +
+                        "lets look at this program\n\n" +
+                        "\t - - - code - - - \n\n\n" +
+                        "#include <stdio.h>\n" +
+                        "#include <stdlib.h>\n" +
+                        "void main()\n" +
+                        "{\n" +
+                        "    int *a;\n" +
+                        "    a = malloc(sizeof(int));\n" +
+                        "    printf(\"Enter a value\\t\");\n" +
+                        "    scanf(\"%d\", a);\n" +
+                        "    printf(\"Value entered is\\t%d\", *a);\n" +
+                        "}\n\n\n" +
+                        "This is a simple program where we have used dynamic memory allocation to assign a certain size of memory to a pointer, for this first we declared " +
+                        "a pointer since when we use malloc function to allocate some size in memory it return the address of that memory block so to store that address we needed" +
+                        " a pointer and we used <stlib.h> header file for malloc in second line inside main we assigned the memory space address to pointer and inside malloc we have to define" +
+                        " the memory size, so we have used integer number so we needed integer size but as we told before size of variables varies from one compiler to another so we used" +
+                        " sizeof function which returns the size of parameter inside it. You might have noticed that in the scanf() part we didn't add '&' symbol before a, that is because " +
+                        "a is pointer and a is already a address so we don't need &a in this case. After that we printed the number to the screen.\n"
 
                 foot.text="Although we have finished about pointers in beginner level but you should practice pointers as they have many" +
                         " use in C and many programs are based on pointers and dynamic memory allocation in competitive program so it would" +
