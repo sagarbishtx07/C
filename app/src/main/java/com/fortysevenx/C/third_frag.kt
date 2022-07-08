@@ -38,7 +38,9 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
         var q5=view.findViewById<TextView>(R.id.q5)
         var s1=view.findViewById<TextView>(R.id.c1)
         var s2=view.findViewById<TextView>(R.id.c2)
-
+        var heading=view.findViewById<TextView>(R.id.f3head)
+        var f3topiclist:ArrayList<CardDetails>?=Constants.getTV()
+        var st="Program on"
         var stid = arrayOf(
             R.string.f3i1q1,
             R.string.f3i1s1,
@@ -179,6 +181,8 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
         )
         when(c_id){
             0->{
+                st="Program on "+f3topiclist!![c_id].details
+                heading.setText(" ")
                 q1.text=getString(stid[(c_id*7)])
                 s1.text=getString(stid[(c_id*7)+1])
                 q2.text=getString(stid[(c_id*7)+2])
@@ -188,6 +192,8 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q5.text=getString(stid[(c_id*7)+6])
             }
             1->{
+                st="Program on "+f3topiclist!![c_id].details
+                heading.setText(" ")
                 q1.text=getString(stid[(c_id*7)])
                 s1.text=getString(stid[(c_id*7)+1])
                 q2.text=getString(stid[(c_id*7)+2])
@@ -198,6 +204,7 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
 
             }
             2->{
+                heading.setText("Let's start coding")
                 q1.text=getString(stid[(c_id*7)])
                 s1.text=getString(stid[(c_id*7)+1])
                 q2.text=getString(stid[(c_id*7)+2])
@@ -207,6 +214,8 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q5.text=getString(stid[(c_id*7)+6])
             }
             3->{
+                st="Program on "+f3topiclist!![c_id].details
+                heading.setText(st)
                 q1.text=getString(stid[(c_id*7)])
                 s1.text=getString(stid[(c_id*7)+1])
                 q2.text=getString(stid[(c_id*7)+2])
@@ -216,6 +225,8 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q5.text=getString(stid[(c_id*7)+6])
             }
             4->{
+                st="Program on "+f3topiclist!![c_id].details
+                heading.setText(st)
                 q1.text=getString(stid[(c_id*7)])
                 s1.text=getString(stid[(c_id*7)+1])
                 q2.text=getString(stid[(c_id*7)+2])
@@ -225,6 +236,8 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q5.text=getString(stid[(c_id*7)+6])
             }
             5->{
+                st="Program on "+f3topiclist!![c_id].details
+                heading.setText(st)
                 q1.text=getString(stid[(c_id*7)])
                 s1.text=getString(stid[(c_id*7)+1])
                 q2.text=getString(stid[(c_id*7)+2])
@@ -234,6 +247,8 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q5.text=getString(stid[(c_id*7)+6])
             }
             6->{
+                st="Program on "+f3topiclist!![c_id].details
+                heading.setText(st)
                 q1.text=getString(stid[(c_id*7)])
                 s1.text=getString(stid[(c_id*7)+1])
                 q2.text=getString(stid[(c_id*7)+2])
@@ -243,6 +258,8 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q5.text=getString(stid[(c_id*7)+6])
             }
             7->{
+                st="Program on "+f3topiclist!![c_id].details
+                heading.setText(st)
                 q1.text=getString(stid[(c_id*7)])
                 s1.text=getString(stid[(c_id*7)+1])
                 q2.text=getString(stid[(c_id*7)+2])
@@ -252,6 +269,8 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q5.text=getString(stid[(c_id*7)+6])
             }
             8->{
+                st="Program on "+f3topiclist!![c_id].details
+                heading.setText(st)
                 q1.text=getString(stid[(c_id*7)])
                 s1.text=getString(stid[(c_id*7)+1])
                 q2.text=getString(stid[(c_id*7)+2])
@@ -261,6 +280,8 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q5.text=getString(stid[(c_id*7)+6])
             }
             9->{
+                st="Program on "+f3topiclist!![c_id].details
+                heading.setText(st)
                 q1.text=getString(stid[(c_id*7)])
                 s1.text=getString(stid[(c_id*7)+1])
                 q2.text=getString(stid[(c_id*7)+2])
@@ -270,6 +291,8 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q5.text=getString(stid[(c_id*7)+6])
             }
             10->{
+                st="Program on "+f3topiclist!![c_id].details
+                heading.setText("More program on functions")
                 q1.text=getString(stid[(c_id*7)])
                 s1.text=getString(stid[(c_id*7)+1])
                 q2.text=getString(stid[(c_id*7)+2])
@@ -279,6 +302,8 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q5.text=getString(stid[(c_id*7)+6])
             }
             11->{
+                st="Program on "+f3topiclist!![c_id].details
+                heading.setText(st)
                 q1.text=getString(stid[(c_id*7)])
                 s1.text=getString(stid[(c_id*7)+1])
                 q2.text=getString(stid[(c_id*7)+2])
@@ -288,6 +313,8 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q5.text=getString(stid[(c_id*7)+6])
             }
             12->{
+                st="Program on "+f3topiclist!![c_id].details
+                heading.setText(st)
                 q1.text=getString(stid[(c_id*7)])
                 s1.text=getString(stid[(c_id*7)+1])
                 q2.text=getString(stid[(c_id*7)+2])
@@ -297,6 +324,8 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q5.text=getString(stid[(c_id*7)+6])
             }
             13->{
+                st="Program on "+f3topiclist!![c_id].details
+                heading.setText(st)
                 q1.text=getString(stid[(c_id*7)])
                 s1.text=getString(stid[(c_id*7)+1])
                 q2.text=getString(stid[(c_id*7)+2])
@@ -306,6 +335,8 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q5.text=getString(stid[(c_id*7)+6])
             }
             14->{
+                st="Program on "+f3topiclist!![c_id].details
+                heading.setText(st)
                 q1.text=getString(stid[(c_id*7)])
                 s1.text=getString(stid[(c_id*7)+1])
                 q2.text=getString(stid[(c_id*7)+2])
@@ -315,6 +346,8 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q5.text=getString(stid[(c_id*7)+6])
             }
             15->{
+                st="Program on "+f3topiclist!![c_id].details
+                heading.setText(st)
                 q1.text=getString(stid[(c_id*7)])
                 s1.text=getString(stid[(c_id*7)+1])
                 q2.text=getString(stid[(c_id*7)+2])
@@ -324,6 +357,8 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q5.text=getString(stid[(c_id*7)+6])
             }
             16->{
+                st="Program on "+f3topiclist!![c_id].details
+                heading.setText("ENUM and Typedef")
                 q1.text=getString(stid[(c_id*7)])
                 s1.text=getString(stid[(c_id*7)+1])
                 q2.text=getString(stid[(c_id*7)+2])
@@ -333,6 +368,8 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q5.text=getString(stid[(c_id*7)+6])
             }
             17->{
+                st="Program on "+f3topiclist!![c_id].details
+                heading.setText("ENUM and Typedef")
                 q1.text=getString(stid[(c_id*7)])
                 s1.text=getString(stid[(c_id*7)+1])
                 q2.text=getString(stid[(c_id*7)+2])

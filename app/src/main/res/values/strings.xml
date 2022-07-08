@@ -901,30 +901,29 @@ m
     </string>
 
     <string name="f3i15s1">
-        #include&lt;stdio.h&gt;
-        struct info
-        {
-            int r_no;
-            char email[30];
-            char name[20];
-        };
-
-
-        int main()
-        {
-            struct info inf;
-            printf(&quot;Enter Details : &quot;);
-            printf(&quot;\\nRoll no\\t&quot;);
-            scanf(&quot;%d&quot;, &amp;inf.r_no);
-            printf(&quot;em@il id\\t&quot;);
-            scanf(&quot;%s&quot;, inf.email);
-            printf(&quot;name\\t&quot;);
-            scanf(&quot;%s&quot;, inf.name);
-            printf(&quot;\\n\\nDetails entered are&quot;);
-            printf(&quot;\\nRoll no\\t%d\\n&quot;, inf.r_no);
-            printf(&quot;em@il id\\t%s\\n&quot;, inf.email);
-            printf(&quot;name\\t%s&quot;, inf.name);
-}
+        #include&lt;stdio.h&gt;\n
+        struct info\n
+        {\n\t
+            int r_no;\n\t
+            char email[30];\n\t
+            char name[20];\n
+        };\n
+        \n
+        int main()\n
+        {\n
+            struct info inf;\n
+            printf(\"Enter Details : \");\n
+            printf(\"\\nRoll no\\t\");\n
+            scanf(\"%d\", &amp;inf.r_no);\n
+            printf(\"em@il id\\t\");\n
+            scanf(\"%s\", inf.email);\n
+            printf(\"name\\t\");\n
+            scanf(\"%s\", inf.name);\n
+            printf(\"\\n\\nDetails entered are\");\n
+            printf(\"\\nRoll no\\t%d\\n\", inf.r_no);\n
+            printf(\"em@il id\\t%s\\n\", inf.email);\n
+            printf(\"name\\t%s\", inf.name);\n
+}\n
 
     </string>
 
@@ -935,29 +934,29 @@ m
 
     <string name="f3i15s2">
         \nNOTE - when we use a pointer declaration on a structure or pointer of a structure we use &quot;->&quot; instead of
-         &quot;.&quot;.
-        #include&lt;\nstdio.h&gt;\n
-        #include&lt;\nstdlib.h&gt;\n
+         \".\".
+       \n\n #include&lt;stdio.h&gt;\n
+        #include&lt;stdlib.h&gt;\n
         struct demo\n
         {\n
-        \tint *a, *b;\n
-        \tint data;\n
+        int *a, *b;\n
+        int data;\n
         };\n
         void main()\n
         {\n
-        \tstruct demo *d;\n
-        \tint a, b;\n
-        \td = malloc(sizeof(struct demo));\n
-        \tprintf(&quot;\nEnter a:\\t&quot;\n);\n
-        \tscanf(&quot;\n%d&quot;\n, &amp;\na);\n
-        \tprintf(&quot;\nb:\\t&quot;\n);\n
-        \tscanf(&quot;\n%d&quot;\n, &amp;\nb);\n
-        \tprintf(&quot;\ndata:\\t&quot;\n);\n
-        \tscanf(&quot;\n%d&quot;\n, &amp;\nd->data);\n
-        \td-&lt;\na = &amp;\na;\n
-        \td-&lt;\nb = &amp;\nb;\n
-        \tprintf(&quot;\n\\n\\nDetails entered are :\\n&quot;\n);\n
-        \tprintf(&quot;\na:\\t %d \\n b:\\t %d \\n data:\\t %d&quot;\n, *d->a, *d->b, d->data);\n
+        struct demo *d;\n
+        int a, b;\n
+        d = malloc(sizeof(struct demo));\n
+        printf(\"\\nEnter a:\\t\");\n
+        scanf(\"\\n%d\", &amp;a);\n
+        printf(\"\\nb:\\t\");\n
+        scanf(\"\\n%d\", &amp;b);\n
+        printf(\"\\ndata:\\t\");\n
+        scanf(\"\\n%d\", &amp;d->data);\n
+        d-&lt;a = &amp;a;\n
+        d-&lt;b = &amp;b;\n
+        printf(\"\\n\\n\\nDetails entered are :\\n\");\n
+        printf(\"\\na:\\t %d \\n b:\\t %d \\n data:\\t%d\",*d->a,*d->b,d->data);\n
         }\n
 
 
@@ -996,20 +995,20 @@ m
     \tint i;\n
     \tchar s[20];\n
     \tchar ch;\n
-    \tf=fopen(&quot;names.txt&quot;,&quot;w&quot;);\n
+    \tf=fopen(\"names.txt\",\"w\");\n
     \tfor(i=0;i&lt;5;i++)\n
     \t{\n
-    \tprintf(&quot;Entername%d\\t&quot;,i);\n
-    \tscanf(&quot;%[^\\n]%*c&quot;,s);\n
-    \tfprintf(f,&quot;Name:%s\\n&quot;,s);\n
+    \tprintf(\"Entername%d\\t\",i);\n
+    \tscanf(\"%[^\\n]%*c\",s);\n
+    \tfprintf(f,\"Name:%s\\n\",s);\n
     \t}\n
     \tfclose(f);\n
 
-    \tf=fopen(&quot;names.txt&quot;,&quot;r&quot;);\n
+    \tf=fopen(\"names.txt\",\"r\");\n
     \tdo\n
     \t{\n
     \tch=fgetc(f);\n
-    \tprintf(&quot;%c&quot;,ch);\n
+    \tprintf(\"%c\",ch);\n
     \t}while(ch!=EOF);\n
     \tfclose(f);\n
     \t}\n
@@ -1020,9 +1019,9 @@ m
     </string>
 
     <string name="f3i16s2">
-        #include &lt;stdio.h&gt;
-#include &lt;stdlib.h&gt;
-#include &lt;string.h&gt;
+        #include&lt;stdio.h&gt;\n
+#include&lt;stdlib.h&gt;\n
+#include&lt;string.h&gt;\n
 struct student\n
 {\n
     int rollno;\n
@@ -1032,27 +1031,27 @@ struct student\n
 void main()\n
 {\n
     FILE *f;\n
-    f = fopen(&quot;std.txt&quot;, &quot;w&quot;);\n
+    f = fopen(\"std.txt\", \"w\");\n
     struct student s, rd;\n
     if (f == NULL)\n
     {\n
-        fprintf(stderr, &quot;\nERROR unable to open file&quot;);\n
+        fprintf(stderr, \"\\nERROR unable to open file\");\n
         exit(1);\n
     }\n
-    printf(&quot;Enter Name\\t&quot;);\n
+    printf(\"Enter Name\\t\");\n
     gets(s.name);\n
-    printf(&quot;Enter Roll No\\t&quot;);\n
-    scanf(&quot;%d&quot;, &amp;s.rollno);\n
+    printf(\"Enter Roll No\\t\");\n
+    scanf(\"%d\", &amp;s.rollno);\n
     fwrite(&amp;s, sizeof(struct student), 1, f);\n
     fclose(f);\n
-    f = fopen(&quot;std.txt&quot;, &quot;r&quot;);\n
+    f = fopen(\"std.txt\", \"r\");\n
     if (f == NULL)\n
     {\n
-        fprintf(stderr, &quot;\nEmpty File&quot;);\n
+        fprintf(stderr, \"\\nEmpty File\");\n
         exit(1);\n
     }\n
     fread(&amp;rd, sizeof(struct student), 1, f);\n
-    printf(&quot;\\nName\\t%s\\nRoll No.\\t%d&quot;, rd.name, rd.rollno);\n
+    printf(\"\\nName\\t%s\\nRoll No.\\t%d\", rd.name, rd.rollno);\n
 }\n
 
     </string>
@@ -1083,17 +1082,17 @@ void main()\n
         thurs,\n
         fri,\n
         sat\n
-    };/n
-int main()/n
+    };\n
+int main()\n
 {\n
     enum days day;\n
     day = thurs;\n
     while (day != 0)\n
     {\n
-        printf("No Holiday\n");\n
-        day—;\n
+        printf(\"No Holiday\\n\");\n
+        day=day-1;\n
         if (day == 0)\n
-            printf("Sunday");\n
+            printf(\"Sunday\");\n
     }\n
     return 0;\n
 }\n
@@ -1105,25 +1104,25 @@ int main()/n
     </string>
     <string name="f3i17s2">
         <![CDATA[
-       #include <stdio.h>
-#include <string.h>
-typedef struct info
-{
-    int r_no;
-    char email[30];
-    char name[20];
-} inf;
+       \t#include<stdio.h>\n
+       \t#include<string.h>\n
+       \ttypedef struct info\n
+       \t{\n
+       \tint r_no;\n
+       \tchar email[30];\n
+       \tchar name[20];\n
+       \t} inf;\n
 
-int main()
-{
-    inf i1;
-    i1.r_no = 31;
-    strcpy(i1.email, "dragoncoder@xyz.com");
-    strcpy(i1.name, "Mr. Coder");
-    printf("Rollno\t%d\n", i1.r_no);
-    printf("Name\t%s\n", i1.name);
-    printf("Email\t%s\n", i1.email);
-}
+       \tint main()
+       \n\t{
+        \n\tinf i1;
+        \n\ti1.r_no = 31;
+        \n\tstrcpy(i1.email, \"dragoncoder@xyz.com\");
+        \n\tstrcpy(i1.name, \"Mr. Coder\");
+        \n\tprintf(\"Rollno\\t%d\\n\", i1.r_no);
+        \n\tprintf(\"Name\\t%s\\n\", i1.name);
+        \n\tprintf(\"Email\\t%s\\n\", i1.email);
+       \n\t}
 ]]>
     </string>
     <string name="f3i17q3">

@@ -15,10 +15,31 @@
     android:orientation="vertical">
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:id="@+id/f3head"
+        android:text="Programs on topic" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/f3l"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:text="--+----------------------------------------------+--"
+        android:padding="2dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="10dp"
+        />
+
+    <TextView
         android:id="@+id/q1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
+        android:layout_margin="5dp"
         android:text="HELLO FRAGMENT 3 TEsTING"
         android:layout_marginTop="5dp"
         android:textSize="16sp" />
@@ -27,16 +48,18 @@
         android:id="@+id/c1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif-monospace"
         android:layout_margin="10dp"
+        android:paddingBottom="10dp"
+        android:fontFamily="sans-serif-black"
         android:text="include\nmain()\n{\n\ts1\n\ts2\n}\n"
         android:textAlignment="viewStart"
-        android:textSize="14sp" />
+        android:textSize="12sp" />
     <TextView
         android:id="@+id/q2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
+        android:layout_margin="5dp"
         android:text="HELLO FRAGMENT 3 TEsTING"
         android:layout_marginTop="5dp"
         android:textSize="16sp" />
@@ -45,11 +68,11 @@
         android:id="@+id/c2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif-monospace"
         android:layout_margin="10dp"
+        android:fontFamily="sans-serif-black"
         android:text="include\nmain()\n{\n\ts1\n\ts2\n}\n"
         android:textAlignment="viewStart"
-        android:textSize="14sp" />
+        android:textSize="12sp" />
     <TextView
         android:id="@+id/div"
         android:layout_width="wrap_content"
@@ -67,7 +90,8 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:text="HELLO FRAGMENT 3 TEsTING"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
         android:textSize="16sp" />
     <TextView
         android:id="@+id/q4"
@@ -75,7 +99,8 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:text="HELLO FRAGMENT 3 TEsTING"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
         android:textSize="16sp" />
     <TextView
         android:id="@+id/q5"
@@ -83,7 +108,8 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:text="HELLO FRAGMENT 3 TEsTING"
-        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
         android:textSize="16sp" />
 
 </LinearLayout>
