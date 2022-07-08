@@ -37,6 +37,7 @@ class Second_fragment : Fragment(R.layout.fragment_second) {
         val q2 =view.findViewById<TextView>(R.id.q2)
         val q3 =view.findViewById<TextView>(R.id.q3)
         val q4 =view.findViewById<TextView>(R.id.q4)
+        var headid=view.findViewById<TextView>(R.id.tvf2)
         var id = arrayOf(
             view.findViewById<TextView>(R.id.q1c1),
             view.findViewById<TextView>(R.id.q1c2),
@@ -56,6 +57,7 @@ class Second_fragment : Fragment(R.layout.fragment_second) {
             view.findViewById<TextView>(R.id.q4c4),
         )
         var opList:ArrayList<Questions>?=quest.getQuest()
+        var headList:ArrayList<CardDetails>?=Constants.getTV()
        // view.findViewById<TextView>(R.id.q1c1).setOnClickListener(this)
         for(i in 0..15){
             id[i].setOnClickListener{
@@ -69,6 +71,7 @@ selectedOV(i,opList,id,q_id);
             0->{
 
                 j=q_id;
+                headid.text=headList!![j].details
                 q1.text= opList!![j].ques
                 q2.text= opList[j+1].ques
                 q3.text= opList[j+2].ques
@@ -110,6 +113,7 @@ selectedOV(i,opList,id,q_id);
             }
             1->{
                 j=(4*q_id);
+                headid.text=headList!![q_id].details
                 q1.text= opList!![j].ques
                 q2.text= opList[j+1].ques
                 q3.text= opList[j+2].ques
@@ -129,6 +133,7 @@ selectedOV(i,opList,id,q_id);
             2->{
 
                 j=4*q_id;
+                headid.text=headList!![q_id].details
                 q1.text= opList!![j].ques
                 q2.text= opList[j+1].ques
                 q3.text= opList[j+2].ques
@@ -150,7 +155,7 @@ selectedOV(i,opList,id,q_id);
             3->{
 
                 j=4*q_id;
-
+                headid.text=headList!![q_id].details
                 q1.text= opList!![j].ques
                 q2.text= opList[j+1].ques
                 q3.text= opList[j+2].ques
@@ -172,7 +177,7 @@ selectedOV(i,opList,id,q_id);
             4->{
 
                 j=4*q_id;
-
+                headid.text=headList!![q_id].details
                 q1.text= opList!![j].ques
                 q2.text= opList[j+1].ques
                 q3.text= opList[j+2].ques
@@ -193,7 +198,7 @@ selectedOV(i,opList,id,q_id);
             5->{
 
                 j=4*q_id;
-
+                headid.text=headList!![q_id].details
                 q1.text= opList!![j].ques
                 q2.text= opList[j+1].ques
                 q3.text= opList[j+2].ques
@@ -214,7 +219,7 @@ selectedOV(i,opList,id,q_id);
             6->{
 
                 j=4*q_id;
-
+                headid.text=headList!![q_id].details
                 q1.text= opList!![j].ques
                 q2.text= opList[j+1].ques
                 q3.text= opList[j+2].ques
@@ -235,7 +240,7 @@ selectedOV(i,opList,id,q_id);
             7->{
 
                 j=4*q_id;
-
+                headid.text=headList!![q_id].details
                 q1.text= opList!![j].ques
                 q2.text= opList[j+1].ques
                 q3.text= opList[j+2].ques
@@ -256,7 +261,7 @@ selectedOV(i,opList,id,q_id);
             8->{
 
                 j=4*q_id;
-
+                headid.text=headList!![q_id].details
                 q1.text= opList!![j].ques
                 q2.text= opList[j+1].ques
                 q3.text= opList[j+2].ques
@@ -276,7 +281,7 @@ selectedOV(i,opList,id,q_id);
             }
             9->{
                 j=4*q_id;
-
+                headid.text=headList!![q_id].details
                 q1.text= opList!![j].ques
                 q2.text= opList[j+1].ques
                 q3.text= opList[j+2].ques
@@ -296,7 +301,7 @@ selectedOV(i,opList,id,q_id);
             }
             10->{
                 j=4*q_id;
-
+                headid.text=headList!![q_id].details
                 q1.text= opList!![j].ques
                 q2.text= opList[j+1].ques
                 q3.text= opList[j+2].ques
@@ -316,7 +321,7 @@ selectedOV(i,opList,id,q_id);
             }
             11->{
                 j=4*q_id;
-
+                headid.text=headList!![q_id].details
                 q1.text= opList!![j].ques
                 q2.text= opList[j+1].ques
                 q3.text= opList[j+2].ques
@@ -335,7 +340,7 @@ selectedOV(i,opList,id,q_id);
                 }}
             12->{
                 j=4*q_id;
-
+                headid.text=headList!![q_id].details
                 q1.text= opList!![j].ques
                 q2.text= opList[j+1].ques
                 q3.text= opList[j+2].ques
@@ -354,7 +359,7 @@ selectedOV(i,opList,id,q_id);
                 }}
             13->{
                 j=4*q_id;
-
+                headid.text=headList!![q_id].details
                 q1.text= opList!![j].ques
                 q2.text= opList[j+1].ques
                 q3.text= opList[j+2].ques
@@ -373,7 +378,7 @@ selectedOV(i,opList,id,q_id);
                 }}
             14->{
                 j=4*q_id;
-
+                headid.text=headList!![q_id].details
                 q1.text= opList!![j].ques
                 q2.text= opList[j+1].ques
                 q3.text= opList[j+2].ques
@@ -392,7 +397,7 @@ selectedOV(i,opList,id,q_id);
                 }}
             15->{
                 j=4*q_id;
-
+                headid.text=headList!![q_id].details
                 q1.text= opList!![j].ques
                 q2.text= opList[j+1].ques
                 q3.text= opList[j+2].ques
@@ -411,7 +416,7 @@ selectedOV(i,opList,id,q_id);
                 }}
             16->{
                 j=4*q_id;
-
+                headid.text=headList!![q_id].details
                 q1.text= opList!![j].ques
                 q2.text= opList[j+1].ques
                 q3.text= opList[j+2].ques
@@ -445,3 +450,4 @@ else{
 
 }
 //192.168.137.117 fe80::5bf8:5977:8ae1:1a2
+
