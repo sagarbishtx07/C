@@ -14,7 +14,7 @@
     </string>
     
     <string name="f3i1q2">
-m
+
     </string>
 
     <string name="f3i1s2">
@@ -67,7 +67,7 @@ m
 
     <!-- ID 3 -->
     <string name="f3i3q1">
-       Write and Execute a program that prints your name.
+       1. Write and Execute a program that prints your name.
     </string>
 
     <string name="f3i3s1">
@@ -81,7 +81,7 @@ m
     </string>
 
     <string name="f3i3q2">
-        Write and execute a program to print the sum of 10 and 5.
+        2. Write and execute a program to print the sum of 10 and 5.
     </string>
 
     <string name="f3i3s2">
@@ -94,11 +94,11 @@ m
     </string>
 
     <string name="f3i3q3">
-        Write and execute a program that prints your name and your school name.
+        3. Write and execute a program that prints your name and your school name.
     </string>
 
     <string name="f3i3q4">
-        Write a program that prints the product of 10 and 2500 and prints like \"2500*10 = &apos;solution&apos; \"
+        4. Write a program that prints the product of 10 and 2500 and prints like \"2500*10 = \'solution\' \"
     </string>
 
     <string name="f3i3q5">
@@ -109,8 +109,8 @@ m
     <!--      ID 4            -->
 
     <string name="f3i4q1">
-        NOTE - Some of these program might be more understandable to you after you go through the next section, so if you dont get these
-        program now dont worry in the next section you will understand then you can go through these again :).
+        NOTE - Some of these program might be more understandable to you after you go through the next section, so if you don\'t get these
+        program now don\'t worry in the next section you will understand then you can go through these again :).
 
        
     </string>
@@ -121,7 +121,7 @@ m
     </string>
 
     <string name="f3i4q2">
-        W and E a program to show the use of float, int and char data types.
+        1.W and E a program to show the use of float, int and char data types.
 
     </string>
 
@@ -136,17 +136,17 @@ m
    \t\tage = 20;\n
    \t\tprcnt = 67.78;\n
    \t\tgender = \'M\';\n
-   \t\tprintf(\"\\nAge = %d\\nPercent = %f\\nGender = %c\\",age,prcnt,gender);\n
+   \t\tprintf(\"\\nAge = %d\\nPercent = %f\\nGender = %c\\t\",age,prcnt,gender);\n
    \t}\n
 
 </string>
 
 <string name="f3i4q3">
-    Write a program to store 37,98.7,\'345\',\'A\' inside different data types and then print them in separate lines.
+    2.Write a program to store 37,98.7,\'345\',\'A\' inside different data types and then print them in separate lines.
 </string>
 
 <string name="f3i4q4">
-    Write and execute a program to add 2 numbers 23 and 33.456 by storing them in their correct data types then printing the output as
+    3.Write and execute a program to add 2 numbers 23 and 33.456 by storing them in their correct data types then printing the output as
      an integer value(without decimal places).
 </string>
 
@@ -158,7 +158,7 @@ m
 <!--      ID 5            -->
 
     <string name="f3i5q1">
-         Write and execute a program to print a float value without points/decimal places.
+        1. Write and execute a program to print a float value without points/decimal places.
     </string>
 
     <string name="f3i5s1">
@@ -177,7 +177,7 @@ m
     </string>
 
     <string name="f3i5q2">
-        Write a program to take 2 integer inputs and print the total of those values.
+       2. Write a program to take 2 integer inputs and print the total of those values.
 
     </string>
 
@@ -197,7 +197,7 @@ m
     </string>
 
     <string name="f3i5q3">
-        Write and Execute a program like we did above by taking 2 numbers as
+        3. Write and Execute a program like we did above by taking 2 numbers as
         input but this time perform subtraction,division and multiplication
         also.
 
@@ -214,7 +214,7 @@ m
     <!-- ID 6 -->
 
     <string name="f3i6q1">
-        Write a program to check that the given number is positive or negative.
+       1. Write a program to check that the given number is positive or negative.
 
     </string>
 
@@ -234,7 +234,7 @@ m
     </string>
 
     <string name="f3i6q2">
-        Write and Execute a program to reverse a 2 digit int value.
+        2.Write and Execute a program to reverse a 2 digit int value.
 
     </string>
 
@@ -256,7 +256,7 @@ m
     </string>
 
     <string name="f3i6q3">
-        W and E a program that checks whether the given number is the square of any number between
+        3.W and E a program that checks whether the given number is the square of any number between
         2 and 7 or not,If its a square of the number from 2 and 7 print YES otherwise print NO .\n
 
         for ex - input number = 25\n
@@ -266,7 +266,7 @@ m
     </string>
 
     <string name="f3i6q4">
-        Write and Execute a program that prints the number(between 1 and 8) taken as input from the user
+      4. Write and Execute a program that prints the number(between 1 and 8) taken as input from the user
          in words.\n
         For example-:\n
         \tinput - 7\n
@@ -285,7 +285,7 @@ m
     <!-- ID LOOPS -->
 
     <string name="f3i7q1">
-        Write and Execute a program that prints the table of 19 using for loop.
+       1. Write and Execute a program that prints the table of 19 using for loop.
 
     </string>
 
@@ -301,7 +301,7 @@ m
     </string>
 
     <string name="f3i7q2">
-        Write a program that takes two values from the user a and b and prints the values from a to b.
+       2. Write a program that takes two values from the user a and b and prints the values from a to b.
 
 
     </string>
@@ -323,7 +323,7 @@ m
 
     <string name="f3i7q3">
 
-        Write and Execute a program that prints the table of 25 but only for the odd places or values.\n
+        3. Write and Execute a program that prints the table of 25 but only for the odd places or values.\n
         for example -:\n
         \t25x1 = 25\n
         go to the next odd place i.e. 3\n
@@ -332,7 +332,7 @@ m
     </string>
 
     <string name="f3i7q4">
-        Write a program that prints all the even numbers between 0 and 51 using while loop.
+       4. Write a program that prints all the even numbers between 0 and 51 using while loop.
 
 
 
@@ -347,7 +347,7 @@ m
     <!-- ID Nested Loop and Switch Case -->
 
     <string name="f3i8q1">
-        Write and Execute a program that reverses the given int number.
+       1. Write and Execute a program that reverses the given int number.
 
 
     </string>
@@ -372,7 +372,7 @@ m
     </string>
 
     <string name="f3i8q2">
-        Write and Execute a program that prints the words for number between 1 and 5 inserted by user by
+       2. Write and Execute a program that prints the words for number between 1 and 5 inserted by user by
         using the switch case.\n
         for ex - : \n\t
         input = 1\n\t
@@ -411,13 +411,13 @@ m
     </string>
 
     <string name="f3i8q3">
-          Write and Execute a program that checks whether a number is divisible by 5 and then checks
+         3. Write and Execute a program that checks whether a number is divisible by 5 and then checks
          that if its even or odd with the use of nested if-else.
 
     </string>
 
     <string name="f3i8q4">
-        W and E a program to build a calculator that inputs 2 number from user and then give the user
+        4. W and E a program to build a calculator that inputs 2 number from user and then give the user
          choice for the option between +,-,*,/ and then uses the switch case to implement those operations.
        \n Note - : you should be able to make this program on your own but even after trying many times if
         you are unable to implement this program there is a similar program in next section, although try
@@ -434,7 +434,7 @@ m
     <!-- ID FUNCTIONS -->
 
     <string name="f3i9q1">
-        Write and Execute a program to build an interactive calculator with the use of functions.
+        1. Write and Execute a program to build an interactive calculator with the use of functions.
 
     </string>
 
@@ -484,7 +484,7 @@ m
     </string>
 
     <string name="f3i9q2">
-        Write a function in C that prints all the even numbers between 2 values passed to it.
+       2. Write a function in C that prints all the even numbers between 2 values passed to it.
 
     </string>
 
@@ -510,7 +510,7 @@ m
     </string>
 
     <string name="f3i9q3">
-        Write a program with a function that checks whether the number sent to it as
+       3. Write a program with a function that checks whether the number sent to it as
          an argument is negative or positive.\n
         for ex -:\n
         input -: -23\n
@@ -520,13 +520,13 @@ m
     </string>
 
     <string name="f3i9q4">
-        Write a program with a function that takes 3 value and returns the biggest value.
+       4. Write a program with a function that takes 3 value and returns the biggest value.
 
 
     </string>
 
     <string name="f3i9q5">
-        Write a function that prints the square of first 10 natural numbers.
+        5.Write a function that prints the square of first 10 natural numbers.
 
     </string>
 
@@ -534,7 +534,7 @@ m
     <!-- ID POINTERS 10-->
 
     <string name="f3i10q1">
-        Write a program to input two variables then swap them and print them.(you can use the third/temporary
+        1.Write a program to input two variables then swap them and print them.(you can use the third/temporary
          variable for swapping.)
 
 
@@ -563,7 +563,7 @@ m
     </string>
 
     <string name="f3i10q2">
-    \nWrite and Execute a program that takes stores address of a variable in a pointer and then add 17 to the value using the pointer.
+    \n2. Write and Execute a program that takes stores address of a variable in a pointer and then add 17 to the value using the pointer.
 
     </string>
 
@@ -584,13 +584,13 @@ m
     </string>
 
     <string name="f3i10q3">
-        Write a program that takes input of one char,one int and one float and prints the address of each of them.
+        3.Write a program that takes input of one char,one int and one float and prints the address of each of them.
 
 
     </string>
 
     <string name="f3i10q4">
-    Write and Execute a program that take 2 int as input and after that takes 1 character as input and then swap the two int and
+   4.Write and Execute a program that take 2 int as input and after that takes 1 character as input and then swap the two int and
         prints all the three values finally.
 
     </string>
@@ -604,7 +604,7 @@ m
     <!-- ID More about FUNCTIONS -->
 
     <string name="f3i11q1">
-        Write a program to input two variables then swap(exchange their positions) them using the pointers without using the third variable with the use of a function.
+        1.Write a program to input two variables then swap(exchange their positions) them using the pointers without using the third variable with the use of a function.
 
 
     </string>
@@ -631,7 +631,7 @@ m
     </string>
 
     <string name="f3i11q2">
-        Write a program with a function that takes 2 number and returns their product inside a pointer.
+        2.Write a program with a function that takes 2 number and returns their product inside a pointer.
 
 
     </string>
@@ -658,14 +658,14 @@ m
     </string>
 
     <string name="f3i11q3">
-        Write a function that returns zero if the value sent to it is odd and returns zero if
+        3.Write a function that returns zero if the value sent to it is odd and returns zero if
         the value sent is even.
 
 
     </string>
 
     <string name="f3i11q4">
-        Write and execute a program with a function that takes three values as pointers and returns a pointer
+        4.Write and execute a program with a function that takes three values as pointers and returns a pointer
         which is the biggest of all three value and then prints the biggest value.
 
     </string>
@@ -679,7 +679,7 @@ m
     <!-- ID Arrays and Strings -->
 
     <string name="f3i12q1">
-        Write and execute a program that takes 10 integers as input then adds 10 to all the
+        1.Write and execute a program that takes 10 integers as input then adds 10 to all the
          number and then prints all the 10 integers.
 
 
@@ -704,7 +704,7 @@ m
     </string>
 
     <string name="f3i12q2">
-        Write and execute a program that inputs a string then prints all the even places and odd places/indexes of the string
+        2.Write and execute a program that inputs a string then prints all the even places and odd places/indexes of the string
         in two separate lines.\n
         for ex -:\n
         input - &gt; \"HIGHWAY\"\n
@@ -736,13 +736,13 @@ m
     </string>
 
     <string name="f3i12q3">
-        Write and Execute a program to input full name of a person or a string containing spaces.[Hint -: Use
+       3. Write and Execute a program to input full name of a person or a string containing spaces.[Hint -: Use
         \"%[^\\n]%*c\" instead of %s as this scanf whitespaces also;
 
     </string>
 
     <string name="f3i12q4">
-        Write and E. a program to input 10 integer values in an array and then print only the even values in it.
+        4.Write and E. a program to input 10 integer values in an array and then print only the even values in it.
 
 
     </string>
@@ -756,7 +756,7 @@ m
     <!-- ID Pointers in Array-->
 
     <string name="f3i13q1">
-        Write and Execute a program that passes an array to a function using pointers and also pass the length
+        1.Write and Execute a program that passes an array to a function using pointers and also pass the length
          of array then prints all the elements of array from that function.
 
     </string>
@@ -777,7 +777,7 @@ m
     </string>
 
     <string name="f3i13q2">
-        Write and execute a program to dynamically allocate an array of 10 elements
+       2.Write and execute a program to dynamically allocate an array of 10 elements
          using the malloc function then store and print the values in it.
 
     </string>
@@ -798,7 +798,7 @@ m
     </string>
 
     <string name="f3i13q3">
-        W and E a program that inputs an array of 10 elements that and passes the address of that array to a function
+       3. W and E a program that inputs an array of 10 elements that and passes the address of that array to a function
          and then the function will display the values of that array that are at even indices.\n
         \ti.e. output only a[0],a[2],a[4] ....a[ _even_index_ ].
 
@@ -806,7 +806,7 @@ m
     </string>
 
     <string name="f3i13q4">
-        W and Execute a program that inputs 20 values then takes a value x as input and searches the value x in the array
+        4. Write and Execute a program that inputs 20 values then takes a value x as input and searches the value x in the array
          ,if it found the value in it print the (index number+1) which is the position of that
          value at which the value is found.
 
@@ -822,7 +822,7 @@ m
     <!-- ID MULTIDIMENSIONAL ARRAY -->
 
     <string name="f3i14q1">
-        A program to input an array of 3x3 the print the elements of left diagonal and the right diagonal.
+        1. Make a program to input an array of 3x3 the print the elements of left diagonal and the right diagonal.
 
     </string>
 
@@ -854,7 +854,7 @@ m
     </string>
 
     <string name="f3i14q2">
-        Write a program that generates an 2D array where first row is filled with the multiples of 2 second
+        2.Write a program that generates an 2D array where first row is filled with the multiples of 2 second
          row filled with multiples of 9 and third row filled with multiples of 15 and print the array in
          a matrix format.
 
@@ -878,13 +878,13 @@ m
     </string>
 
     <string name="f3i14q3">
-        Write and execute a program that copies all the elements of one 3x3 array a into another
+        3.Write and execute a program that copies all the elements of one 3x3 array a into another
          3x3 array b then print both the 2D array.
 
     </string>
 
     <string name="f3i14q4">
-        Write and execute a program that transposes a given(user input) 3 x 3 matrix. Transposing
+        4.Write and execute a program that transposes a given(user input) 3 x 3 matrix. Transposing
         a matrix means that converting row elements into column elements and vice versa.
 
 
@@ -895,7 +895,7 @@ m
 
 <!--    Structures-->
     <string name="f3i15q1">
-        Write and execute a program that takes name,mail-id and roll number of a student inside a structure and then displays the information.
+       1. Write and execute a program that takes name,mail-id and roll number of a student inside a structure and then displays the information.
     </string>
 
     <string name="f3i15s1">
@@ -926,7 +926,7 @@ m
     </string>
 
     <string name="f3i15q2">
-        Write and execute a program to input 2 pointer int variables and one int variable with the use of malloc function.
+       2. Write and execute a program to input 2 pointer int variables and one int variable with the use of malloc function.
 
     </string>
 
@@ -961,28 +961,28 @@ m
     </string>
 
     <string name="f3i15q3">
-        Write and execute a program which inputs the name(String format),id(Int format) and address(string format) of 20 students\n
+        3.Write and execute a program which inputs the name(String format),id(Int format) and address(string format) of 20 students\n
         and then displays the student name,id and address of all 20 students.
 
 
     </string>
 
     <string name="f3i15q4">
-        Write a program that creates 2 instances of an structure name emp (struct emp1,emp2;) and stores name and id in one structure emp1
+       4. Write a program that creates 2 instances of an structure name emp (struct emp1,emp2;) and stores name and id in one structure emp1
         and then copy all the data of emp1 to emp2 and display the name and id from emp2.
 
 
     </string>
 
     <string name="f3i15q5">
-        DO the above program but with the use of dynamic memory allocation (struct *emp1,*emp2;).
+        5. DO the above program but with the use of dynamic memory allocation (struct *emp1,*emp2;).
         Hint -: see example 2 program above.
 
     </string>
 
 <!--    FILE HANDLING-->
     <string name="f3i16q1">
-        Write a file handling program to input and save 5 names in a file and then later read the names from the file.
+        1.Write a file handling program to input and save 5 names in a file and then later read the names from the file.
     </string>
 
     <string name="f3i16s1">
@@ -1013,7 +1013,7 @@ m
     </string>
 
     <string name="f3i16q2">
-        Input name and roll number of a student in a file but this time using a structure and then read those name and rollno from the file.
+        2.Input name and roll number of a student in a file but this time using a structure and then read those name and rollno from the file.
     </string>
 
     <string name="f3i16s2">
@@ -1055,18 +1055,19 @@ void main()\n
     </string>
 
     <string name="f3i16q3">
-        Write a file handling program to store and read a paragraph of length 50 to 60 words.
+        3.Write a file handling program to store and read a paragraph of length 50 to 60 words.
     </string>
 
     <string name="f3i16q4">
-        Write a file handling program Input name and roll number of 5 students in a file using array and structure and then read those name and rollno from the file.
+       4. Write a file handling program Input name and roll number of 5 students in a file using array and structure and then read those name and rollno from the file.
     </string>
 
     <string name="f3i16q5">
     </string>
 
+<!--    enums and typedef-->
     <string name="f3i17q1">
-        Write a program that uses enums as parameters in while and if-else statement.
+        1.Write a program that uses enums as parameters in while and if-else statement.
 
     </string>
     <string name="f3i17s1"><![CDATA[
@@ -1097,7 +1098,7 @@ int main()\n
 
     ]]></string>
     <string name="f3i17q2">
-        Write a structure program with the use of Typedef.
+       2. Write a structure program with the use of Typedef.
 
     </string>
     <string name="f3i17s2">
