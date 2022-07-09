@@ -8,7 +8,7 @@
     </string>
 
     <string name="f3i1s1">
-        As you might have read in the bottom navigation plate that this zone is for code but since we have only done the introduction
+        As you might have read in the bottom navigation plate that this section is for code but since we have only done the introduction
          part so we will begin coding from the 3rd section, since the next section will also going to be mainly about setting up the editor, environment
         for working in C.
     </string>
@@ -73,7 +73,7 @@ m
     <string name="f3i3s1">
         \t#include&lt;stdio.h&gt;\n
         \tvoid main(){\n
-        \t\tprintf(&quot;MY NAME IS BOOSTER&quot;);
+        \t\tprintf(\"MY NAME IS BOOSTER\");
         \n\t
         }\n
 
@@ -88,7 +88,7 @@ m
         \n
         \t#include&lt;stdio.h&gt;\n
         \tvoid main(){\n\t\t
-        printf(&quot;Sum of 10 and 15 is = %d&quot;,10+15);\n\t
+        printf(\"Sum of 10 and 15 is = %d\",10+15);\n\t
         }\n
 
     </string>
@@ -98,7 +98,7 @@ m
     </string>
 
     <string name="f3i3q4">
-        Write a program that prints the product of 10 and 2500 and prints like &quot;2500*10 = &apos;ans&apos; &quot;
+        Write a program that prints the product of 10 and 2500 and prints like \"2500*10 = &apos;solution&apos; \"
     </string>
 
     <string name="f3i3q5">
@@ -110,7 +110,7 @@ m
 
     <string name="f3i4q1">
         NOTE - Some of these program might be more understandable to you after you go through the next section, so if you dont get these
-        program now dont worry in the next section you will understand then you can go through these again :)/n
+        program now dont worry in the next section you will understand then you can go through these again :).
 
        
     </string>
@@ -129,14 +129,14 @@ m
 
    \n
    \t#include&lt;stdio.h&gt;
-   \tvoid main(){\n
+   \n\tvoid main(){\n
    \t\tint age;\n
    \t\tfloat prcnt;\n
    \t\tchar gender;\n
    \t\tage = 20;\n
    \t\tprcnt = 67.78;\n
    \t\tgender = \'M\';\n
-   \t\tprintf(&quot;\\nAge = %d\\nPercent = %f\\nGender = %c\&quot;,age,prcnt,gender);\n
+   \t\tprintf(\"\\nAge = %d\\nPercent = %f\\nGender = %c\\",age,prcnt,gender);\n
    \t}\n
 
 </string>
@@ -166,7 +166,7 @@ m
         \t#include&lt;stdio.h&gt;\n
         \tvoid main(){\n
         \t\tfloat b=5.89;\n
-        \t\tprintf(&quot;%d&quot;,(int)b);\n
+        \t\tprintf(\"%d\",(int)b);\n
         \t\t}
         \n
         What you seen in the above program is called type casting. Here b an floating point or a decimal value
@@ -186,12 +186,12 @@ m
         #include&lt;stdio.h&gt;\n
         void main(){\n
         \tint a,b,total;\n
-        \tprintf(&quot;Enter First Value = &quot;);
-        \tscanf(&quot;%d&quot;,&amp;a);\n
-        \tprintf(&quot;Enter Second Value = &quot;);
-        \tscanf(&quot;%d&quot;,&amp;n);\n
+        \tprintf(\"Enter First Value = \");
+        \n\tscanf(\"%d\",&amp;a);\n
+        \tprintf(\"Enter Second Value = \");
+        \n\tscanf(\"%d\",&amp;b);\n
         \ttotal=a+b;\n
-        \tprintf(&quot;A + B = %d&quot;,total);\n
+        \tprintf(\"A + B = %d\",total);\n
         }
         
     </string>
@@ -223,12 +223,12 @@ m
         #include&lt;stdio.h&gt;\n
         void main(){\n
         \tint a;\n
-        \tprintf(&quot;Enter Number &quot;);\n
-        \tscanf(&quot;%d&quot;,&amp;a);\n
+        \tprintf(\"Enter Number \");\n
+        \tscanf(\"%d\",&amp;a);\n
         \tif(a>=0)\n
-        \tprintf(&quot;Positive Number&quot;);\n
+        \tprintf(\"Positive Number\");\n
         \telse\n
-        \tprintf(&quot;Negative Number&quot;);\n
+        \tprintf(\"Negative Number\");\n
         }\n
 
     </string>
@@ -239,11 +239,10 @@ m
     </string>
 
     <string name="f3i6s2">
-        \n
         #include&lt;stdio.h&gt;\n
         void main(){\n
         \tint a,b=0;
-        \tprintf(&quot;Enter a 2 number &quot;);\n
+        \n\tprintf(\"Enter a 2 digit number \");\n
         \tscanf("%d",&amp;a);\n
         \tb=a%10;\n
         \ta=a/10;\n
@@ -277,6 +276,8 @@ m
     </string>
 
     <string name="f3i6q5">
+        Note -: in many questions you might have a better way of solving them than what is done or shown in the examples so go on try your method if it works its nice, since
+         there can be many ways to solve a problem.
 
 
     </string>
@@ -293,7 +294,7 @@ m
         void main(){\n
         \tint i;\n
         \tfor(i=1;i&lt;=10;i++){\n
-        \t\tprintf(&quot;19 x %d = %d&quot;,i,(19*i));\n
+        \t\tprintf(\"19 x %d = %d\",i,(19*i));\n
         \t}\n
         }
 
@@ -310,12 +311,12 @@ m
         #include&lt;stdio.h&gt;\n
         void main(){\n
         \tint a,b,i;\n
-        \tprintf(&quot;Enter First Value &quot;);\n
-        \tscanf(&quot;%d&quot;,&amp;a);\n
-        \tprintf(&quot;Enter Second Value &quot;);\n
-        \tscanf(&quot;%d&quot;,&amp;b);\n
+        \tprintf(\"Enter First Value \");\n
+        \tscanf(\"%d\",&amp;a);\n
+        \tprintf(\"Enter Second Value \");\n
+        \tscanf(\"%d\",&amp;b);\n
         \tfor(i=a;i&lt;=b;i++)\n
-        \tprintf(&quot;%d\\t&quot;,i);\n
+        \tprintf(\"%d\\t\",i);\n
         }
 
     </string>
@@ -358,13 +359,13 @@ m
         {\n
         \tint n, rev = 0;\n
         \tprintf(&lt;Enter Number &gt;);\n
-        \tscanf(&quot;%d&quot;, &amp;n);\n
+        \tscanf(\"%d\", &amp;n);\n
         \twhile (n != 0)\n
         \t{\n
         \trev = rev * 10 + (n % 10);\n
         \tn = n / 10;\n
         \t}\n
-        \tprintf(&quot;Reverse Value is %d&quot;,rev);\n
+        \tprintf(\"Reverse Value is %d\",rev);\n
 }
 
 
@@ -384,25 +385,25 @@ m
         #include&lt;stdio.h&gt;\n
         void main(){\n
         \tint i;\n
-        \tscanf(&quot;%d&quot;,&amp;i);\n
+        \tscanf(\"%d\",&amp;i);\n
         \tswitch(i){\n
-        \t\tCase 1:\n
-        \t\tprintf(&quot;ONE&quot;);\n
+        \t\tcase 1:\n
+        \t\tprintf(\"ONE\");\n
         \t\tbreak;\n
-        \t\tCase 2:\n
-        \t\tprintf(&quot;TWO&quot;);\n
+        \t\tcase 2:\n
+        \t\tprintf(\"TWO\");\n
         \t\tbreak;\n
-        \t\tCase 3:\n
-        \t\tprintf(&quot;THREE&quot;);\n
+        \t\tcase 3:\n
+        \t\tprintf(\"THREE\");\n
         \t\tbreak;\n
-        \t\tCase 4:\n
-        \t\tprintf(&quot;FOUR&quot;);\n
+        \t\tcase 4:\n
+        \t\tprintf(\"FOUR\");\n
         \t\tbreak;\n
-        \t\tCase 5:\n
-        \t\tprintf(&quot;FIVE&quot;);\n
+        \t\tcase 5:\n
+        \t\tprintf(\"FIVE\");\n
         \t\tbreak;\n
         \t\tdefault:\n
-        \t\tprintf(&quot;INVALID OPTION&quot;);
+        \t\tprintf(\"INVALID OPTION\");
         \t}\n
         }\n
 
@@ -444,38 +445,38 @@ m
         {\n
         \tint ans;\n
         \tchar opt;\n
-        \tprintf(&quot;Enter operation from these [+,-,*,/]&quot;);\n
-        \tscanf(&quot; %c&quot;, &amp;opt);\n
+        \tprintf(\"Enter operation from these [+,-,*,/]\");\n
+        \tscanf(\" %c\", &amp;opt);\n
         \tswitch (opt)\n
         \t{\n
         \tcase \'+\':\n
         \tans = x + y;\n
-        \tprintf(&quot;a + b = %d&quot;, ans);\n
+        \tprintf(\"a + b = %d\", ans);\n
         \tbreak;\n
         \tcase \'-\':\n
         \tans = x - y;\n
-        \tprintf(&quot;a - b = %d&quot;, ans);\n
+        \tprintf(\"a - b = %d\", ans);\n
         \tbreak;\n
         \tcase \'*\':\n
         \tans = x * y;\n
-        \tprintf(&quot;a * b = %d&quot;, ans);\n
+        \tprintf(\"a * b = %d\", ans);\n
         \tbreak;\n
         \tcase \'/\':\n
         \tans = x / y;\n
-        \tprintf(&quot;a / b = %d&quot;, ans);\n
+        \tprintf(\"a / b = %d\", ans);\n
         \tbreak;\n
         \tdefault:\n
-        \tprintf(&quot;INVALID OPTION&quot;);\n
+        \tprintf(\"INVALID OPTION\");\n
         \t}\n
         }\n
         \n
         void main()\n
         {\n
         \tint a, b, opt;\n
-        \tprintf(&quot;a = &quot;);\n
-        \tscanf(&quot;%d&quot;, &amp;a);\n
-        \tprintf(&quot;b = &quot;);\n
-        \tscanf(&quot;%d&quot;, &amp;b);\n
+        \tprintf(\"a = \");\n
+        \tscanf(\"%d\", &amp;a);\n
+        \tprintf(\"b = \");\n
+        \tscanf(\"%d\", &amp;b);\n
         \tcalculator(a, b);\n
 }
 
@@ -490,28 +491,27 @@ m
     <string name="f3i9s2">
         #include&gt;stdio.h&lt;\n
         void even(int a,int b){
-        \tint i;\n
+        \n\tint i;\n
         \tfor(i=a+1;i&lt;b;i++){\n
         \tif(i%2==0)\n
-        \tprintf(&quot;%d\\ti&quot;,i);\n
+        \tprintf(\"%d\\t\",i);\n
         \t}\n
         }\n
         void main(){\n
         \tint a,b;\n
-        \tprintf(&quot;a = &quot;);\n
-        \tscanf(&quot;%d&quot;, &amp;a);\n
-        \tprintf(&quot;b = &quot;);\n
-        \tscanf(&quot;%d&quot;, &amp;b);\n
+        \tprintf(\"a = \");\n
+        \tscanf(\"%d\", &amp;a);\n
+        \tprintf(\"b = \");\n
+        \tscanf(\"%d\", &amp;b);\n
         \teven(a,b);
-        }
+        \n}
 
 
     </string>
 
     <string name="f3i9q3">
         Write a program with a function that checks whether the number sent to it as
-         an argument is negative or positive.
-
+         an argument is negative or positive.\n
         for ex -:\n
         input -: -23\n
         output -: NEGATIVE VALUE
@@ -544,26 +544,26 @@ m
     <string name="f3i10s1">
         #include&lt;stdio.h&gt;\n
         void swap(int a,int b){\n
-        \tint temp;
+        \tint temp;\n
         \ta=temp;\n
         \ta=b;\n
         \tb=temp;\n
-        \tprintf(&quot;AFTER SWAPPING\\n&quot;);\n
-        \tprintf(&quot;x=%d\\n&quot;y=%d&quot;,a,b);\n
-        }\n
+        \tprintf(\"AFTER SWAPPING\\n\");\n
+        \tprintf(\"x=%d\\n\"y=%d\",a,b);
+        \n}\n
         void main(){\n
         \tint x,y;\n
-        \tprintf(&quot;x = &quot;);\n
-        \tscanf(&quot;%d&quot;, &amp;x);\n
-        \tprintf(&quot;y = &quot;);\n
-        \tscanf(&quot;%d&quot;, &amp;y);\n
+        \tprintf(\"x = \");\n
+        \tscanf(\"%d\", &amp;x);\n
+        \tprintf(\"y = \");\n
+        \tscanf(\"%d\", &amp;y);\n
         \tswap(a,b);\n
         }
 
     </string>
 
     <string name="f3i10q2">
-    Write and Execute a program that takes stores address of a variable in a pointer and then add 17 to the value using the pointer.
+    \nWrite and Execute a program that takes stores address of a variable in a pointer and then add 17 to the value using the pointer.
 
     </string>
 
@@ -572,11 +572,11 @@ m
         void main(){\n
         \tint x;\n
         \tint *p;\n
-        \tprintf(&quot;x = &quot;);\n
-        \tscanf(&quot;%d&quot;, &amp;x);\n
+        \tprintf(\"x = \");\n
+        \tscanf(\"%d\", &amp;x);\n
         \tp=&amp;x;\n
         \t*p=*p+17;\n
-        \tprintf(&quot;x = %d&quot;,*p);\n
+        \tprintf(\"x = %d\",*p);\n
         }
         
 
@@ -604,7 +604,7 @@ m
     <!-- ID More about FUNCTIONS -->
 
     <string name="f3i11q1">
-        Write a program to input two variables then swap them using the pointers without using the third variable with the use of a function.
+        Write a program to input two variables then swap(exchange their positions) them using the pointers without using the third variable with the use of a function.
 
 
     </string>
@@ -618,13 +618,13 @@ m
         }\n
         void main(){\n
         \tint x,y;\n
-        \tprintf(&quot;x = &quot;);\n
-        \tscanf(&quot;%d&quot;, &amp;x);\n
-        \tprintf(&quot;y = &quot;);\n
-        \tscanf(&quot;%d&quot;, &amp;y);\n
-        \tprintf(&quot;AFTER SWAPPING\\n&quot;);\n
+        \tprintf(\"x = \");\n
+        \tscanf(\"%d\", &amp;x);\n
+        \tprintf(\"y = \");\n
+        \tscanf(\"%d\", &amp;y);\n
+        \tprintf(\"AFTER SWAPPING\\n\");\n
         \tswap(&amp;x,&amp;y);\n
-        \tprintf(&quot;x=%d\\n&quot;y=%d&quot;,x,y);\n
+        \tprintf(\"x=%d\\n\"y=%d\",x,y);\n
         }
 
 
@@ -645,13 +645,13 @@ m
         }\n
         void main(){\n
         \tint x,y;\n
-        \tint *total;
-        \tprintf(&quot;x = &quot;);\n
-        \tscanf(&quot;%d&quot;, &amp;x);\n
-        \tprintf(&quot;y = &quot;);\n
-        \tscanf(&quot;%d&quot;, &amp;y);\n
+        \tint *total;\n
+        \tprintf(\"x = \");\n
+        \tscanf(\"%d\", &amp;x);\n
+        \tprintf(\"y = \");\n
+        \tscanf(\"%d\", &amp;y);\n
         \ttotal = sum(&amp;x,&amp;y);\n
-        \tprintf(&quot;x + y =%d&quot;,*total);\n
+        \tprintf(\"x + y =%d\",*total);\n
         }
 
 
@@ -687,18 +687,18 @@ m
 
     <string name="f3i12s1">
         \n
-        #include&lt;stdio.n&gt;\n
+        #include&lt;stdio.h&gt;\n
         void main(){\n
         \tint a[10],i;\n
         \tprint("Enter Values - \\n");\n
         \tfor(i=0;i&lt;10;i++){\n
-        \tscanf(&quot;%d&quot;,&amp;a[i]);\n
+        \tscanf(\"%d\",&amp;a[i]);\n
         \ta[i]=a[i]+10;\n
         \t}\n
-        \tprintf(&quot;Values + 10 -:\n&quot;);\n
+        \tprintf(\"Values + 10 -:\\n\");\n
         \tfor(i=0;i&lt;10;i++){\n
-        \tprintf(&quot;%d\\t&quot;,a[i]);\n
-        \t}\n
+        \tprintf(\"%d\\t\",a[i]);\n
+        \t}\n}
 
 
     </string>
@@ -707,30 +707,29 @@ m
         Write and execute a program that inputs a string then prints all the even places and odd places/indexes of the string
         in two separate lines.\n
         for ex -:\n
-        input - : &quot;HIGHWAY&quot;\n
-        output -: \n&quot;ODD PLACES -: HGWY\n
-        EVEN PLACES -: IHA\n\n
+        input - &gt; \"HIGHWAY\"\n
+        output -&gt;\n \"ODD PLACES -: HGWY\n
+        EVEN PLACES -&gt; IHA\n
 
     </string>
 
     <string name="f3i12s2">
-        \n
         #include&lt;stdio.h&gt;\n
         #include&lt;string.h&gt;\n
         void main(){\n
         \tchar st[20];\n
         \tint i,len;\n
-        \tscanf(&quot;%s&quot;,st);\n
+        \tscanf(\"%s\",st);\n
         \tlen = strlen(st);\n
-        \tprintf(&quot;ODD PLACES -: \\n&quot;);\n
+        \tprintf(\"ODD PLACES -: \\n\");\n
         \tfor(i=0;i&lt;len;i++){\n
         \tif(i%2==0)\n
-        \tprintf(&quot;%c\t&quot;,st[i]);\n
+        \tprintf(\"%c\t\",st[i]);\n
         \t}\n
-        \tprintf(&quot;\\nEVEN PLACES -: \\n&quot;);\n
+        \tprintf(\"\\nEVEN PLACES -: \\n\");\n
         \tfor(i=0;i&lt;len;i++){\n
         \tif(i%2!=0)\n
-        \tprintf(&quot;%c\t&quot;,st[i]);\n
+        \tprintf(\"%c\t\",st[i]);\n
         \t}\n
         }
 
@@ -738,7 +737,7 @@ m
 
     <string name="f3i12q3">
         Write and Execute a program to input full name of a person or a string containing spaces.[Hint -: Use
-        &quot;%[^\n]%*c&quot; instead of %s as this scanf whitespaces also;
+        \"%[^\\n]%*c\" instead of %s as this scanf whitespaces also;
 
     </string>
 
@@ -766,9 +765,9 @@ m
         \n
         #include&lt;stdio.h&gt;\n
         void point_array(int* a,int len){\n
-        \tint i;
+        \tint i;\n
         \tfor(i=0;i&lt;len;i++)\n
-        \tprintf(&quot;%d\t&quot;,a[i]);\n
+        \tprintf(\"%d\t\",a[i]);\n
         }\n
         void main(){\n
         \tint a[]={23,34,12,1,231,785};\n
@@ -784,17 +783,16 @@ m
     </string>
 
     <string name="f3i13s2">
-        \n
-        #include&lt;stdio.&gt;\n
+        #include&lt;stdio.h&gt;\n
         void main(){\n
         \tint *a,i;\n
-        \ta=malloc(sizeOf(int)*10);\n
-        \tprintf(&quot;Enter Values &quot;);\n
+        \ta=malloc(sizeof(int)*10);\n
+        \tprintf(\"Enter Values \");\n
         \tfor(i=0;i&lt;10;i++)\n
-        \tscanf(&quot;%d&quot;,&amp;a[i]);\n
-        \tprintf(&quot;The Values entered are -: \\n\\n&quot;);\n
+        \tscanf(\"%d\",&amp;a[i]);\n
+        \tprintf(\"The Values entered are -: \\n\\n\");\n
         \tfor(i=0;i&lt;10;i++)\n
-        \tprintf(&quot;%d\t&quot;,a[i]);\n
+        \tprintf(\"%d\t\",a[i]);\n
         }\n
 
     </string>
@@ -802,7 +800,7 @@ m
     <string name="f3i13q3">
         W and E a program that inputs an array of 10 elements that and passes the address of that array to a function
          and then the function will display the values of that array that are at even indices.\n
-        \ti.e. output only a[0],a[2],a[4] ....a[_even_index_].
+        \ti.e. output only a[0],a[2],a[4] ....a[ _even_index_ ].
 
 
     </string>
@@ -833,22 +831,22 @@ m
         #include&lt;stdio.h&gt;\n
         void main(){\n
         \tint a[3][3],i,j;\n
-        \tprintf(&quot;Enter values \\n&quot;);\t
+        \tprintf(\"Enter values \\n\");\n
         \tfor(i=0;i&lt;3;i++){\n
         \tfor(j=0;j&lt;3;j++){\n
-        \t\tscanf(&quot;%d&quot;,&amp;a[i][j]);\n
+        \t\tscanf(\"%d\",&amp;a[i][j]);\n
         \t}}\n
-        \tprintf(&quot;Elements of left diagonal are -:&quot;);\n
+        \tprintf(\"Elements of left diagonal are -:\\t\");\n
         \tfor(i=0;i&lt;3;i++){\n
         \tfor(j=0;j&lt;3;j++){\n
         \tif(i==j){\n
-        \tprintf(&quot;%d\\t&quot;,a[i][j]);\n
+        \tprintf(\"%d\\t\",a[i][j]);\n
         \t}}\n
-        \tprintf(&quot;\\nElements of right diagonal are -:&quot;);\n
+        \tprintf(\"\\nElements of right diagonal are -:\\t\");\n
         \tfor(i=0;i&lt;3;i++){\n
         \tfor(j=0;j&lt;3;j++){\n
         \tif(i+j==2){\n
-        \tprintf(&quot;%d\\t&quot;,a[i][j]);\n
+        \tprintf(\"%d\\t\",a[i][j]);\n
         \t}}\n
         \t}
 
@@ -869,11 +867,11 @@ m
         \tfor(i=0;i&lt;3;i++){\n
         \tfor(j=0;j&lt;3;j++){\n
         \tif(i==0)\n
-        \tprintf(&quot;%d\\t&quot;,(j+1)*2);\n
+        \tprintf(\"%d\\t\",(j+1)*2);\n
         \telse if(i==1)\n
-        \tprintf(&quot;%d\\t&quot;,(j+1)*9);\n
+        \tprintf(\"%d\\t\",(j+1)*9);\n
         \telse\n
-        \tprintf(&quot;%d\\t&quot;,(j+1)*15);\n
+        \tprintf(\"%d\\t\",(j+1)*15);\n
         \t}}\n
         }\n
 

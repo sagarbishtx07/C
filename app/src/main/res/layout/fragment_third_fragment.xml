@@ -109,6 +109,7 @@
         android:fontFamily="sans-serif-black"
         android:text="HELLO FRAGMENT 3 TEsTING"
         android:layout_marginLeft="5dp"
+        android:paddingBottom="15dp"
         android:layout_marginTop="30dp"
         android:textSize="16sp" />
 
