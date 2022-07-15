@@ -2,11 +2,19 @@ package com.fortysevenx.C
 
 //import android.os.Bundle
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.google.android.gms.ads.*
+import com.google.android.gms.ads.rewarded.RewardItem
+import com.google.android.gms.ads.rewarded.RewardedAd
+import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback
+
 //import android.view.LayoutInflater
 //import android.view.View
 //import android.view.ViewGroup
@@ -21,6 +29,10 @@ import androidx.fragment.app.Fragment
  * create an instance of this fragment.
  */
 class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
+    private lateinit var mRewardedVideoads: RewardedAd
+
+    private var mRewardedAd: RewardedAd? = null
+    private final var TAG = "MainActivity"
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -31,6 +43,61 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
         //val tv = view.findViewById<View>(R.id.tvf3)as TextView
         val bundle = arguments
         val c_id = bundle!!.getInt("mText")
+
+        if (container != null) {
+            MobileAds.initialize(container.context) {}
+        }
+        var adRequest = AdRequest.Builder().build()
+
+        if (container != null) {
+            RewardedAd.load(container.context,"ca-app-pub-3940256099942544/5224354917", adRequest, object : RewardedAdLoadCallback() {
+                override fun onAdFailedToLoad(adError: LoadAdError) {
+                    Log.d(TAG, adError?.toString())
+                    mRewardedAd = null
+                }
+
+                override fun onAdLoaded(rewardedAd: RewardedAd) {
+                    Log.d(TAG, "Ad was loaded.")
+                    Toast.makeText(container.context,"AD WAS LOADED",Toast.LENGTH_SHORT)
+                    mRewardedAd = rewardedAd
+
+                    mRewardedAd?.fullScreenContentCallback = object: FullScreenContentCallback() {
+                        override fun onAdClicked() {
+                            // Called when a click is recorded for an ad.
+                            Log.d(TAG, "Ad was clicked.")
+                        }
+
+                        override fun onAdDismissedFullScreenContent() {
+                            // Called when ad is dismissed.
+                            // Set the ad reference to null so you don't show the ad a second time.
+                            Log.d(TAG, "Ad dismissed fullscreen content.")
+                            mRewardedAd = null
+                        }
+
+                        override fun onAdFailedToShowFullScreenContent(p0: AdError) {
+                            // Called when ad fails to show.
+                            Log.e(TAG, "Ad failed to show fullscreen content.")
+                            mRewardedAd = null
+                        }
+
+                        override fun onAdImpression() {
+                            // Called when an impression is recorded for an ad.
+                            Log.d(TAG, "Ad recorded an impression.")
+                        }
+
+                        override fun onAdShowedFullScreenContent() {
+                            // Called when ad is shown.
+                            Log.d(TAG, "Ad showed fullscreen content.")
+                        }
+                    }
+                }
+            })
+        }
+
+        var l1=view.findViewById<TextView>(R.id.ad1)
+        var mark1=view.findViewById<TextView>(R.id.mark11)
+        var ans1=view.findViewById<TextView>(R.id.ans1)
+        var ans2=view.findViewById<TextView>(R.id.ans2)
         var q1=view.findViewById<TextView>(R.id.q1)
         var q2=view.findViewById<TextView>(R.id.q2)
         var q3=view.findViewById<TextView>(R.id.q3)
@@ -40,6 +107,8 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
         var s2=view.findViewById<TextView>(R.id.c2)
         var heading=view.findViewById<TextView>(R.id.f3head)
         var f3topiclist:ArrayList<CardDetails>?=Constants.getTV()
+
+
         var st="Program on"
         var stid = arrayOf(
             R.string.f3i1q1,
@@ -190,6 +259,9 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q3.text=getString(stid[(c_id*7)+4])
                 q4.text=getString(stid[(c_id*7)+5])
                 q5.text=getString(stid[(c_id*7)+6])
+                l1.text=""
+                ans1.text=""
+                mark1.text=""
             }
             1->{
                 st="Program on "+f3topiclist!![c_id].details
@@ -201,6 +273,8 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q3.text=getString(stid[(c_id*7)+4])
                 q4.text=getString(stid[(c_id*7)+5])
                 q5.text=getString(stid[(c_id*7)+6])
+                ans1.text=""
+                mark1.text=""
 
             }
             2->{
@@ -212,6 +286,38 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q3.text=getString(stid[(c_id*7)+4])
                 q4.text=getString(stid[(c_id*7)+5])
                 q5.text=getString(stid[(c_id*7)+6])
+                l1.setOnClickListener {
+                    if (mRewardedAd != null) {
+                        activity?.let { it1 ->
+                            mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
+
+                                ans1.text="    #include <stdio.h>\n" +
+                                        "    void main()\n" +
+                                        "    {\n" +
+                                        "        printf(\" Hi My Name is JACK \\(●‿●)/\");\n" +
+                                        "        printf(\"\\nI study in Hero Academy\");\n" +
+                                        "    }\n" +
+                                        "\n"
+
+                                 ans2.text="\n#include <stdio.h>\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    printf(\"2500 * 10 = %d\", 2500 * 10);\n" +
+                                        "}"
+                                mark1.text=""
+
+                                var rewardAmount = rewardItem.amount
+                                var rewardType = rewardItem.type
+
+                            })
+                        }
+                    } else {
+                        if (container != null) {
+                            Toast.makeText(container.context,"Try Again",Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                }
+
             }
             3->{
                 st="Program on "+f3topiclist!![c_id].details
@@ -223,6 +329,49 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q3.text=getString(stid[(c_id*7)+4])
                 q4.text=getString(stid[(c_id*7)+5])
                 q5.text=getString(stid[(c_id*7)+6])
+                l1.setOnClickListener {
+                    if (mRewardedAd != null) {
+                        activity?.let { it1 ->
+                            mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
+                                var rewardAmount = rewardItem.amount
+                                var rewardType = rewardItem.type
+                                ans1.text="#include <stdio.h>\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    \n" +
+                                        "    int a;\n" +
+                                        "    float b;\n" +
+                                        "    char c, d;\n" +
+                                        "\n" +
+                                        "    a = 37;\n" +
+                                        "    b = 98.7;\n" +
+                                        "    c = '3';\n" +
+                                        "    d = 'A';\n" +
+                                        "\n" +
+                                        "    printf(\"%d\\n%0.1f\\n%c\\n%c\\n\", a, b, c, d);\n" +
+                                        "\n" +
+                                        "    // in %f you might have noticed 0.1 before f\n" +
+                                        "    // change the value of 0.1 to 0.2, 0.3, 0.4 and see the output\n" +
+                                        "}"
+                                ans2.text="#include <stdio.h>\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    int a = 23;\n" +
+                                        "    float b = 33.456;\n" +
+                                        "    int c = a + b;\n" +
+                                        "    printf(\"23+33.456 = %d\", c);\n" +
+                                        "}"
+                                mark1.text=""
+
+                            })
+                        }
+                    } else {
+                        if (container != null) {
+                            Toast.makeText(container.context,"Try Again",Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                }
+
             }
             4->{
                 st="Program on "+f3topiclist!![c_id].details
@@ -234,6 +383,40 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q3.text=getString(stid[(c_id*7)+4])
                 q4.text=getString(stid[(c_id*7)+5])
                 q5.text=getString(stid[(c_id*7)+6])
+                l1.setOnClickListener {
+                    if (mRewardedAd != null) {
+                        activity?.let { it1 ->
+                            mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
+                                var rewardAmount = rewardItem.amount
+                                var rewardType = rewardItem.type
+                                ans1.text="#include <stdio.h>\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    int a = 23;\n" +
+                                        "    int b;\n" +
+                                        "\n" +
+                                        "    printf(\"Enter-: \\nnum1 \");\n" +
+                                        "    scanf(\"%d\", &a);\n" +
+                                        "    printf(\"num2 \");\n" +
+                                        "    scanf(\"%d\", &b);\n" +
+                                        "\n" +
+                                        "    printf(\"\\na+b = %d\\n\", a + b);\n" +
+                                        "    printf(\"\\na-b = %d\\n\", a - b);\n" +
+                                        "    printf(\"\\na*b = %d\\n\", a * b);\n" +
+                                        "    printf(\"\\na/b = %d\\n\", a / b);\n" +
+                                        "}"
+                                ans2.text=""
+                                mark1.text=""
+
+                            })
+                        }
+                    } else {
+                        if (container != null) {
+                            Toast.makeText(container.context,"Try Again",Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                }
+
             }
             5->{
                 st="Program on "+f3topiclist!![c_id].details
@@ -245,6 +428,25 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q3.text=getString(stid[(c_id*7)+4])
                 q4.text=getString(stid[(c_id*7)+5])
                 q5.text=getString(stid[(c_id*7)+6])
+
+                l1.setOnClickListener {
+                    if (mRewardedAd != null) {
+                        activity?.let { it1 ->
+                            mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
+                                var rewardAmount = rewardItem.amount
+                                var rewardType = rewardItem.type
+                                ans1.text=""
+                                ans2.text=""
+                                mark1.text=""
+
+                            })
+                        }
+                    } else {
+                        if (container != null) {
+                            Toast.makeText(container.context,"Try Again",Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                }
             }
             6->{
                 st="Program on "+f3topiclist!![c_id].details
@@ -256,6 +458,25 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q3.text=getString(stid[(c_id*7)+4])
                 q4.text=getString(stid[(c_id*7)+5])
                 q5.text=getString(stid[(c_id*7)+6])
+
+                l1.setOnClickListener {
+                    if (mRewardedAd != null) {
+                        activity?.let { it1 ->
+                            mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
+                                var rewardAmount = rewardItem.amount
+                                var rewardType = rewardItem.type
+                                ans1.text=""
+                                ans2.text=""
+                                mark1.text=""
+
+                            })
+                        }
+                    } else {
+                        if (container != null) {
+                            Toast.makeText(container.context,"Try Again",Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                }
             }
             7->{
                 st="Program on "+f3topiclist!![c_id].details
@@ -267,6 +488,25 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q3.text=getString(stid[(c_id*7)+4])
                 q4.text=getString(stid[(c_id*7)+5])
                 q5.text=getString(stid[(c_id*7)+6])
+
+                l1.setOnClickListener {
+                    if (mRewardedAd != null) {
+                        activity?.let { it1 ->
+                            mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
+                                var rewardAmount = rewardItem.amount
+                                var rewardType = rewardItem.type
+                                ans1.text=""
+                                ans2.text=""
+                                mark1.text=""
+
+                            })
+                        }
+                    } else {
+                        if (container != null) {
+                            Toast.makeText(container.context,"Try Again",Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                }
             }
             8->{
                 st="Program on "+f3topiclist!![c_id].details
@@ -278,6 +518,25 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q3.text=getString(stid[(c_id*7)+4])
                 q4.text=getString(stid[(c_id*7)+5])
                 q5.text=getString(stid[(c_id*7)+6])
+
+                l1.setOnClickListener {
+                    if (mRewardedAd != null) {
+                        activity?.let { it1 ->
+                            mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
+                                var rewardAmount = rewardItem.amount
+                                var rewardType = rewardItem.type
+                                ans1.text=""
+                                ans2.text=""
+                                mark1.text=""
+
+                            })
+                        }
+                    } else {
+                        if (container != null) {
+                            Toast.makeText(container.context,"Try Again",Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                }
             }
             9->{
                 st="Program on "+f3topiclist!![c_id].details
@@ -289,6 +548,25 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q3.text=getString(stid[(c_id*7)+4])
                 q4.text=getString(stid[(c_id*7)+5])
                 q5.text=getString(stid[(c_id*7)+6])
+
+                l1.setOnClickListener {
+                    if (mRewardedAd != null) {
+                        activity?.let { it1 ->
+                            mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
+                                var rewardAmount = rewardItem.amount
+                                var rewardType = rewardItem.type
+                                ans1.text=""
+                                ans2.text=""
+                                mark1.text=""
+
+                            })
+                        }
+                    } else {
+                        if (container != null) {
+                            Toast.makeText(container.context,"Try Again",Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                }
             }
             10->{
                 st="Program on "+f3topiclist!![c_id].details
@@ -300,6 +578,25 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q3.text=getString(stid[(c_id*7)+4])
                 q4.text=getString(stid[(c_id*7)+5])
                 q5.text=getString(stid[(c_id*7)+6])
+
+                l1.setOnClickListener {
+                    if (mRewardedAd != null) {
+                        activity?.let { it1 ->
+                            mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
+                                var rewardAmount = rewardItem.amount
+                                var rewardType = rewardItem.type
+                                ans1.text=""
+                                ans2.text=""
+                                mark1.text=""
+
+                            })
+                        }
+                    } else {
+                        if (container != null) {
+                            Toast.makeText(container.context,"Try Again",Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                }
             }
             11->{
                 st="Program on "+f3topiclist!![c_id].details
@@ -380,5 +677,6 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
             }
         }
         //tv.text="Fragment 3 ${msg.toString()}"
+
         return view
 }}

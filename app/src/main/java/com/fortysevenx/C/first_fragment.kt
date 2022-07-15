@@ -9,6 +9,12 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import com.google.android.gms.ads.AdListener
+import com.google.android.gms.ads.AdLoader
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.LoadAdError
+import com.google.android.gms.ads.nativead.NativeAd
+import com.google.android.gms.ads.nativead.NativeAdOptions
 import org.w3c.dom.Text
 
 //import android.view.LayoutInflater
@@ -47,6 +53,32 @@ class First_fragment : Fragment(R.layout.fragment_first_fragment) {
         val im1 = view.findViewById<ImageView>(R.id.i1)
         val im2 = view.findViewById<ImageView>(R.id.i2)
         val im3 = view.findViewById<ImageView>(R.id.i3)
+
+        val adLoader = container?.let {
+            AdLoader.Builder(it.context, "ca-app-pub-3940256099942544/2247696110")
+                .forNativeAd { ad : NativeAd ->
+                    // Show the ad.
+//                    if (isDestroyed) {
+//                        nativeAd.destroy()
+//                        return@forNativeAd
+//                    }
+                }
+                .withAdListener(object : AdListener() {
+                    override fun onAdFailedToLoad(adError: LoadAdError) {
+                        // Handle the failure by logging, altering the UI, and so on.
+                    }
+                })
+                .withNativeAdOptions(
+                    NativeAdOptions.Builder()
+                    // Methods in the NativeAdOptions.Builder class can be
+                    // used here to specify individual options settings.
+                    .build())
+                .build()
+
+        }
+        if (adLoader != null) {
+            adLoader.loadAd(AdRequest.Builder().build())
+        }
 
         when (c_id) {
             0 -> {

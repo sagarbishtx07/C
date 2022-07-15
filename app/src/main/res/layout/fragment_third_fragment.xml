@@ -93,6 +93,34 @@
         android:layout_marginTop="30dp"
         android:layout_marginLeft="5dp"
         android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/mark11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:layout_gravity="left"
+
+        android:gravity="center"
+        android:text="-   tap below to load solution     - "
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/ans1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:text="- "
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="2dp"
+        android:textSize="12sp" />
+
     <TextView
         android:id="@+id/q4"
         android:layout_width="wrap_content"
@@ -101,6 +129,54 @@
         android:text="HELLO FRAGMENT 3 TEsTING"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="5dp"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/ans2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:text="- "
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="2dp"
+        android:textSize="12sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="+ - - - - - - - - - - - - - - - - +"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="0dp"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/ad1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="-   tap here to load solution     - "
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:textSize="14sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="+ - - - - - - - - - - - - - - - - +"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="0dp"
+        android:layout_marginTop="0dp"
         android:textSize="16sp" />
     <TextView
         android:id="@+id/q5"
@@ -112,6 +188,7 @@
         android:paddingBottom="15dp"
         android:layout_marginTop="30dp"
         android:textSize="16sp" />
+
 
 </LinearLayout>
 

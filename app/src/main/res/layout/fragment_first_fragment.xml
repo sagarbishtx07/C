@@ -48,9 +48,6 @@
             android:textSize="14sp"
             android:textStyle="bold"
          />
-
-
-
         <TextView
             android:id="@+id/sh1"
             android:layout_width="wrap_content"
