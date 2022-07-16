@@ -189,6 +189,18 @@
         android:layout_marginTop="30dp"
         android:textSize="16sp" />
 
+    <TextView
+        android:id="@+id/ans3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:text="- "
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="2dp"
+        android:textSize="12sp" />
+
 
 </LinearLayout>
 

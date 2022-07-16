@@ -658,8 +658,7 @@
     </string>
 
     <string name="f3i11q3">
-        3.Write a function that returns zero if the value sent to it is odd and returns zero if
-        the value sent is even.
+        3.Write a function that checks a number is prime or not.
 
 
     </string>
@@ -737,7 +736,7 @@
 
     <string name="f3i12q3">
        3. Write and Execute a program to input full name of a person or a string containing spaces.[Hint -: Use
-        \"%[^\\n]%*c\" instead of %s as this scanf whitespaces also;
+        \"%[^\\n]%*c\" instead of %s as this scans whitespaces also]
 
     </string>
 

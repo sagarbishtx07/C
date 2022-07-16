@@ -98,6 +98,7 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
         var mark1=view.findViewById<TextView>(R.id.mark11)
         var ans1=view.findViewById<TextView>(R.id.ans1)
         var ans2=view.findViewById<TextView>(R.id.ans2)
+        var ans3=view.findViewById<TextView>(R.id.ans3)
         var q1=view.findViewById<TextView>(R.id.q1)
         var q2=view.findViewById<TextView>(R.id.q2)
         var q3=view.findViewById<TextView>(R.id.q3)
@@ -261,6 +262,7 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q5.text=getString(stid[(c_id*7)+6])
                 l1.text=""
                 ans1.text=""
+                ans3.text=""
                 mark1.text=""
             }
             1->{
@@ -274,6 +276,7 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q4.text=getString(stid[(c_id*7)+5])
                 q5.text=getString(stid[(c_id*7)+6])
                 ans1.text=""
+                ans3.text=""
                 mark1.text=""
 
             }
@@ -304,6 +307,8 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                                         "{\n" +
                                         "    printf(\"2500 * 10 = %d\", 2500 * 10);\n" +
                                         "}"
+
+                                ans3.text=""
                                 mark1.text=""
 
                                 var rewardAmount = rewardItem.amount
@@ -361,6 +366,7 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                                         "    int c = a + b;\n" +
                                         "    printf(\"23+33.456 = %d\", c);\n" +
                                         "}"
+                                ans3.text=""
                                 mark1.text=""
 
                             })
@@ -406,13 +412,14 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                                         "    printf(\"\\na/b = %d\\n\", a / b);\n" +
                                         "}"
                                 ans2.text=""
+                                ans3.text=""
                                 mark1.text=""
 
                             })
                         }
                     } else {
                         if (container != null) {
-                            Toast.makeText(container.context,"Try Again",Toast.LENGTH_SHORT).show()
+                            Toast.makeText(container.context,"Try Again/check network",Toast.LENGTH_SHORT).show()
                         }
                     }
                 }
@@ -435,8 +442,37 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                             mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
                                 var rewardAmount = rewardItem.amount
                                 var rewardType = rewardItem.type
-                                ans1.text=""
-                                ans2.text=""
+                                ans1.text="#include <stdio.h>\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    int a;\n" +
+                                        "    printf(\"Enter number \");\n" +
+                                        "    scanf(\"%d\", &a);\n" +
+                                        "    if (a == 4 || a == 9 || a == 25 || a == 36 || a == 49)\n" +
+                                        "        printf(\"YES\");\n" +
+                                        "    else\n" +
+                                        "        printf(\"NO\");\n" +
+                                        "}"
+                                ans2.text="#include <stdio.h>\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    int a;\n" +
+                                        "    printf(\"Enter number \");\n" +
+                                        "    scanf(\"%d\", &a);\n" +
+                                        "    if (a == 3)\n" +
+                                        "        printf(\"THREE\");\n" +
+                                        "    else if (a == 4)\n" +
+                                        "        printf(\"FOUR\");\n" +
+                                        "    else if (a == 5)\n" +
+                                        "        printf(\"FIVE\");\n" +
+                                        "    else if (a == 6)\n" +
+                                        "        printf(\"SIX\");\n" +
+                                        "    else if (a == 7)\n" +
+                                        "        printf(\"SEVEN\");\n" +
+                                        "    else\n" +
+                                        "        printf(\"Number not in between 2 and 8\");\n" +
+                                        "}"
+                                ans3.text=""
                                 mark1.text=""
 
                             })
@@ -465,8 +501,32 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                             mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
                                 var rewardAmount = rewardItem.amount
                                 var rewardType = rewardItem.type
-                                ans1.text=""
-                                ans2.text=""
+                                ans1.text="#include <stdio.h>\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    int i;\n" +
+                                        "    for (i = 1; i <= 10; i++)\n" +
+                                        "        if (i % 2 != 0)\n" +
+                                        "        {\n" +
+                                        "            printf(\"25 * %d = %d\\n\", i, (25 * i));\n" +
+                                        "        }\n" +
+                                        "}"
+
+                                ans2.text="#include <stdio.h>\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    int i = 1;\n" +
+                                        "    printf(\"Even numbers between 0 and 51 are\");\n" +
+                                        "    while (i < 51)\n" +
+                                        "    {\n" +
+                                        "        if (i % 2 == 0)\n" +
+                                        "        {\n" +
+                                        "            printf(\"%d\\n\", i);\n" +
+                                        "        }\n" +
+                                        "        i++;\n" +
+                                        "    }\n" +
+                                        "}"
+                                ans3.text=""
                                 mark1.text=""
 
                             })
@@ -495,8 +555,65 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                             mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
                                 var rewardAmount = rewardItem.amount
                                 var rewardType = rewardItem.type
-                                ans1.text=""
-                                ans2.text=""
+                                ans1.text="#include <stdio.h>\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    int i = 1;\n" +
+                                        "    printf(\"Insert a number : \");\n" +
+                                        "    scanf(\"%d\", &i);\n" +
+                                        "    if (i % 5 == 0)\n" +
+                                        "    {\n" +
+                                        "        if (i % 2 == 0)\n" +
+                                        "            printf(\"Even number divisible by 5\");\n" +
+                                        "        else\n" +
+                                        "            printf(\"Odd number divisible by 5\");\n" +
+                                        "    }\n" +
+                                        "    else\n" +
+                                        "    {\n" +
+                                        "        if (i % 2 == 0)\n" +
+                                        "            printf(\"Even number not divisible by 5\");\n" +
+                                        "        else\n" +
+                                        "            printf(\"Odd number not divisible by 5\");\n" +
+                                        "    }\n" +
+                                        "}"
+                                ans2.text="#include <stdio.h>\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    char ch;\n" +
+                                        "    int a, b;\n" +
+                                        "    printf(\"a : \");\n" +
+                                        "    scanf(\"%d\", &a);\n" +
+                                        "    printf(\"b : \");\n" +
+                                        "    scanf(\"%d\", &b);\n" +
+                                        "    printf(\"Press :\\n\");\n" +
+                                        "    printf(\"+ for addition\\n\");\n" +
+                                        "    printf(\"- for subtraction\\n\");\n" +
+                                        "    printf(\"* for multiplication\\n\");\n" +
+                                        "    printf(\"/ for division\\n\");\n" +
+                                        "    scanf(\" %c\", &ch);\n" +
+                                        "    switch (ch)\n" +
+                                        "    {\n" +
+                                        "    case '+':\n" +
+                                        "        printf(\"a + b = %d\", a + b);\n" +
+                                        "        break;\n" +
+                                        "\n" +
+                                        "    case '-':\n" +
+                                        "        printf(\"a - b = %d\", a - b);\n" +
+                                        "        break;\n" +
+                                        "\n" +
+                                        "    case '*':\n" +
+                                        "        printf(\"a * b = %d\", a * b);\n" +
+                                        "        break;\n" +
+                                        "\n" +
+                                        "    case '/':\n" +
+                                        "        printf(\"a / b = %d\", a / b);\n" +
+                                        "        break;\n" +
+                                        "\n" +
+                                        "    default:\n" +
+                                        "        break;\n" +
+                                        "    }\n" +
+                                        "}"
+                                ans3.text=""
                                 mark1.text=""
 
                             })
@@ -525,8 +642,59 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                             mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
                                 var rewardAmount = rewardItem.amount
                                 var rewardType = rewardItem.type
-                                ans1.text=""
-                                ans2.text=""
+                                ans1.text="#include <stdio.h>\n" +
+                                        "void check(int a)\n" +
+                                        "{\n" +
+                                        "    if (a >= 0)\n" +
+                                        "        printf(\"Positive value\");\n" +
+                                        "    else\n" +
+                                        "        printf(\"negative value\");\n" +
+                                        "}\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    int val;\n" +
+                                        "    printf(\"Enter a value \");\n" +
+                                        "    scanf(\"%d\", &val);\n" +
+                                        "    check(val);\n" +
+                                        "}"
+                                ans2.text="#include <stdio.h>\n" +
+                                        "int find_greatest(int a, int b, int c)\n" +
+                                        "{\n" +
+                                        "    if (a >= b && a >= c)\n" +
+                                        "        return a;\n" +
+                                        "    else if (b >= a && b >= c)\n" +
+                                        "        return b;\n" +
+                                        "    else\n" +
+                                        "        return c;\n" +
+                                        "}\n" +
+                                        "\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    int val1, val2, val3, gt;\n" +
+                                        "    printf(\"Enter value1: \");\n" +
+                                        "    scanf(\"%d\", &val1);\n" +
+                                        "    printf(\"Enter value2: \");\n" +
+                                        "    scanf(\"%d\", &val2);\n" +
+                                        "    printf(\"Enter value3: \");\n" +
+                                        "    scanf(\"%d\", &val3);\n" +
+                                        "    gt = find_greatest(val1, val2, val3);\n" +
+                                        "    printf(\"Biggest value is: %d\", gt);\n" +
+                                        "}"
+                                ans3.text="#include <stdio.h>\n" +
+                                        "void nsquare(int n)\n" +
+                                        "{\n" +
+                                        "    int i;\n" +
+                                        "    printf(\"Squares of first %d numbers are\\n\", n);\n" +
+                                        "    for (i = 1; i <= n; i++)\n" +
+                                        "    {\n" +
+                                        "        printf(\"%d\\n\", i * i);\n" +
+                                        "    }\n" +
+                                        "}\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    int n = 10;\n" +
+                                        "    nsquare(n);\n" +
+                                        "}"
                                 mark1.text=""
 
                             })
@@ -539,7 +707,7 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 }
             }
             9->{
-                st="Program on "+f3topiclist!![c_id].details
+                st="Program on Pointers and swapping(changing position)"
                 heading.setText(st)
                 q1.text=getString(stid[(c_id*7)])
                 s1.text=getString(stid[(c_id*7)+1])
@@ -555,8 +723,40 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                             mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
                                 var rewardAmount = rewardItem.amount
                                 var rewardType = rewardItem.type
-                                ans1.text=""
-                                ans2.text=""
+                                ans1.text="#include <stdio.h>\n" +
+                                        "\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    int a;\n" +
+                                        "    float b;\n" +
+                                        "    char c;\n" +
+                                        "    printf(\"Enter an int value: \");\n" +
+                                        "    scanf(\"%d\", &a);\n" +
+                                        "    printf(\"Enter a float value: \");\n" +
+                                        "    scanf(\"%f\", &b);\n" +
+                                        "    printf(\"Enter a char value: \");\n" +
+                                        "    scanf(\" %c\", &c);\n" +
+                                        "    printf(\"Address of each of them is:\\n\");\n" +
+                                        "    printf(\"a: %d\\nb: %d\\nc: %d\", &a, &b, &c);\n" +
+                                        "}\n"
+
+                                ans2.text="#include <stdio.h>\n" +
+                                        "\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    int a, b;\n" +
+                                        "    char c;\n" +
+                                        "    printf(\"Enter 1sr int value: \");\n" +
+                                        "    scanf(\"%d\", &a);\n" +
+                                        "    printf(\"Enter 2nd int value: \");\n" +
+                                        "    scanf(\"%d\", &b);\n" +
+                                        "    printf(\"Enter a char value: \");\n" +
+                                        "    scanf(\" %c\", &c);\n" +
+                                        "    a = a + b;\n" +
+                                        "    b = a - b;\n" +
+                                        "    a = a - b;\n" +
+                                        "    printf(\"a: %d\\nb: %d\\nc: %c\\n\", a, b, c);\n" +
+                                        "}\n"
                                 mark1.text=""
 
                             })
@@ -585,8 +785,54 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                             mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
                                 var rewardAmount = rewardItem.amount
                                 var rewardType = rewardItem.type
-                                ans1.text=""
-                                ans2.text=""
+                                ans1.text="#include <stdio.h>\n" +
+                                        "void checkprime(int n)\n" +
+                                        "{\n" +
+                                        "    int i = 2, c = 0;\n" +
+                                        "    while (i < n)\n" +
+                                        "    {\n" +
+                                        "        if (n % i == 0)\n" +
+                                        "        {\n" +
+                                        "            c++;\n" +
+                                        "        }\n" +
+                                        "        i++;\n" +
+                                        "    }\n" +
+                                        "    if (c < 1 && n != 1)\n" +
+                                        "        printf(\"Prime Number\");\n" +
+                                        "    else\n" +
+                                        "        printf(\"Not a prime number\");\n" +
+                                        "}\n" +
+                                        "\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    int n;\n" +
+                                        "    printf(\"Enter number: \");\n" +
+                                        "    scanf(\"%d\", &n);\n" +
+                                        "    checkprime(n);\n" +
+                                        "}\n"
+                                ans2.text="#include <stdio.h>\n" +
+                                        "int *biggest(int *a, int *b, int *c)\n" +
+                                        "{\n" +
+                                        "    if (*a > *b && *a > *c)\n" +
+                                        "        return a;\n" +
+                                        "    else if (*b > *a && *b > *c)\n" +
+                                        "        return b;\n" +
+                                        "    else\n" +
+                                        "        return c;\n" +
+                                        "}\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    int a, b, c;\n" +
+                                        "    int *big;\n" +
+                                        "    printf(\"value1 : \");\n" +
+                                        "    scanf(\"%d\", &a);\n" +
+                                        "    printf(\"value2 : \");\n" +
+                                        "    scanf(\"%d\", &b);\n" +
+                                        "    printf(\"value3 : \");\n" +
+                                        "    scanf(\"%d\", &c);\n" +
+                                        "    big = biggest(&a, &b, &c);\n" +
+                                        "    printf(\"Biggest value is: %d\", *big);\n" +
+                                        "}"
                                 mark1.text=""
 
                             })
@@ -608,6 +854,48 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q3.text=getString(stid[(c_id*7)+4])
                 q4.text=getString(stid[(c_id*7)+5])
                 q5.text=getString(stid[(c_id*7)+6])
+
+                l1.setOnClickListener {
+                    if (mRewardedAd != null) {
+                        activity?.let { it1 ->
+                            mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
+                                var rewardAmount = rewardItem.amount
+                                var rewardType = rewardItem.type
+                                ans1.text="#include <stdio.h>\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    char s[20];\n" +
+                                        "    printf(\"Enter Your full Name: \");\n" +
+                                        "    scanf(\"%[^\\n]%*c\", s);\n" +
+                                        "    printf(\"Name: %s\", s);\n" +
+                                        "}"
+                                ans2.text="#include <stdio.h>\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    int a[10], i;\n" +
+                                        "    printf(\"Enter 10 values in the array:\\n \");\n" +
+                                        "    for (i = 0; i < 10; i++)\n" +
+                                        "    {\n" +
+                                        "        printf(\"%d.\\t\", (i + 1));\n" +
+                                        "        scanf(\"%d\", &a[i]);\n" +
+                                        "    }\n" +
+                                        "    printf(\"\\nEven values are: \");\n" +
+                                        "    for (i = 0; i < 10; i++)\n" +
+                                        "    {\n" +
+                                        "        if (a[i] % 2 == 0)\n" +
+                                        "            printf(\"%d\\t\", a[i]);\n" +
+                                        "    }\n" +
+                                        "}"
+                                mark1.text=""
+
+                            })
+                        }
+                    } else {
+                        if (container != null) {
+                            Toast.makeText(container.context,"Try Again",Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                }
             }
             12->{
                 st="Program on "+f3topiclist!![c_id].details
@@ -619,6 +907,25 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q3.text=getString(stid[(c_id*7)+4])
                 q4.text=getString(stid[(c_id*7)+5])
                 q5.text=getString(stid[(c_id*7)+6])
+
+                l1.setOnClickListener {
+                    if (mRewardedAd != null) {
+                        activity?.let { it1 ->
+                            mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
+                                var rewardAmount = rewardItem.amount
+                                var rewardType = rewardItem.type
+                                ans1.text=""
+                                ans2.text=""
+                                mark1.text=""
+
+                            })
+                        }
+                    } else {
+                        if (container != null) {
+                            Toast.makeText(container.context,"Try Again",Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                }
             }
             13->{
                 st="Program on "+f3topiclist!![c_id].details
@@ -630,6 +937,25 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q3.text=getString(stid[(c_id*7)+4])
                 q4.text=getString(stid[(c_id*7)+5])
                 q5.text=getString(stid[(c_id*7)+6])
+
+                l1.setOnClickListener {
+                    if (mRewardedAd != null) {
+                        activity?.let { it1 ->
+                            mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
+                                var rewardAmount = rewardItem.amount
+                                var rewardType = rewardItem.type
+                                ans1.text=""
+                                ans2.text=""
+                                mark1.text=""
+
+                            })
+                        }
+                    } else {
+                        if (container != null) {
+                            Toast.makeText(container.context,"Try Again",Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                }
             }
             14->{
                 st="Program on "+f3topiclist!![c_id].details
@@ -641,6 +967,25 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q3.text=getString(stid[(c_id*7)+4])
                 q4.text=getString(stid[(c_id*7)+5])
                 q5.text=getString(stid[(c_id*7)+6])
+
+                l1.setOnClickListener {
+                    if (mRewardedAd != null) {
+                        activity?.let { it1 ->
+                            mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
+                                var rewardAmount = rewardItem.amount
+                                var rewardType = rewardItem.type
+                                ans1.text=""
+                                ans2.text=""
+                                mark1.text=""
+
+                            })
+                        }
+                    } else {
+                        if (container != null) {
+                            Toast.makeText(container.context,"Try Again",Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                }
             }
             15->{
                 st="Program on "+f3topiclist!![c_id].details
@@ -652,6 +997,25 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q3.text=getString(stid[(c_id*7)+4])
                 q4.text=getString(stid[(c_id*7)+5])
                 q5.text=getString(stid[(c_id*7)+6])
+
+                l1.setOnClickListener {
+                    if (mRewardedAd != null) {
+                        activity?.let { it1 ->
+                            mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
+                                var rewardAmount = rewardItem.amount
+                                var rewardType = rewardItem.type
+                                ans1.text=""
+                                ans2.text=""
+                                mark1.text=""
+
+                            })
+                        }
+                    } else {
+                        if (container != null) {
+                            Toast.makeText(container.context,"Try Again",Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                }
             }
             16->{
                 st="Program on "+f3topiclist!![c_id].details
@@ -663,6 +1027,25 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q3.text=getString(stid[(c_id*7)+4])
                 q4.text=getString(stid[(c_id*7)+5])
                 q5.text=getString(stid[(c_id*7)+6])
+
+                l1.setOnClickListener {
+                    if (mRewardedAd != null) {
+                        activity?.let { it1 ->
+                            mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
+                                var rewardAmount = rewardItem.amount
+                                var rewardType = rewardItem.type
+                                ans1.text=""
+                                ans2.text=""
+                                mark1.text=""
+
+                            })
+                        }
+                    } else {
+                        if (container != null) {
+                            Toast.makeText(container.context,"Try Again",Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                }
             }
             17->{
                 st="Program on "+f3topiclist!![c_id].details
