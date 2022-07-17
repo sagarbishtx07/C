@@ -1213,7 +1213,45 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                                         "    fgets(read, 500, f);\n" +
                                         "    printf(\"%s\", read);\n" +
                                         "}"
-                                ans2.text=""
+                                ans2.text="#include <stdio.h>\n" +
+                                        "#include <stdlib.h>\n" +
+                                        "struct std\n" +
+                                        "{\n" +
+                                        "    char name[50];\n" +
+                                        "    int r_no;\n" +
+                                        "};\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    FILE *f;\n" +
+                                        "    struct std st[5], rd;\n" +
+                                        "    int i;\n" +
+                                        "    f = fopen(\"Student.txt\", \"w\");\n" +
+                                        "    if (f == NULL)\n" +
+                                        "    {\n" +
+                                        "        printf(\"FILE FAILED TO OPEN\");\n" +
+                                        "        exit(0);\n" +
+                                        "    }\n" +
+                                        "    printf(\"Enter the data to store in file:\\n\");\n" +
+                                        "    for (i = 0; i < 5; i++)\n" +
+                                        "    {\n" +
+                                        "        printf(\"\\nName: \");\n" +
+                                        "        scanf(\" %[^\\n]%*c\", st[i].name);\n" +
+                                        "        printf(\"ID: \");\n" +
+                                        "        scanf(\"%d\", &st[i].r_no);\n" +
+                                        "        fwrite(&st[i], sizeof(struct std), 1, f);\n" +
+                                        "    }\n" +
+                                        "\n" +
+                                        "    fclose(f);\n" +
+                                        "\n" +
+                                        "    f = fopen(\"Student.txt\", \"r\");\n" +
+                                        "    printf(\"\\n\\nData in file:\\n \");\n" +
+                                        "    while (fread(&rd, sizeof(struct std), 1, f))\n" +
+                                        "    {\n" +
+                                        "        printf(\"Name : %s\\n\", rd.name);\n" +
+                                        "        printf(\"Roll No. : %d\\n\\n\", rd.r_no);\n" +
+                                        "    }\n" +
+                                        "    fclose(f);\n" +
+                                        "}"
                                 mark1.text=""
 
                             })
@@ -1254,17 +1292,6 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                         }
                     }
                 }
-            }
-            17->{
-                st="Program on "+f3topiclist!![c_id].details
-                heading.setText("ENUM and Typedef")
-                q1.text=getString(stid[(c_id*7)])
-                s1.text=getString(stid[(c_id*7)+1])
-                q2.text=getString(stid[(c_id*7)+2])
-                s2.text=getString(stid[(c_id*7)+3])
-                q3.text=getString(stid[(c_id*7)+4])
-                q4.text=getString(stid[(c_id*7)+5])
-                q5.text=getString(stid[(c_id*7)+6])
             }
         }
         //tv.text="Fragment 3 ${msg.toString()}"

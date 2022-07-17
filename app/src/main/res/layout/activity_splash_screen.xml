@@ -3,6 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".SplashScreen">
 
@@ -15,20 +17,18 @@
         android:layout_marginTop="209dp"
         android:src="@drawable/ic_baseline_settings_ethernet_24" />
 -->
+
     <TextView
         android:id="@+id/ic_ss"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="478dp"
-        android:layout_marginEnd="151dp"
-        android:layout_marginBottom="213dp"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="# { / ( > %"
-        android:textColor="#17A1B3"
-        android:textSize="22sp" />
+
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="+ - - - - - - - - - - +\n C programming\n+ - - - - - - - - - - +"
+        android:textColor="#687273"
+        android:textSize="24sp" />
+
+
 
 </RelativeLayout>
