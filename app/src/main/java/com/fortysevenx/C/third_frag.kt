@@ -914,8 +914,55 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                             mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
                                 var rewardAmount = rewardItem.amount
                                 var rewardType = rewardItem.type
-                                ans1.text=""
-                                ans2.text=""
+                                ans1.text="#include <stdio.h>\n" +
+                                        "void evenindices(int a[])\n" +
+                                        "{\n" +
+                                        "    int i;\n" +
+                                        "    for (i = 0; i < 10; i++)\n" +
+                                        "    {\n" +
+                                        "        if (i % 2 == 0)\n" +
+                                        "        {\n" +
+                                        "            printf(\"%d. %d\", (i + 1), a[i]);\n" +
+                                        "        }\n" +
+                                        "    }\n" +
+                                        "}\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    int a[10], i;\n" +
+                                        "    printf(\"Enter 10 values in the array:\\n \");\n" +
+                                        "    for (i = 0; i < 10; i++)\n" +
+                                        "    {\n" +
+                                        "        printf(\"%d.\\t\", i);\n" +
+                                        "        scanf(\"%d\", &a[i]);\n" +
+                                        "    }\n" +
+                                        "    printf(\"\\nValues at Even indices are: \");\n" +
+                                        "    evenindices(a);\n" +
+                                        "}"
+                                ans2.text="#include <stdio.h>\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    int a[10], i, x, c = 0;\n" +
+                                        "    printf(\"Enter 20 values in the array:\\n \");\n" +
+                                        "    for (i = 0; i < 10; i++)\n" +
+                                        "    {\n" +
+                                        "        scanf(\"%d\", &a[i]);\n" +
+                                        "    }\n" +
+                                        "    printf(\"\\nEnter the value to search: \");\n" +
+                                        "    scanf(\"%d\", &x);\n" +
+                                        "    for (i = 0; i < 10; i++)\n" +
+                                        "    {\n" +
+                                        "        if (x == a[i])\n" +
+                                        "        {\n" +
+                                        "            printf(\"Value found at index %d\", (i + 1));\n" +
+                                        "            c = 1;\n" +
+                                        "            break;\n" +
+                                        "        }\n" +
+                                        "    }\n" +
+                                        "    if (c != 1)\n" +
+                                        "    {\n" +
+                                        "        printf(\"Value not found\");\n" +
+                                        "    }\n" +
+                                        "}"
                                 mark1.text=""
 
                             })
@@ -944,8 +991,69 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                             mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
                                 var rewardAmount = rewardItem.amount
                                 var rewardType = rewardItem.type
-                                ans1.text=""
-                                ans2.text=""
+                                ans1.text="#include <stdio.h>\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    int a[3][3], b[3][3], i, j;\n" +
+                                        "\n" +
+                                        "    for (i = 0; i < 3; i++)\n" +
+                                        "    {\n" +
+                                        "        for (j = 0; j < 3; j++)\n" +
+                                        "        {\n" +
+                                        "            scanf(\"%d\", &a[i][j]);\n" +
+                                        "        }\n" +
+                                        "    }\n" +
+                                        "\n" +
+                                        "    for (i = 0; i < 3; i++)\n" +
+                                        "    {\n" +
+                                        "        for (j = 0; j < 3; j++)\n" +
+                                        "        {\n" +
+                                        "            b[i][j] = a[i][j];\n" +
+                                        "        }\n" +
+                                        "    }\n" +
+                                        "    printf(\"\\nElemetns of B are -:\\n\");\n" +
+                                        "    for (i = 0; i < 3; i++)\n" +
+                                        "    {\n" +
+                                        "        for (j = 0; j < 3; j++)\n" +
+                                        "        {\n" +
+                                        "            printf(\"%d\\t\", b[i][j]);\n" +
+                                        "        }\n" +
+                                        "        printf(\"\\n\");\n" +
+                                        "    }\n" +
+                                        "}"
+
+                                ans2.text="#include <stdio.h>\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    int a[3][3], b[3][3], i, j;\n" +
+                                        "\n" +
+                                        "    for (i = 0; i < 3; i++)\n" +
+                                        "    {\n" +
+                                        "        for (j = 0; j < 3; j++)\n" +
+                                        "        {\n" +
+                                        "            scanf(\"%d\", &a[i][j]);\n" +
+                                        "        }\n" +
+                                        "    }\n" +
+                                        "\n" +
+                                        "    for (i = 0; i < 3; i++)\n" +
+                                        "    {\n" +
+                                        "        for (j = 0; j < 3; j++)\n" +
+                                        "        {\n" +
+                                        "            b[i][j] = a[j][i];\n" +
+                                        "        }\n" +
+                                        "    }\n" +
+                                        "\n" +
+                                        "    printf(\"Elements after transposing are -:\\n\");\n" +
+                                        "\n" +
+                                        "    for (i = 0; i < 3; i++)\n" +
+                                        "    {\n" +
+                                        "        for (j = 0; j < 3; j++)\n" +
+                                        "        {\n" +
+                                        "            printf(\"%d\\t\", b[i][j]);\n" +
+                                        "        }\n" +
+                                        "        printf(\"\\n\");\n" +
+                                        "    }\n" +
+                                        "}"
                                 mark1.text=""
 
                             })
@@ -974,8 +1082,82 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                             mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
                                 var rewardAmount = rewardItem.amount
                                 var rewardType = rewardItem.type
-                                ans1.text=""
-                                ans2.text=""
+                                ans1.text="#include <stdio.h>\n" +
+                                        "struct std_info\n" +
+                                        "{\n" +
+                                        "    char name[20], add[20];\n" +
+                                        "    int id;\n" +
+                                        "};\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    struct std_info st[5];\n" +
+                                        "    int i;\n" +
+                                        "    for (i = 0; i < 5; i++)\n" +
+                                        "    {\n" +
+                                        "        printf(\"%d. \\n\", i);\n" +
+                                        "        printf(\"Name: \");\n" +
+                                        "        scanf(\"%[^\\n]%*c\", st[i].name);\n" +
+                                        "        printf(\"Id: \");\n" +
+                                        "        scanf(\"%d\", &st[i].id);\n" +
+                                        "        printf(\"Address: \");\n" +
+                                        "        scanf(\"%[^\\n]%*c\", st[i].add);\n" +
+                                        "    }\n" +
+                                        "    printf(\"Details Entered are: \\n\");\n" +
+                                        "    for (i = 0; i < 5; i++)\n" +
+                                        "    {\n" +
+                                        "        printf(\"%d. \", i);\n" +
+                                        "        printf(\"Name: %s\\n\", st[i].name);\n" +
+                                        "        printf(\"ID: %d\\n\", st[i].id);\n" +
+                                        "        printf(\"Address: %s\\n\", st[i].add);\n" +
+                                        "    }\n" +
+                                        "}"
+                                ans2.text="#include <stdio.h>\n" +
+                                        "#include <string.h>\n" +
+                                        "struct emp\n" +
+                                        "{\n" +
+                                        "    char name[20];\n" +
+                                        "    int id;\n" +
+                                        "};\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    struct emp emp1, emp2;\n" +
+                                        "    printf(\"Name: \");\n" +
+                                        "    scanf(\"%[^\\n]%*c\", emp1.name);\n" +
+                                        "    printf(\"Id: \");\n" +
+                                        "    scanf(\"%d\", &emp1.id);\n" +
+                                        "    emp2.id = emp1.id;\n" +
+                                        "    strcpy(emp2.name, emp1.name);\n" +
+                                        "    printf(\"Details stored in emp2 are:  \\n\");\n" +
+                                        "\n" +
+                                        "    printf(\"Name: %s\\n\", emp2.name);\n" +
+                                        "    printf(\"ID: %d\\n\", emp2.id);\n" +
+                                        "}"
+
+                                ans3.text = "#include <stdio.h>\n" +
+                                        "#include <stdlib.h>\n" +
+                                        "#include <string.h>\n" +
+                                        "struct emp\n" +
+                                        "{\n" +
+                                        "    char name[20];\n" +
+                                        "    int id;\n" +
+                                        "};\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    struct emp *emp1, *emp2;\n" +
+                                        "    emp1 = malloc(sizeof(struct emp));\n" +
+                                        "    emp2 = malloc(sizeof(struct emp));\n" +
+                                        "\n" +
+                                        "    printf(\"Name: \");\n" +
+                                        "    scanf(\"%[^\\n]%*c\", emp1->name);\n" +
+                                        "    printf(\"Id: \");\n" +
+                                        "    scanf(\"%d\", &emp1->id);\n" +
+                                        "    emp2->id = emp1->id;\n" +
+                                        "    strcpy(emp2->name, emp1->name);\n" +
+                                        "    printf(\"Details stored in emp2 are:  \\n\");\n" +
+                                        "\n" +
+                                        "    printf(\"Name: %s\\n\", emp2->name);\n" +
+                                        "    printf(\"ID: %d\\n\", emp2->id);\n" +
+                                        "}"
                                 mark1.text=""
 
                             })
@@ -1004,7 +1186,33 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                             mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
                                 var rewardAmount = rewardItem.amount
                                 var rewardType = rewardItem.type
-                                ans1.text=""
+                                ans1.text="#include <stdio.h>\n" +
+                                        "#include <stdlib.h>\n" +
+                                        "void main()\n" +
+                                        "{\n" +
+                                        "    FILE *f;\n" +
+                                        "    char para[500], read[500];\n" +
+                                        "    f = fopen(\"Para.txt\", \"w\");\n" +
+                                        "    if (f == NULL)\n" +
+                                        "    {\n" +
+                                        "        printf(\"FILE FAILED TO OPEN\");\n" +
+                                        "        exit(0);\n" +
+                                        "    }\n" +
+                                        "    printf(\"Enter the data to store in file:\\n\");\n" +
+                                        "    scanf(\"%[^\\n]%*c\", para);\n" +
+                                        "    fputs(para, f);\n" +
+                                        "    fclose(f);\n" +
+                                        "\n" +
+                                        "    f = fopen(\"Para.txt\", \"r\");\n" +
+                                        "    if (f == NULL)\n" +
+                                        "    {\n" +
+                                        "        printf(\"FILE FAILED TO OPEN\");\n" +
+                                        "        exit(0);\n" +
+                                        "    }\n" +
+                                        "    printf(\"Data stored: \\n\");\n" +
+                                        "    fgets(read, 500, f);\n" +
+                                        "    printf(\"%s\", read);\n" +
+                                        "}"
                                 ans2.text=""
                                 mark1.text=""
 
