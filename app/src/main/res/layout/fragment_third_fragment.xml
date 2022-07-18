@@ -145,6 +145,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
+        android:id="@+id/d1"
         android:textColor="@color/black"
         android:layout_gravity="center"
         android:gravity="center"
@@ -168,6 +169,7 @@
         android:textSize="14sp" />
     <TextView
         android:layout_width="match_parent"
+        android:id="@+id/d2"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:textColor="@color/black"

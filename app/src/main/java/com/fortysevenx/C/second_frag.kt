@@ -8,6 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
+
 //import android.view.LayoutInflater
 //import android.view.View
 //import android.view.ViewGroup
@@ -31,6 +35,7 @@ class Second_fragment : Fragment(R.layout.fragment_second) {
         val view: View = inflater.inflate(R.layout.fragment_second,container,false)
         val tv = view.findViewById<View>(R.id.tvf2)as TextView
         val bundle = arguments
+        var adV: AdView
         val q_id = bundle!!.getInt("mText")
         tv.text="Fragment 2 ${q_id.toString()}"
         val q1 =view.findViewById<TextView>(R.id.q1)
@@ -56,6 +61,15 @@ class Second_fragment : Fragment(R.layout.fragment_second) {
             view.findViewById<TextView>(R.id.q4c3),
             view.findViewById<TextView>(R.id.q4c4),
         )
+
+        if (container != null) {
+            MobileAds.initialize(container.context) {}
+        }
+
+        adV = view.findViewById(R.id.adViewbig)
+        val adRequest = AdRequest.Builder().build()
+        adV.loadAd(adRequest)
+
         var opList:ArrayList<Questions>?=quest.getQuest()
         var headList:ArrayList<CardDetails>?=Constants.getTV()
        // view.findViewById<TextView>(R.id.q1c1).setOnClickListener(this)

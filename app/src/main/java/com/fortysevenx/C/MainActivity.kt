@@ -1,6 +1,8 @@
 package com.fortysevenx.C
 
+import android.content.ActivityNotFoundException
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -24,7 +26,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private var textlist: ArrayList<CardDetails>? = null
     lateinit var reviewInfo:ReviewInfo
-    lateinit var mAdView : AdView
+    lateinit var mAdView1 : AdView
+    lateinit var mAdView2 : AdView
+    lateinit var mAdView3 : AdView
 
     lateinit var minter: InterstitialAd
     private var mInterstitialAd: InterstitialAd? = null
@@ -36,26 +40,36 @@ class MainActivity : AppCompatActivity() {
        // var tb = binding.toolBar
         setSupportActionBar(findViewById(R.id.toolBar))
         setcards()
-        val rate=findViewById<Button>(R.id.rate);
-        val reviewManager: ReviewManager = ReviewManagerFactory.create(this)
-        val requestReviewTask= reviewManager.requestReviewFlow()
-        requestReviewTask.addOnCompleteListener { request ->
-            if (request.isSuccessful) {
-                // Request succeeded and a ReviewInfo instance was received
-                reviewInfo= request.result
-            } else {
-                // Request failed
+        val rate=findViewById<TextView>(R.id.rate);
+//        val reviewManager: ReviewManager = ReviewManagerFactory.create(this)
+//        val requestReviewTask= reviewManager.requestReviewFlow()
+//        requestReviewTask.addOnCompleteListener { request ->
+//            if (request.isSuccessful) {
+//                // Request succeeded and a ReviewInfo instance was received
+//                reviewInfo= request.result
+//            } else {
+//                // Request failed
+//            }
+//        }
+        rate.setOnClickListener {
+            try{
+                startActivity( Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id="+packageName)))
+            }
+            catch (e:ActivityNotFoundException){
+                startActivity(Intent("android.intent.action.VIEW", Uri.parse("https://play.google.com/store/apps/details?id="+packageName)));
             }
         }
-        rate.setOnClickListener {
-            startreview(reviewManager)
-        }
+
 
 
         MobileAds.initialize(this@MainActivity){}
-        mAdView = findViewById<AdView>(R.id.adviewmain)
+        mAdView1 = findViewById<AdView>(R.id.adView1)
+        mAdView2= findViewById<AdView>(R.id.adView2)
+        mAdView3 = findViewById<AdView>(R.id.adView3)
         val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
+        mAdView1.loadAd(adRequest)
+        mAdView2.loadAd(adRequest)
+        mAdView3.loadAd(adRequest)
 
         InterstitialAd.load(this,"ca-app-pub-3940256099942544/1033173712", adRequest, object : InterstitialAdLoadCallback() {
             override fun onAdFailedToLoad(adError: LoadAdError) {
@@ -70,15 +84,15 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-private fun startreview(reviewManager:ReviewManager){
-    val flow = reviewManager.launchReviewFlow(this, reviewInfo)
-    flow.addOnCompleteListener { _ ->
-        Toast.makeText(this,"RATING DONE",Toast.LENGTH_SHORT).show()
-        // The flow has finished. The API does not indicate whether the user
-        // reviewed or not, or even whether the review dialog was shown. Thus, no
-        // matter the result, we continue our app flow.
-    }
-}
+//private fun startreview(reviewManager:ReviewManager){
+//    val flow = reviewManager.launchReviewFlow(this, reviewInfo)
+//    flow.addOnCompleteListener { _ ->
+//        Toast.makeText(this,"RATING DONE",Toast.LENGTH_SHORT).show()
+//        // The flow has finished. The API does not indicate whether the user
+//        // reviewed or not, or even whether the review dialog was shown. Thus, no
+//        // matter the result, we continue our app flow.
+//    }
+//}
     private fun setcards() {
         textlist = Constants.getTV()
 

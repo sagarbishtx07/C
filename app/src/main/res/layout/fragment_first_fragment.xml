@@ -48,6 +48,16 @@
             android:textSize="14sp"
             android:textStyle="bold"
          />
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
         <TextView
             android:id="@+id/sh1"
             android:layout_width="wrap_content"
@@ -76,7 +86,16 @@
             android:textSize="14sp"
             android:textStyle="bold"
             />
-
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
         <TextView
             android:id="@+id/sh2"
             android:layout_width="wrap_content"
@@ -150,6 +169,7 @@
             android:textColor="#09A6A6"
             android:textSize="16sp"
             android:textStyle="bold" />
+
 
 
     </LinearLayout>

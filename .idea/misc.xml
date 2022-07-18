@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/C/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2355" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/C/app/src/main/res/drawable/ic_baseline_settings_ethernet_24.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/C/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2355" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/C/app/src/main/res/drawable/roundedimage.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/C/app/src/main/res/layout/activity_content.xml" value="0.25" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/C/app/src/main/res/layout/activity_main.xml" value="0.2593516209476309" />
@@ -14,7 +16,10 @@
         <entry key="..\:/Users/ACER/AndroidStudioProjects/C/app/src/main/res/layout/toolbar.xml" value="0.264" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/C/app/src/main/res/menu/bottom_nav.xml" value="0.25" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/C/app/src/main/res/menu/bottom_nav_menu.xml" value="0.26197916666666665" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/C/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.128" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/C/app/src/main/res/mipmap-anydpi-v26/ic_quiz.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/C/app/src/main/res/mipmap-anydpi-v26/launchericON.xml" value="0.2355" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/C/app/src/main/res/mipmap-anydpi-v26/launchericON_round.xml" value="0.124" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/C/app/src/main/res/layout/fragment_first_fragment.xml" value="0.25" />
       </map>
     </option>

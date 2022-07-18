@@ -4,7 +4,8 @@ object quest{
     fun getQuest():ArrayList<Questions>{
         val quesList = ArrayList<Questions>()
         //0 Intro
-            quesList.add(Questions(1,"Which of these is not a programming language?",
+            quesList.add(Questions(1,"Which of these is not a programming language?(Tap on the text on the options below, Blue color means " +
+                    "correct option.)",
                 "Java","HTML","Unity","Python",2));
 
             quesList.add(Questions(2,"Which of the following language is preferred for game development? ","Java","C/C++","Python","HTML",1+4));
@@ -23,10 +24,10 @@ object quest{
                         " and if everything alright converts the code into low level language code for computer to understand.",3))
 
             quesList.add(Questions(6,"Which of the following is a text editor.","Notepad++","Notepad","VS code","All of them",3+4))
-            quesList.add(Questions(7,"Which of the following is not an IDE","Code Blocks","Turbo C","Vs Code","Netbeans",2+8))
+            quesList.add(Questions(7,"Which of the following is not an IDE or is a text editor with many features?","Code Blocks","Turbo C","Vs Code","Netbeans",2+8))
             quesList.add(Questions(8,"What is an environment path when we were setting up the compiler?","It sets the IDE for coding",
                 "It tells the computer the location/path of the bin file of the compiler where the program for executing our code exists.","It installs the compiler in our" +
-                        " computer so we can run the code without any problem","None of these",2+12))
+                        " computer so we can run the code without any problem","None of these",1+12))
 
         //2 First Program
             quesList.add(Questions(9,"Which of the following type of brackets is used to the define the definition of program or specify the code inside of a block of code.",
@@ -46,15 +47,17 @@ object quest{
             quesList.add(Questions(12,"What does the header file stdio.h that we include in every C program contains?",
                 "Its called standard input output header file and it contains the source code of compiler",
                 "It contains the information about the location of C compiler installed in our system.",
-                "It is the Standard Input output header file and it contains the information related to input output functions.","op4",2+12))
+                "It is the Standard Input output header file and it contains the information related to input output functions.",
+                "It's an empty file used to save code",2+12))
 
         //3 Variables Data Types
             quesList.add(Questions(13,"Which of these is not a data type in C?","struct","number","int","float",1))
-            quesList.add(Questions(14,"What is the range of integers that we could normally store in the int data type with using long int?","0 to 1 million ",
+            quesList.add(Questions(14,"What is the range of integers that we could normally store in the int data type?",
+                "0 to 1 million ",
                 "-32767 to 32767","0 to 32767","0 to 65535",1+4))
 
             quesList.add(Questions(15,"Which of the following values is wrong to put inside an int?","32767","-4000","3132.42","0",2+8))
-            quesList.add(Questions(16,"To store 5.43234 which data type will you prefer?","Int","Double","Point","Float",1+12))
+            quesList.add(Questions(16,"To store 5.432234 which data type will you prefer?","Int","Double","Point","Float",1+12))
 
         //4 Format specifies and Taking input
         quesList.add(Questions(17,"Which of these is not a valid format specifier for data types?",
@@ -74,17 +77,18 @@ object quest{
                 "ampersand '&' is missing after x",
                 "ampersand '&' is missing before x","Both 1 and 3 are correct",3+8))
 
-            quesList.add(Questions(20,"Which of the following statement is incorrect?","\\n is used to start newline",
+            quesList.add(Questions(20,"Which of the following statement is incorrect?",
+                "\\n is used to start newline",
                 "a=>b is a correct expression for comparison between a and b in c",
                 "In C true is 1 and false is 0 or any negative number as boolean values.",
-                "a>=b is a correct expression for comparison between a and b in c",2+12))
+                "a>=b is a correct expression for comparison between a and b in c",1+12))
 
 
         //5 if-else
         quesList.add(Questions(21,"What is a Boolean Value?",
             "Value which is only divisible by 100",
             "Values which can only be positive or negative",
-            "Values which are either true or false, or 0 or 1 , where 0 is false and 1 is true",
+            "Values which are either true or false, 0 or 1 , where 0 is false and 1 is true",
             "Binary Values are Boolean Values",2))
 
         quesList.add(Questions(22,"Guess the output of this portion of code? -: " +
@@ -114,7 +118,7 @@ object quest{
 
         quesList.add(Questions(26,"How many time this loop will run?\n\twhile(1){\n\t\tprintf(\"RUNNING\\n\");\n\t}\n",
             "1 time","Will not run even once","This will be a infinity loop",
-            "Program will throw error because there is no condition specified inside while loop",0+4))
+            "Program will throw error because there is no condition specified inside while loop",2+4))
 
         quesList.add(Questions(27,"Identify the correct output of this program -:\n\t" +
                 "for(i=5;i<=7;i++)\n\t\tprintf(\"Yo \");\n\t\tprintf(\"HELLO \");\n",
@@ -156,7 +160,7 @@ object quest{
             "DOG",
             "BAT",
             "program will give error because no break statement inside default case",
-            3+8))
+            2+8))
 
         quesList.add(Questions(32,
             "Which of these is an invalid statement.",
@@ -198,9 +202,9 @@ object quest{
         quesList.add(Questions(38,"Find the values of a,b and c -:\n\t" +
                 "int a,*b,c;\n\t" +
                 "a=5;\n\t" +
-                "*b=&a;\n\t" +
+                "b=&a;\n\t" +
                 "c=*b;\n\t" +
-                "a=a+1;\n","a=5 b=5 c=5","a=6 b=5 c=6","a=6 b=6 c=6","a=6 b=6 c=5",
+                "a=a+1;\n","a=5 *b=5 c=5","a=6 *b=5 c=6","a=6 *b=6 c=6","a=6 *b=6 c=5",
             3+4))
 
         quesList.add(Questions(39,"What will this expression be address or value(a is an integer values)?-:\n\t" +
@@ -210,7 +214,7 @@ object quest{
         quesList.add(Questions(40,"Which of the following is incorrect for pointers?",
             "Pointers contains the address and when used with * points to that address",
             "When we declare a pointer like int *a; it doesn't get space for storing the value but for storing the " +
-                    "space so if we do *a=5; it might return an error.",
+                    "space so if we do a=5; it might return an error.",
             "We can store value in an pointer.",
             "We can store the address of the variable which is storing the value.",2+12))
 
@@ -259,7 +263,7 @@ object quest{
             "It will print all the even values from the array",
             "It will print all the prime numbers in the array",
             "This will print all the odd numbers in the array",
-            "This will print all the elements of the  array",2+4))
+            "This will print all values at odd indiex/odd places.",3+4))
 
         quesList.add(Questions(47,"We are given an array a[5] what will be the size of the array assuming size of 1 int" +
                 " as 2bytes in the given compiler.",
@@ -268,7 +272,7 @@ object quest{
         quesList.add(Questions(48,"If we have an array string st of 10 elements (char st[10];) then which of the following statement" +
                 " given below is incorrect.",
             "st without square brackets is an pointer pointing to the starting of array",
-            "size of given array is double the size of one char",
+            "size of given array is 10x the size of one char",
             "to print the whole character string we can use %s format specifier",
             "we cannot print the whole string at once without using loop",3+12))
 
@@ -284,7 +288,7 @@ object quest{
         quesList.add(
             Questions(51,"What do we mean by dynamic memory allocation?",
             "Adding, removing and changing memory space  at run time that is once allocated",
-            "allocating memory without even declaring the variable",
+            "allocating memory address to a pointer variable directly",
             "Using the malloc() function for memory allocation",
             "all of the above",3+4))
 
@@ -367,7 +371,7 @@ object quest{
            "It is denoted by the syntax a[i][j]",
            "in a[i][j] i is row index and j is column index",
            "All of the above",
-           0))
+           3))
 
        quesList.add(Questions(55,
            "What is a square matrix.",
@@ -378,14 +382,14 @@ object quest{
            2+4))
 
         quesList.add(Questions(56,"What do you mean by transpose of a square matrix a.",
-            "A matrix which contains the index numbers of all the elements of a",
+            "A matrix which contains the index numbers of all the elements of array",
             "A 2-D array which contains the index number starting from 1 of all elements of a.",
             "A matrix which contains all the row elements of a in its column and all the column elements of a in its rows.",
             "A 2-D array with reciprocal values of each elements of a.",
             2+8))
 
         quesList.add(Questions(57,"Which of the following is not true for a 2-D array",
-            "Its size can be calculated by size of one element into total number of elements i.e. - i x j x n",
+            "Its size can be calculated by multiplying the size of one element n into total number of elements i.e. - i x j x n",
             "a[2][4] will give the element in the second column and 3rd row",
             "a[2][4] will give the element in the second row and 4th column",
             "a[9][9] is s 9 cross 9 square matrix",1+12))
@@ -393,11 +397,11 @@ object quest{
         //14 Structures
         quesList.add(
             Questions(58,
-            "Which of these best describes the difference between structure and function",
+            "Which of these best describes the difference between structure and function.",
             "Function is also a data type same as structure.",
             "Structures are used as a data type whereas function is method defined by us.",
             "Structure is not reusable but function is reusable",
-            "Structure cannot be used as d data type but function can be used",1)
+            "Structure cannot be used as data type but function can be used",1)
         )
 
         quesList.add(Questions(59,
@@ -411,7 +415,7 @@ object quest{
             "What is wrong with this piece of code.\n\t" +
                     "struct emp1(\n\t" +
                     "int x;\n" +
-                    "};",
+                    ");",
             "semi colon at the end",
             "s is in Lowercase(small letters) in struct",
             "no curly brackets used",
@@ -419,16 +423,16 @@ object quest{
 
         quesList.add(Questions(61,
             "Which is the correct syntax for initializing a struct using dynamic memory allocation",
-            "struct emp* = malloc(sizeof(struct));",
+            "struct *emp = malloc(sizeof(struct));",
             "struct *emp = sizeof(struct emp));",
             "struct emp = sizeof((struct emp));",
-            "struct emp = (struct *)sizeof(struct));",0 ))
+            "struct emp = (struct *)sizeof(struct));",0+12 ))
 
         //15 File Handling
         quesList.add(
             Questions(62,
         "What is the need for file handling?.",
-        "It help us save the data that we entered into the main memory.",
+        "It help us encode the data that we entered into the main memory.",
         "It helps to read and write data from RAM",
         "It helps to permanently save and retrieve data.",
         "It is used to write and create text files only.",
@@ -440,7 +444,7 @@ object quest{
             "FILE *fp;",
             "FILE *fp = fopen(\"F1.txt\",\"r\");",
             "File *fp = Fopen(\"F1.txt\",\"w\");",
-            "FILE *fp = fopen(\"F1.txt\",\"w\");",
+            "FILE *fp = fopen(\"F1\",\"w\");",
             2+4))
 
         quesList.add(Questions(64,
@@ -485,15 +489,15 @@ object quest{
             "C/C++ games are free.",
             "Logic building is easy in C.",
             "C/C++ programs are  fast in terms of processing.",
-            0))
+            3+8))
 
         quesList.add(Questions(68,
-            "Some tips that would help you in future.",
-            "practicing the concepts/programs that feels hard.",
-            "try to master some particular language first before moving to another.",
-            "dont always keep on learning try to implement them then learn next then implement that and so on.",
-            "its always You vs Yourself always be better than you were yestarday",
-            0))
+            "Which of the following is incorrect in respect to programming.",
+            "Programming is similar to mathematics in other words its more about understanding practicing and implementing rather just learning.",
+            "You might find very similar concepts in different language although syntax will be different.",
+            "Concepts like arrays,file handling,functions are only available in C.",
+            "It is possible to create new programming language using another.",
+            2+12))
 
 
         return quesList

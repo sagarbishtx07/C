@@ -105,6 +105,8 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
         var q4=view.findViewById<TextView>(R.id.q4)
         var q5=view.findViewById<TextView>(R.id.q5)
         var s1=view.findViewById<TextView>(R.id.c1)
+        var d1=view.findViewById<TextView>(R.id.d1)
+        var d2=view.findViewById<TextView>(R.id.d2)
         var s2=view.findViewById<TextView>(R.id.c2)
         var heading=view.findViewById<TextView>(R.id.f3head)
         var f3topiclist:ArrayList<CardDetails>?=Constants.getTV()
@@ -263,6 +265,8 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 l1.text=""
                 ans1.text=""
                 ans3.text=""
+                d1.text=""
+                d2.text=""
                 mark1.text=""
             }
             1->{
@@ -275,6 +279,9 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q3.text=getString(stid[(c_id*7)+4])
                 q4.text=getString(stid[(c_id*7)+5])
                 q5.text=getString(stid[(c_id*7)+6])
+                l1.text=""
+                d1.text=""
+                d2.text=""
                 ans1.text=""
                 ans3.text=""
                 mark1.text=""
@@ -1273,25 +1280,10 @@ class Third_fragment : Fragment(R.layout.fragment_third_fragment) {
                 q3.text=getString(stid[(c_id*7)+4])
                 q4.text=getString(stid[(c_id*7)+5])
                 q5.text=getString(stid[(c_id*7)+6])
-
-                l1.setOnClickListener {
-                    if (mRewardedAd != null) {
-                        activity?.let { it1 ->
-                            mRewardedAd?.show(it1, OnUserEarnedRewardListener{rewardItem ->
-                                var rewardAmount = rewardItem.amount
-                                var rewardType = rewardItem.type
-                                ans1.text=""
-                                ans2.text=""
-                                mark1.text=""
-
-                            })
-                        }
-                    } else {
-                        if (container != null) {
-                            Toast.makeText(container.context,"Try Again",Toast.LENGTH_SHORT).show()
-                        }
-                    }
-                }
+                d1.text=""
+                d2.text=""
+                l1.text=""
+                mark1.text=""
             }
         }
         //tv.text="Fragment 3 ${msg.toString()}"
